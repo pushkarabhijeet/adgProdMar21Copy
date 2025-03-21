@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Families --></label>
+    <name>Product_Families__c</name>
+    <picklistValues>
+        <masterLabel>Cabinets</masterLabel>
+        <translation><!-- Cabinets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Countertops</masterLabel>
+        <translation><!-- Countertops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flooring</masterLabel>
+        <translation><!-- Flooring --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lighting</masterLabel>
+        <translation><!-- Lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Specialties</masterLabel>
+        <translation><!-- Specialties --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Window Treatments</masterLabel>
+        <translation><!-- Window Treatments --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

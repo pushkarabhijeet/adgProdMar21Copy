@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Picture_Pan_Square_Required</fullName>
+    <active>false</active>
+    <errorConditionFormula>LOWER($Label.SG_DisableValidations) != &quot;true&quot; &amp;&amp;
+AND(
+NOT( ISNEW() ),
+AND(
+RecordType.Name = &quot;QC_Wall_Tile_Install&quot;,
+ISBLANK(Picture_Pan_Square__c),
+ISPICKVAL (Status__c, &quot;Completed&quot;)
+))</errorConditionFormula>
+    <errorMessage>Please upload a picture showing the Pan Square</errorMessage>
+</ValidationRule>

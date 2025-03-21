@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>None</contactAccessLevel>
+    <description>Customer Service Floors Dallas</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Customer Service Floors Dallas</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Operations_Manager_Floors_Dallas</parentRole>
+</Role>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LVP_Spec_Levels__c</fullName>
+    <label>LVP Spec Levels</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2mm | 6 mil gluedown</fullName>
+                <default>false</default>
+                <label>2mm | 6 mil gluedown</label>
+            </value>
+            <value>
+                <fullName>2mm | 8 mil gluedown</fullName>
+                <default>false</default>
+                <label>2mm | 8 mil gluedown</label>
+            </value>
+            <value>
+                <fullName>2mm | 12 mil gluedown</fullName>
+                <default>false</default>
+                <label>2mm | 12 mil gluedown</label>
+            </value>
+            <value>
+                <fullName>Rigid LVP</fullName>
+                <default>false</default>
+                <label>Rigid LVP</label>
+            </value>
+            <value>
+                <fullName>Other gluedown</fullName>
+                <default>false</default>
+                <label>Other gluedown</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

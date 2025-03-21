@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel_of_Business__c</fullName>
+    <label>Channel of Business</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Single Family</fullName>
+                <default>false</default>
+                <label>Single Family</label>
+            </value>
+            <value>
+                <fullName>Multi-Family - New</fullName>
+                <default>false</default>
+                <label>Multi-Family - New</label>
+            </value>
+            <value>
+                <fullName>Muti-Family - Relay</fullName>
+                <default>false</default>
+                <label>Muti-Family - Relay</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

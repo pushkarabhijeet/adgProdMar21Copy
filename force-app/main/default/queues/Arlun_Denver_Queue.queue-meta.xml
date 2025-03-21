@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>invalid@invalid.com.invalid</email>
+    <name>Arlun Denver Queue (INACTIVE QUEUE)</name>
+    <queueMembers>
+        <users>
+            <user>aaron.hall@arlun.com</user>
+            <user>cindy.calomino@arlun.com</user>
+            <user>cynthia.figueroa@adgus.net</user>
+            <user>gabe.costa@arlun.com</user>
+            <user>ginger.kurtz@arlun.com</user>
+            <user>jamelia.wright@arlun.com</user>
+            <user>mike.maginity@arlun.com</user>
+            <user>rachel.jackson@arlun.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

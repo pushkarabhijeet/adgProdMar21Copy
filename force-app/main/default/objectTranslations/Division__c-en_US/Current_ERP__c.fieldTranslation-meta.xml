@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Current ERP --></label>
+    <name>Current_ERP__c</name>
+    <picklistValues>
+        <masterLabel>Great Plains</masterLabel>
+        <translation><!-- Great Plains --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RFMS</masterLabel>
+        <translation><!-- RFMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>uFactory</masterLabel>
+        <translation><!-- uFactory --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

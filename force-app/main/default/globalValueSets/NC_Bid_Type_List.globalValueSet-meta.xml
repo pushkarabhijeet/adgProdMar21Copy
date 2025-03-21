@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Schematic Deisgn - SD</fullName>
+        <default>false</default>
+        <label>Schematic Deisgn - SD</label>
+    </customValue>
+    <customValue>
+        <fullName>Design Development - DD</fullName>
+        <default>false</default>
+        <label>Design Development - DD</label>
+    </customValue>
+    <customValue>
+        <fullName>Issue for Permit - IFP</fullName>
+        <default>false</default>
+        <label>Issue for Permit - IFP</label>
+    </customValue>
+    <customValue>
+        <fullName>Issure for Construction - IFC</fullName>
+        <default>false</default>
+        <label>Issure for Construction - IFC</label>
+    </customValue>
+    <masterLabel>NC Bid Type List</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

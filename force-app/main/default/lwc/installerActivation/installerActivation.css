@@ -1,0 +1,16 @@
+.account-area {
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-color: rgb(233, 233, 235);
+  border-width: 1px;
+  border-style: solid;
+  background-color: var(--lwc-colorBackground, #f3f2f2);
+  border-radius: 5px;
+  padding: 1em 0.8em 0.8em 0.8em;
+  min-height: 162px;
+  max-height: 20em;
+}
+
+.datatable {
+  height: 162px
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stain_any_exposed_edges_of_tile__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Includes niches, jacuzzi face, window seals, shower seats. Excludes where tile meets sheetrock, example shower walls.</inlineHelpText>
+    <label>Stain any exposed edges of tile</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

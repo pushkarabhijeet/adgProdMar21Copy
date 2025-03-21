@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Adhesive --></label>
+    <name>Adhesive__c</name>
+    <picklistValues>
+        <masterLabel>Installer supplies</masterLabel>
+        <translation><!-- Installer supplies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supplied to Installer</masterLabel>
+        <translation><!-- Supplied to Installer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Shoemold --></label>
+    <name>Shoemold__c</name>
+    <picklistValues>
+        <masterLabel>Included (specify)</masterLabel>
+        <translation><!-- Included (specify) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Included</masterLabel>
+        <translation><!-- Not Included --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

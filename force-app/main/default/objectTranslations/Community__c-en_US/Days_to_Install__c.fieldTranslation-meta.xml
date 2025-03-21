@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Days from estimated dried-in --></help>
+    <label><!-- Days to Install --></label>
+    <name>Days_to_Install__c</name>
+</CustomFieldTranslation>

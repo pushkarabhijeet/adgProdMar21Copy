@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Free_of_grout_haze_picklist_value</fullName>
+    <active>false</active>
+    <errorConditionFormula>LOWER($Label.SG_DisableValidations) != &quot;true&quot; &amp;&amp;
+AND(
+NOT( ISNEW() ),
+AND(
+OR(RecordType.Name = &quot;QC Floor &amp; Wall Tile Install&quot;, RecordType.Name = &quot;QC Tile Backsplash Install&quot;),
+ISPICKVAL(Free_of_grout_haze__c,&quot;Please select a value&quot;),
+ISPICKVAL( Status__c , &quot;Completed&quot;)
+))</errorConditionFormula>
+    <errorDisplayField>Free_of_grout_haze__c</errorDisplayField>
+    <errorMessage>Please select either Yes or No</errorMessage>
+</ValidationRule>

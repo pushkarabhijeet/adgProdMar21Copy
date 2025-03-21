@@ -1,0 +1,116 @@
+<!--
+/**********************************************************************
+* Name:     qc_Countertop
+* Author:   Strategic Growth, Inc. (www.strategicgrowthinc.com)
+* 
+* ======================================================
+* ======================================================
+* Purpose:                                                      
+* 
+* ======================================================
+* ======================================================
+* History:                                                            
+* VERSION   DATE            INITIALS      DESCRIPTION/FEATURES ADDED
+* 1.0       13-Oct-2020     rwd           Initial Development           
+*   
+***********************************************************************/ 
+-->
+<!-- Qc Countertop -->
+<template>
+        <lightning-card title="QC - Countertop" icon-name="custom:custom62">
+                <div class="slds-m-around_medium">
+                        <!--  onload={handleLoad} -->
+                        <lightning-record-edit-form object-api-name={objectApiName} record-id={recordId}
+                                onerror={handleError} onsuccess={handleSuccess} onsubmit={handleSubmit}>
+                                <lightning-messages></lightning-messages>
+                                <div class="slds-align_absolute-center">
+                                        <template if:true={spinner}>
+                                                <lightning-spinner class="spins" size="medium"></lightning-spinner>
+                                        </template>
+                                </div>
+                                <lightning-input-field field-name="QC_Date__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Subdecksproperlyinstalledandsmooth__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Shimmedproperlyandtheshimscutflush__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Dishwasherbracketinstallednonlaminate__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Sinkinstalledcorrectwithbracketclip__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Sinkscaulkedandcleanedproperly__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Coreholesdrilledcorrectly__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Cooktopopeningsquarecutoutsaccurate__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Isthecountertoplevel__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Seamstightandflush__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Overhangsconsistent__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Notchesandcutsaroundcabinetstight__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Underneathdetailssmoothfreeofglue__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Doesthecaulkingcolormatchthestone__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Fabricationandcenterlinemarksremoved__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Havethecountertopsbeensealed__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Sitecleanerthanwhenyouarrived__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Anycountertopsmissing__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Anybacksplashesmissing__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Anyscratchedtopolish__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Does_job_meet_industry_standards__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Comment__c"></lightning-input-field>
+                                <c-adg-compress-file-upload record-id={recordId} label="Countertop Picture"
+                                        prefix="Counertop_">
+                                </c-adg-compress-file-upload>
+                                <lightning-input-field field-name="Status__c" required></lightning-input-field>
+                                <!--
+                                <lightning-input-field field-name="QC_Date__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Are_cabinets_level_and_square__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Are_seams_properly_done__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Does_the_sink_have_clips__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Is_the_splash_caulked__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Dishwasher_clips_builder_requirements__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Are_corbels_where_needed__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Comment__c">
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Are_Countertops_Installed__c" required>
+                                </lightning-input-field>
+                                <c-adg-file-uploader record-id={recordId} label="Countertop Picture">
+                                </c-adg-file-uploader>
+                                <lightning-input-field field-name="Status__c" required onchange={handleTypeChange}>
+                                </lightning-input-field>
+                                -->
+                                <!-- show case create if needed -->
+                                <!--
+                                <template if:true={showCaseCreation}>
+                                        <c-submit-qc-case record-id={recordId}></c-submit-qc-case>
+                                </template>
+                                -->
+                                <!-- end case create -->
+                                <div class="slds-m-top_medium">
+                                        <lightning-button variant="brand" type="submit" name="update" label="Save">
+                                        </lightning-button>
+                                </div>
+                        </lightning-record-edit-form>
+                </div>
+        </lightning-card>
+</template>

@@ -1,0 +1,23 @@
+** System generated email **
+
+You are being informed that Case {!Case.CaseNumber} has been escalated.
+
+
+{!Case.Link}
+
+
+Owner:            {!Case.OwnerFullName}
+
+Type:               {!Case.Type}
+
+Contact:          {!Case.Contact}
+
+Account:          {!Case.Account}
+
+Phone:            {!Contact.Phone}
+
+
+Subj.:               {!Case.Subject}
+
+
+.

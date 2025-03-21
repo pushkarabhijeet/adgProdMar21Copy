@@ -1,0 +1,19 @@
+<template>
+  <lightning-card>
+    <div class="contract-pro-panel">
+      <div class="left">
+          <p>Contract Pro</p>
+      </div>
+      <div>
+        <lightning-button
+          variant="brand-outline"
+          label="Create New Installer"
+          title="Create New Installer"
+          class="slds-m-left_x-small"
+          onclick={openModal}
+        ></lightning-button>
+      </div>
+    </div>
+  </lightning-card>
+  <c-installer-activation></c-installer-activation>
+</template>

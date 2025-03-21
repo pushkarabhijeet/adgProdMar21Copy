@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Channel of Business --></label>
+    <name>Channel_of_Business__c</name>
+    <picklistValues>
+        <masterLabel>Multi-Family - New</masterLabel>
+        <translation><!-- Multi-Family - New --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Muti-Family - Relay</masterLabel>
+        <translation><!-- Muti-Family - Relay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Family</masterLabel>
+        <translation><!-- Single Family --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

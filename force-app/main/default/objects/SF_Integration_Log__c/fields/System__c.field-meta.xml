@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>System__c</fullName>
+    <description>Shows the Integration Process that caused the Error</description>
+    <inlineHelpText>Shows the Integration Process that caused the Error</inlineHelpText>
+    <label>System</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RFMS</fullName>
+                <default>false</default>
+                <label>RFMS</label>
+            </value>
+            <value>
+                <fullName>NuWood</fullName>
+                <default>false</default>
+                <label>NuWood</label>
+            </value>
+            <value>
+                <fullName>Vintage</fullName>
+                <default>false</default>
+                <label>Vintage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

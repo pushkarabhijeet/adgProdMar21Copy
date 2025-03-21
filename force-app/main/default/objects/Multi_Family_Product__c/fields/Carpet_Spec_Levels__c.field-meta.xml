@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Carpet_Spec_Levels__c</fullName>
+    <label>Carpet Spec Levels</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>18oz PET</fullName>
+                <default>false</default>
+                <label>18oz PET</label>
+            </value>
+            <value>
+                <fullName>20oz PET</fullName>
+                <default>false</default>
+                <label>20oz PET</label>
+            </value>
+            <value>
+                <fullName>25oz PET</fullName>
+                <default>false</default>
+                <label>25oz PET</label>
+            </value>
+            <value>
+                <fullName>&gt;25oz PET</fullName>
+                <default>false</default>
+                <label>&gt;25oz PET</label>
+            </value>
+            <value>
+                <fullName>Other PET</fullName>
+                <default>false</default>
+                <label>Other PET</label>
+            </value>
+            <value>
+                <fullName>18oz SmartStrand</fullName>
+                <default>false</default>
+                <label>18oz SmartStrand</label>
+            </value>
+            <value>
+                <fullName>20oz SmartStrand</fullName>
+                <default>false</default>
+                <label>20oz SmartStrand</label>
+            </value>
+            <value>
+                <fullName>25oz SmartStrand</fullName>
+                <default>false</default>
+                <label>25oz SmartStrand</label>
+            </value>
+            <value>
+                <fullName>&gt;25oz SmartStrand</fullName>
+                <default>false</default>
+                <label>&gt;25oz SmartStrand</label>
+            </value>
+            <value>
+                <fullName>Other SmartStrand</fullName>
+                <default>false</default>
+                <label>Other SmartStrand</label>
+            </value>
+            <value>
+                <fullName>18oz Nylon</fullName>
+                <default>false</default>
+                <label>18oz Nylon</label>
+            </value>
+            <value>
+                <fullName>20oz Nylon</fullName>
+                <default>false</default>
+                <label>20oz Nylon</label>
+            </value>
+            <value>
+                <fullName>25oz Nylon</fullName>
+                <default>false</default>
+                <label>25oz Nylon</label>
+            </value>
+            <value>
+                <fullName>&gt;25oz Nylon</fullName>
+                <default>false</default>
+                <label>&gt;25oz Nylon</label>
+            </value>
+            <value>
+                <fullName>Other Nylon</fullName>
+                <default>false</default>
+                <label>Other Nylon</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

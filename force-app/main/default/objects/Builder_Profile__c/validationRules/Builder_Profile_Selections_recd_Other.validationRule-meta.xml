@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Builder_Profile_Selections_recd_Other</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(   Selections_received_by__c  ,&quot;Other&quot;),
+ISBLANK(  Selections_received_by_Other__c ))</errorConditionFormula>
+    <errorDisplayField>Selections_received_by_Other__c</errorDisplayField>
+    <errorMessage>A value must be provided when &quot;Other&quot; is selected from &apos;Selections received by&apos; picklist.</errorMessage>
+</ValidationRule>

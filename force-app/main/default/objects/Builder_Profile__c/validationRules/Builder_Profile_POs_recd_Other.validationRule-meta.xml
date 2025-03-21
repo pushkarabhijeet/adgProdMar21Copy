@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Builder_Profile_POs_recd_Other</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(  PO_s_received_by__c  ,&quot;Other&quot;),
+ISBLANK(  POs_received_by_Other__c  ))</errorConditionFormula>
+    <errorDisplayField>POs_received_by_Other__c</errorDisplayField>
+    <errorMessage>A value must be provided when &quot;Other&quot; is selected from &apos;POs received by&apos; picklist.</errorMessage>
+</ValidationRule>

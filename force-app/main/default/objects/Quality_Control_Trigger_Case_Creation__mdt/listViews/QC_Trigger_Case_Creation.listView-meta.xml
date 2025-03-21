@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QC_Trigger_Case_Creation</fullName>
+    <columns>MasterLabel</columns>
+    <columns>List_of_QC_Record_Types__c</columns>
+    <columns>QC_Field_Name_to_Verify__c</columns>
+    <columns>QC_Field_Value__c</columns>
+    <columns>Case_Subject__c</columns>
+    <columns>Case_Type__c</columns>
+    <columns>QC_Field_Name_for_Material_Option__c</columns>
+    <columns>Case_Material_If_No__c</columns>
+    <columns>Case_Material_If_Yes__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>QC Trigger Case Creation</label>
+</ListView>

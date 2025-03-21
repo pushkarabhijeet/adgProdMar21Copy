@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Underlayment on 2nd Floor --></label>
+    <name>Underlayment_on_2nd_Floor__c</name>
+    <picklistValues>
+        <masterLabel>1/4&quot;</masterLabel>
+        <translation><!-- 1/4&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Durock</masterLabel>
+        <translation><!-- Durock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardi</masterLabel>
+        <translation><!-- Hardi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

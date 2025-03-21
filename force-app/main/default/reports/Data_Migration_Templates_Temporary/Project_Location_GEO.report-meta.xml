@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Project_Location_GEO__c.City__c</field>
+    </columns>
+    <columns>
+        <field>Project_Location_GEO__c.County_Name__c</field>
+    </columns>
+    <columns>
+        <field>Project_Location_GEO__c.Lat__c</field>
+    </columns>
+    <columns>
+        <field>Project_Location_GEO__c.Long__c</field>
+    </columns>
+    <columns>
+        <field>Project_Location_GEO__c.State_Abbr__c</field>
+    </columns>
+    <columns>
+        <field>Project_Location_GEO__c.State_Name__c</field>
+    </columns>
+    <columns>
+        <field>Project_Location_GEO__c.Time_Zone__c</field>
+    </columns>
+    <columns>
+        <field>Project_Location_GEO__c.Project_Location_ID_18__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Project Location GEO</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Project_Location_GEO__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

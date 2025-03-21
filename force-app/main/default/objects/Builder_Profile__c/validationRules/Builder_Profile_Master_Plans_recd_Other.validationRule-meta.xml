@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Builder_Profile_Master_Plans_recd_Other</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( Master_Plans_received_by__c ,&quot;Other&quot;),
+ISBLANK(Master_Plans_received_by_Other__c ))</errorConditionFormula>
+    <errorDisplayField>Master_Plans_received_by_Other__c</errorDisplayField>
+    <errorMessage>A value must be provided when &quot;Other&quot; is selected from &apos;Master Plans received by&apos; field</errorMessage>
+</ValidationRule>

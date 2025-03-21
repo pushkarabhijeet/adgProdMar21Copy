@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Areas_damaged_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>LOWER($Label.SG_DisableValidations) != &quot;true&quot; &amp;&amp;
+AND(
+NOT( ISNEW() ),
+AND(
+OR(RecordType.Name = &quot;QC Carpet Install&quot;), 
+ISPICKVAL(Areanyareasdamaged__c,&quot;Please select a value&quot;),
+ISPICKVAL( Status__c , &quot;Completed&quot;)
+))</errorConditionFormula>
+    <errorDisplayField>Areanyareasdamaged__c</errorDisplayField>
+    <errorMessage>Please select either Yes/No or N/A</errorMessage>
+</ValidationRule>

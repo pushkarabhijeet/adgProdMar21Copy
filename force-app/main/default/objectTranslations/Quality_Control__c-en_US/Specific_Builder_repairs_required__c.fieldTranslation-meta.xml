@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Pic if applicable --></help>
+    <label><!-- Specific Builder repairs required? --></label>
+    <name>Specific_Builder_repairs_required__c</name>
+</CustomFieldTranslation>

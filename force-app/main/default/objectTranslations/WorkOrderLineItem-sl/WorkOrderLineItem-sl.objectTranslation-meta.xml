@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Work Order Line Item Layout (Standard ADMIN)</layout>
+        <sections>
+            <label><!-- Dimensions --></label>
+            <section>Dimensions</section>
+        </sections>
+        <sections>
+            <label><!-- Integration Validation Fields --></label>
+            <section>Integration Validation Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Work Order Line Item Details --></label>
+            <section>Work Order Line Item Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Work Order Line Item Layout (Standard)</layout>
+        <sections>
+            <label><!-- Dimensions --></label>
+            <section>Dimensions</section>
+        </sections>
+        <sections>
+            <label><!-- Work Order Line Item Details --></label>
+            <section>Work Order Line Item Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+</CustomObjectTranslation>

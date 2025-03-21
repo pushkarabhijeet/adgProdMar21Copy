@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>QC_Past_Due</fullName>
+        <description>QC: Past Due</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Manager_Email_Address__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Salesforce_System_Folder_DO_NOT_TOUCH/QC_Escalation_Notice_to_Manager</template>
+    </alerts>
+    <alerts>
+        <fullName>QC_Pre_Walk_Job_Start_Reminder</fullName>
+        <description>QC Pre-Walk / Job Start Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Salesforce_System_Folder_DO_NOT_TOUCH/QC_Pre_Walk_Job_Schedule_Due</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Quality_Control_QC_Date_Populate_on_Com</fullName>
+        <field>QC_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Quality Control: QC Date Populate on Com</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Quality_Control_Status_Complete</fullName>
+        <field>Status__c</field>
+        <literalValue>Completed</literalValue>
+        <name>Quality Control Status Complete</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Quality Control Status Complete</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Quality_Control__c.Status_Mobile__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quality_Control__c.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Completed</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Quality_Control_QC_Date_Populate_on_Com</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Quality_Control_Status_Complete</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Quality_Control__c.Status_Mobile_Change__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Quality Control%3A QC Date Populate on Complete</fullName>
+        <actions>
+            <name>Quality_Control_QC_Date_Populate_on_Com</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Quality_Control__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quality_Control__c.QC_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quality_Control__c.Status_Mobile__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

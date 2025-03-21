@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCCV_All_Communities</fullName>
+    <columns>NAME</columns>
+    <columns>Builder__c</columns>
+    <columns>Community_Status__c</columns>
+    <columns>Field_Service_Manager__c</columns>
+    <columns>Entity__c</columns>
+    <columns>Location__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Entity__c</field>
+        <operation>equals</operation>
+        <value>WCCV</value>
+    </filters>
+    <label>WCCV (All Communities)</label>
+    <sharedTo>
+        <group>System_Administrators</group>
+    </sharedTo>
+</ListView>

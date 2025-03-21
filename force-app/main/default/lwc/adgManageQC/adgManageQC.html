@@ -1,0 +1,54 @@
+<template>
+  <lightning-card title="QC Maintenance" variant="Narrow">
+    <div class="slds-p-around_xx-small">
+      <lightning-button-group
+        ><!-- class="slds-align_absolute-center" -->
+        <lightning-button
+          label="Enable"
+          name="enable"
+          onclick={processAction}
+        ></lightning-button>
+        <lightning-button
+          label="Disable"
+          name="disable"
+          onclick={processAction}
+        ></lightning-button>
+      </lightning-button-group>
+      <!--<div class="slds-m-around_small"> -->
+      <lightning-layout-item>
+        <template if:true={TypePicklistValues.data}>
+          <lightning-combobox
+            name="entity"
+            label="Entity"
+            value={entitySelected}
+            placeholder="-Select Entity-"
+            options={TypePicklistValues.data.values}
+            required
+            onchange={handleChange}
+          >
+          </lightning-combobox>
+        </template>
+      </lightning-layout-item>
+      <lightning-layout-item>
+        <lightning-combobox
+          name="qcField"
+          label="QC Update Type"
+          value={qcField}
+          placeholder="-Select QC Type-"
+          options={fields}
+          required
+          onchange={handleChange}
+        ></lightning-combobox>
+      </lightning-layout-item>
+      <lightning-layout-item>
+        <lightning-input
+          type="date"
+          name="dateInput"
+          label="Enter a date to delete Open QCs"
+          onchange={handleChange}
+        ></lightning-input>
+      </lightning-layout-item>
+      <!--</div> -->
+    </div>
+  </lightning-card>
+</template>

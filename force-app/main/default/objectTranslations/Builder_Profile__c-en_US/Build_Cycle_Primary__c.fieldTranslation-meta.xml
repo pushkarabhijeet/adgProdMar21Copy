@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Build Cycle Primary --></label>
+    <name>Build_Cycle_Primary__c</name>
+    <picklistValues>
+        <masterLabel>Custom Plus Production Cycle</masterLabel>
+        <translation><!-- Custom Plus Production Cycle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom Production Cycle</masterLabel>
+        <translation><!-- Custom Production Cycle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Express Production Cycle</masterLabel>
+        <translation><!-- Express Production Cycle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Normal Production Cycle</masterLabel>
+        <translation><!-- Normal Production Cycle --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Determines the case subject, type and material to be created when the quality control record matches the given criteria</description>
+    <label>Quality Control Trigger Case Creation</label>
+    <pluralLabel>Quality Control Trigger Case Creation</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

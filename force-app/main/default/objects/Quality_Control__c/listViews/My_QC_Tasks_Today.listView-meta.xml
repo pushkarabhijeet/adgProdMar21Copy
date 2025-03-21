@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_QC_Tasks_Today</fullName>
+    <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Builder__c</columns>
+    <columns>Community__c</columns>
+    <columns>House_Unit__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Status__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Completed</value>
+    </filters>
+    <filters>
+        <field>Work_Order_Start_Date__c</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>Work_Order_Start_Date__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>3 - My QCs (Today)</label>
+</ListView>

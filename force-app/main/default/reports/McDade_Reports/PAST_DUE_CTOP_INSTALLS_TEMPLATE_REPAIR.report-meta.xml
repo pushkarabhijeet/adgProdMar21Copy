@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>WorkOrder$Asset</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$Field_Service_Manager__c</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$Job_Type__c</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$Work_Order_Status__c</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$Scheduled_Crew_Name__c</field>
+    </columns>
+    <description>COUNTERTOPS PAST DUE INSTALLS/TEMPLATE/REPAIR</description>
+    <filter>
+        <criteriaItems>
+            <column>WorkOrder$Account_Entity__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>McDade</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkOrder$Work_Order_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>In Progress,Installer Completed - Pending Review,Not Started</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkOrder$Job_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>COUNTERTOPS,COUNTERTOPS / MEASURE,COUNTERTOPS/ REPAIR,COUNTERTOPS / WARRANTY,COUNTERTOPS / SHORTAGE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkOrder$StartDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessThan</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>WorkOrder$StartDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PAST DUE - CTOP INSTALLS/TEMPLATE/REPAIR</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Work_Orders__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>WorkOrder$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

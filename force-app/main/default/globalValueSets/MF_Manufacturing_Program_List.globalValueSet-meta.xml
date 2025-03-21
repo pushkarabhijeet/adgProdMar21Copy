@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AHF</fullName>
+        <default>false</default>
+        <label>AHF</label>
+    </customValue>
+    <customValue>
+        <fullName>Citywide</fullName>
+        <default>false</default>
+        <label>Citywide</label>
+    </customValue>
+    <customValue>
+        <fullName>Congoleum</fullName>
+        <default>false</default>
+        <label>Congoleum</label>
+    </customValue>
+    <customValue>
+        <fullName>Daltile</fullName>
+        <default>false</default>
+        <label>Daltile</label>
+    </customValue>
+    <customValue>
+        <fullName>Earthwerks</fullName>
+        <default>false</default>
+        <label>Earthwerks</label>
+    </customValue>
+    <customValue>
+        <fullName>Emser</fullName>
+        <default>false</default>
+        <label>Emser</label>
+    </customValue>
+    <customValue>
+        <fullName>Engineered Floors</fullName>
+        <default>false</default>
+        <label>Engineered Floors</label>
+    </customValue>
+    <customValue>
+        <fullName>Mannington</fullName>
+        <default>false</default>
+        <label>Mannington</label>
+    </customValue>
+    <customValue>
+        <fullName>Mohawk</fullName>
+        <default>false</default>
+        <label>Mohawk</label>
+    </customValue>
+    <customValue>
+        <fullName>MSI</fullName>
+        <default>false</default>
+        <label>MSI</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Shaw</fullName>
+        <default>false</default>
+        <label>Shaw</label>
+    </customValue>
+    <masterLabel>MF Manufacturing Program List</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

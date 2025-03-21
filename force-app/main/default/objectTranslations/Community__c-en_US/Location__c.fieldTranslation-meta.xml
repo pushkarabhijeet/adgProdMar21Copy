@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Location --></label>
+    <name>Location__c</name>
+    <picklistValues>
+        <masterLabel>Apex</masterLabel>
+        <translation><!-- Apex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Austin</masterLabel>
+        <translation><!-- Austin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Charleston</masterLabel>
+        <translation><!-- Charleston --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Charlotte</masterLabel>
+        <translation><!-- Charlotte --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colorado Springs</masterLabel>
+        <translation><!-- Colorado Springs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Columbia</masterLabel>
+        <translation><!-- Columbia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corpus Christi</masterLabel>
+        <translation><!-- Corpus Christi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DFW</masterLabel>
+        <translation><!-- DFW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Denver</masterLabel>
+        <translation><!-- Denver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fayetteville</masterLabel>
+        <translation><!-- Fayetteville --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grafton</masterLabel>
+        <translation><!-- Grafton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Greensboro</masterLabel>
+        <translation><!-- Greensboro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Greenville</masterLabel>
+        <translation><!-- Greenville --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hilton Head</masterLabel>
+        <translation><!-- Hilton Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Houston</masterLabel>
+        <translation><!-- Houston --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indianapolis</masterLabel>
+        <translation><!-- Indianapolis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loveland</masterLabel>
+        <translation><!-- Loveland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Myrtle Beach</masterLabel>
+        <translation><!-- Myrtle Beach --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nashville</masterLabel>
+        <translation><!-- Nashville --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North Carolina</masterLabel>
+        <translation><!-- North Carolina --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peninsula</masterLabel>
+        <translation><!-- Peninsula --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phoenix</masterLabel>
+        <translation><!-- Phoenix --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raleigh</masterLabel>
+        <translation><!-- Raleigh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salt Lake City</masterLabel>
+        <translation><!-- Salt Lake City --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Antonio</masterLabel>
+        <translation><!-- San Antonio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Marcos</masterLabel>
+        <translation><!-- San Marcos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South Carolina</masterLabel>
+        <translation><!-- South Carolina --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tucson</masterLabel>
+        <translation><!-- Tucson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wilmington</masterLabel>
+        <translation><!-- Wilmington --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Community Profile Sub-Category --></label>
+    <name>Community_Profile_Sub_Category__c</name>
+    <picklistValues>
+        <masterLabel>Carpet</masterLabel>
+        <translation><!-- Carpet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tile (Backsplash)</masterLabel>
+        <translation><!-- Tile (Backsplash) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tile (Floor)</masterLabel>
+        <translation><!-- Tile (Floor) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tile (Wall)</masterLabel>
+        <translation><!-- Tile (Wall) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vinyl (Plank)</masterLabel>
+        <translation><!-- Vinyl (Plank) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vinyl (Sheet)</masterLabel>
+        <translation><!-- Vinyl (Sheet) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wood</masterLabel>
+        <translation><!-- Wood --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

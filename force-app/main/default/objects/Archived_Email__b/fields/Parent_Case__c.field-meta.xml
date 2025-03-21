@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Case__c</fullName>
+    <label>Parent Case</label>
+    <referenceTo>Case</referenceTo>
+    <relationshipLabel>Archived Emails</relationshipLabel>
+    <relationshipName>Archived_Emails</relationshipName>
+    <required>true</required>
+    <type>Lookup</type>
+</CustomField>

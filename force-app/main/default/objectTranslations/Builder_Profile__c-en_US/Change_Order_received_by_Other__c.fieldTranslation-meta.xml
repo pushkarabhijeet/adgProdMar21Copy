@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Required when &quot;Other&quot; is selected from the &apos;Change Order received by&apos; picklist --></help>
+    <label><!-- Change Order received by (Other) --></label>
+    <name>Change_Order_received_by_Other__c</name>
+</CustomFieldTranslation>

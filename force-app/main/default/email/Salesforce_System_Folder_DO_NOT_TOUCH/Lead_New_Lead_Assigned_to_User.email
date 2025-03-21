@@ -1,0 +1,17 @@
+*** System generated email ***
+
+A new Lead has been assigned to you.
+
+{!Lead.Link}
+
+
+Name:               {!Lead.Name}
+
+Company:         {!Lead.Company}
+
+Phone:               {!Lead.Phone}
+
+Email:                {!Lead.Email}
+
+
+.

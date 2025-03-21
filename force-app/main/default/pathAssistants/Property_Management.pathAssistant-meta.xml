@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Property Management</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>of_Homes_Units__c</fieldNames>
+        <fieldNames>Annual_Potential_Revenue__c</fieldNames>
+        <fieldNames>Avg_Unit_Replacement__c</fieldNames>
+        <fieldNames>Certified_Payroll_Required__c</fieldNames>
+        <info>&lt;p&gt;Test 1&lt;/p&gt;</info>
+        <picklistValueName>Qualifying</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Property_Management</recordTypeName>
+</PathAssistant>

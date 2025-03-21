@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Disable all triggers that have been coded to use this custom setting --></help>
+    <label><!-- Disable Opportunity Triggers --></label>
+    <name>Disable_Opportunity_Triggers__c</name>
+</CustomFieldTranslation>

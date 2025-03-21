@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- DREES Only --></help>
+    <label><!-- Stain shower edges so tile meets sheet --></label>
+    <name>Stain_shower_edges_so_tile_meets_sheet__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Does_The_Account_Name_Contain_Market_Name</name>
+        <label>Does The Account Name Contain Market Name?</label>
+        <locationX>489</locationX>
+        <locationY>303</locationY>
+        <defaultConnector>
+            <targetReference>Update_Account_Name</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>YEs</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>$Record.MgmtMarketDescription__c</elementReference>
+                </rightValue>
+            </conditions>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>1 Time Run to update MGMT Companies account name</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>ForAccountName</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Name} +&quot; - &quot; + {!$Record.MgmtMarketDescription__c}</expression>
+    </formulas>
+    <interviewLabel>Account: Update Past Account Names For MGMT Companies {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account: Update Past Account Names For MGMT Companies</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Account_Name</name>
+        <label>Update Account Name</label>
+        <locationX>704</locationX>
+        <locationY>307</locationY>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>ForAccountName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>376</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Does_The_Account_Name_Contain_Market_Name</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0124T000000DOJRQA4</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MgmtMarketDescription__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <schedule>
+            <frequency>Once</frequency>
+            <startDate>2023-08-25</startDate>
+            <startTime>09:04:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

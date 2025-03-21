@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Comma-separated list of QC record type names - a case will be created only if the QC record type matches one of these --></help>
+    <label><!-- List of QC Record Types --></label>
+    <name>List_of_QC_Record_Types__c</name>
+</CustomFieldTranslation>

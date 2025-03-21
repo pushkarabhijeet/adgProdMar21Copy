@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Does_Shower_Bath_Need_picklist_value</fullName>
+    <active>false</active>
+    <errorConditionFormula>LOWER($Label.SG_DisableValidations) != &quot;true&quot; &amp;&amp;
+AND(
+NOT( ISNEW() ),
+AND(
+RecordType.Name = &quot;Pre-Walk&quot;,
+ISPICKVAL(Does_Shower_Bath_Need_Field_Measure__c,&quot;Please select a value&quot;),
+ISPICKVAL( Status__c , &quot;Completed&quot;)))</errorConditionFormula>
+    <errorDisplayField>Does_Shower_Bath_Need_Field_Measure__c</errorDisplayField>
+    <errorMessage>Please select either Yes or No</errorMessage>
+</ValidationRule>

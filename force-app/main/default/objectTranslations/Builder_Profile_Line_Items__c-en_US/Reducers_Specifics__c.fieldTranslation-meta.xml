@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Required when &quot;Included&quot; is selected from the &apos;Reducers&apos; picklist --></help>
+    <label><!-- Reducers Specifics --></label>
+    <name>Reducers_Specifics__c</name>
+</CustomFieldTranslation>

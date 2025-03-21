@@ -1,0 +1,140 @@
+<!--
+/**********************************************************************
+* Name:     SG_ProjectLocation
+* Author:   Strategic Growth, Inc. (www.strategicgrowthinc.com)
+* 
+* ======================================================
+* ======================================================
+* Purpose:                                                      
+* 
+* ======================================================
+* ======================================================
+* History:                                                            
+* VERSION   DATE            INITIALS      DESCRIPTION/FEATURES ADDED
+* 1.0       23-Oct-2019     rwd           Initial Development           
+*   
+***********************************************************************/ 
+-->
+
+
+<apex:page id="SG_ProjectLocation" standardController="Opportunity" extensions="SG_VFC_ProjectLocation" docType="html-5.0" lightningStylesheets="true">
+
+    <center>
+        <apex:pageMessages id="messageBlock" />
+        <apex:form id="theForm">
+
+            <!--
+            *******************************************************************************************************************
+            ********************************* Setting Styles for the Page Formatting ******************************************
+            *******************************************************************************************************************
+            -->
+            <style type="text/css">
+                .fBold
+                {
+
+                font-weight: bold;
+                }
+
+                .fBlackLink
+                {
+                color:black;
+                text-decoration:none;
+                font-weight: bold;
+                }
+            </style>
+
+
+           <!-- THE OPP: {!theOpp}
+            Nearby: {!nearbyAccounts}
+-->
+
+            <apex:pageBlock >
+                <apex:pageBlockSection >
+                    <apex:pageBlockSectionItem >
+                        <apex:outputPanel >
+                            <apex:outputPanel >
+                                <label for="active">Distance (miles) &nbsp;&nbsp;</label>
+                            </apex:outputPanel>
+                            <apex:selectList value="{!distance}" multiselect="false" size="1">
+                                <apex:actionSupport event="onchange" reRender="theForm, messageBlock" action="{!doQuery}"/>
+                                <apex:selectOption itemLabel="10" itemValue="10" />
+                                <apex:selectOption itemLabel="20" itemValue="20" />
+                                <apex:selectOption itemLabel="50" itemValue="50" />
+                                <apex:selectOption itemLabel="100" itemValue="100" />
+                                <apex:selectOption itemLabel="500" itemValue="500" />
+                                <apex:selectOption itemLabel="1000" itemValue="1000" />
+                            </apex:selectList>
+                        </apex:outputPanel>
+                        <apex:outputPanel >
+                            <apex:outputPanel >
+                                <label for="active">Entity</label>
+                            </apex:outputPanel>
+                            <apex:inputField value="{!theOpp.Entity__c}">
+                                <apex:actionSupport event="onchange" reRender="theForm, messageBlock" action="{!doQuery}"/>
+                            </apex:inputField>
+                        </apex:outputPanel>
+
+                    </apex:pageBlockSectionItem>
+                        <apex:map width="100%" height="300px" mapType="roadmap" zoomLevel="{!vZoomLevels}">
+
+                            <apex:mapMarker title="{!targetProject.locationTitle}" position="{latitude: {!targetProject.latitude}, longitude: {!targetProject.longitude}}"  icon="{!URLFOR($Resource.BlueTarget)}">
+                                <apex:mapInfoWindow >
+                                    <apex:outputPanel layout="block" style="font-weight: bold;">
+                                    {!targetProject.locationTitle}
+                            </apex:outputPanel>
+                                    <apex:outputPanel layout="block" style="font-weight: bold;">
+                                        City:  {!targetProject.city}
+                                    </apex:outputPanel>
+                                    <apex:outputPanel layout="block" style="font-weight: bold;">
+                                        County:   {!targetProject.county}
+                                    </apex:outputPanel>
+                                    <apex:outputPanel layout="block" style="font-weight: bold;">
+                                        State:   {!targetProject.state}
+                                    </apex:outputPanel>
+                                    <apex:outputPanel layout="block" style="font-weight: bold;">
+                                        ZIP:   {!targetProject.zip}
+                                    </apex:outputPanel>
+                                </apex:mapInfoWindow>
+                            </apex:mapMarker>
+
+                            <apex:repeat value="{!nearbyLocations}" var="nearby">
+                                <apex:mapMarker title="{!nearby.locationTitle}" position="{latitude: {!nearby.latitude}, longitude: {!nearby.longitude}}" >
+                                    <apex:mapInfoWindow >
+
+                                        <apex:outputPanel layout="block" style="font-weight: bold;">
+                                            <apex:outputLink value="{!'/'+ nearby.o.Id }" target="_blank" >
+                                                <apex:outputText >{!nearby.locationTitle}</apex:outputText>
+                                            </apex:outputLink>
+
+
+                                </apex:outputPanel>
+                                        <apex:outputPanel layout="block" style="font-weight: bold;">
+                                            City:  {!nearby.city}
+                                        </apex:outputPanel>
+                                        <apex:outputPanel layout="block" style="font-weight: bold;">
+                                            County:   {!nearby.county}
+                                        </apex:outputPanel>
+                                        <apex:outputPanel layout="block" style="font-weight: bold;">
+                                            State:   {!nearby.state}
+                                        </apex:outputPanel>
+                                        <apex:outputPanel layout="block" style="font-weight: bold;">
+                                            ZIP:   {!nearby.zip}
+                                        </apex:outputPanel>
+                                    </apex:mapInfoWindow>
+                                </apex:mapMarker>
+                            </apex:repeat>
+
+
+                        </apex:map>
+                </apex:pageBlockSection>
+
+            </apex:pageBlock>
+
+
+            <!--vZoomLevels: {!vZoomLevels}-->
+
+
+        </apex:form>
+    </center>
+
+</apex:page>

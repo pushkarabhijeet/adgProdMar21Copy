@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Asset$Location__c</field>
+    </columns>
+    <columns>
+        <field>Asset$Name</field>
+    </columns>
+    <columns>
+        <field>Asset$Field_Service_Manager__c</field>
+    </columns>
+    <columns>
+        <field>Asset$Confirmed_Foundation_Date__c</field>
+    </columns>
+    <columns>
+        <field>Asset$Confirmed_Framed_Dried_in_Date__c</field>
+    </columns>
+    <columns>
+        <field>Asset$Confirmed_Mechanical_Date__c</field>
+    </columns>
+    <columns>
+        <field>Asset$Confirmed_Finish_Install_Date__c</field>
+    </columns>
+    <columns>
+        <field>Asset$Community__c</field>
+    </columns>
+    <columns>
+        <field>Asset$Account</field>
+    </columns>
+    <columns>
+        <field>Asset$Status</field>
+    </columns>
+    <description>House with current construction stage</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <column>Asset$Entity__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>McDade</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Asset$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>10/1/2023 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Asset$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>House/Unit Completed</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Asset$Construction_Phase__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>House ConstStage</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>HouHouse_with_Work_Ordersse_with_Work_Orders__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Asset$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Asset$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

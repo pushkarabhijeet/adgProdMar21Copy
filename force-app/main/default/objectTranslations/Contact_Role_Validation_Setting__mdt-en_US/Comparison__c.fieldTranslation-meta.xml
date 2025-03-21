@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Comparison --></label>
+    <name>Comparison__c</name>
+    <picklistValues>
+        <masterLabel>equals</masterLabel>
+        <translation><!-- equals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>greater than</masterLabel>
+        <translation><!-- greater than --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>greater than or equals</masterLabel>
+        <translation><!-- greater than or equals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>less than</masterLabel>
+        <translation><!-- less than --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>less than or equals</masterLabel>
+        <translation><!-- less than or equals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>not equals</masterLabel>
+        <translation><!-- not equals --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

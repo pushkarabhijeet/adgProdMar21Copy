@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role__c</fullName>
+    <description>Name of the Role for the Contact Role that should be summed for checking/validating. Use &quot;ANY&quot; to count all Roles, use &quot;IsPrimary&quot; to ensure there is a Primary Contact.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Name of the Role for the Contact Role that should be summed for checking/validating. Use &quot;ANY&quot; to count all Roles, use &quot;IsPrimary&quot; to ensure there is a Primary Contact.</inlineHelpText>
+    <label>then count this Role</label>
+    <length>255</length>
+    <required>true</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

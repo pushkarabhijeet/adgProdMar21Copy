@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Community_Profile_Compact_Layout</fullName>
+    <fields>Type_of_Profile__c</fields>
+    <fields>Name</fields>
+    <fields>Category__c</fields>
+    <fields>Community_Profile_Sub_Category__c</fields>
+    <fields>Community_Profile_Type__c</fields>
+    <fields>LastModifiedById</fields>
+    <label>Community Profile Compact Layout</label>
+</CompactLayout>

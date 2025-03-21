@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Restricts Salesforce from constantly prompting a user to switch to the Lightning Experience. This is a setting in a Custom Profile, but can&apos;t be changed for the standard System Admin Profile (so the Permission Set was created for only that Profile).</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Remain in Classic</label>
+    <license>Salesforce</license>
+</PermissionSet>

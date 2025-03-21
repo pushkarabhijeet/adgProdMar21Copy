@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Picture_Shower_Bath_Picture_Required</fullName>
+    <active>false</active>
+    <errorConditionFormula>LOWER($Label.SG_DisableValidations) != &quot;true&quot; &amp;&amp;
+AND(
+NOT( ISNEW() ),
+AND(
+RecordType.Name = &quot;Pre-Walk&quot;,
+ISPICKVAL (Status__c, &quot;Completed&quot;),
+ISBLANK(Picture_Shower_Bath_Field_Measure__c)))</errorConditionFormula>
+    <errorMessage>Please upload a picture of Shower/Bath for Field Measure</errorMessage>
+</ValidationRule>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sheet_Vinyl_Spec_Levels__c</fullName>
+    <label>Sheet Vinyl Spec Levels</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>55 gauge</fullName>
+                <default>false</default>
+                <label>55 gauge</label>
+            </value>
+            <value>
+                <fullName>60 gauge</fullName>
+                <default>false</default>
+                <label>60 gauge</label>
+            </value>
+            <value>
+                <fullName>65 gauge</fullName>
+                <default>false</default>
+                <label>65 gauge</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If selecting &quot;No&quot; each QC picklist values have to be manually entered.  Suggest you say &quot;Yes&quot; save the record then manually override individual values. --></help>
+    <label><!-- Use Builder Profile Values --></label>
+    <name>Use_Builder_Profile_Values__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

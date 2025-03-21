@@ -1,0 +1,75 @@
+<!--
+ - Created by MacBookPro on 6/12/20.
+ -->
+
+<!-- Qc Edit Record based on RecordEditFormDynamicContact from lwc recipes-->
+<template>
+    <lightning-card
+            title="RecordEditFormDynamicContact"
+            icon-name="custom:custom62"
+    >
+
+
+        <div class="slds-m-around_medium">
+            <lightning-record-edit-form
+                    object-api-name={objectApiName}
+                    record-id={recordId}
+                    onerror={handleError}
+                    onsuccess={handleSuccess}>
+                <lightning-messages></lightning-messages>
+
+                <div class="slds-align_absolute-center">
+                    <template if:true={spinner}>
+                        <div class="slds-m-around_large">
+                            <lightning-spinner
+                                    alternative-text="Loading...">
+                            </lightning-spinner>
+                        </div>
+                    </template>
+                </div>
+
+                <lightning-input-field required
+                        field-name="Status__c">
+                </lightning-input-field>
+
+                <lightning-input-field
+                        field-name="QC_Date__c">
+                </lightning-input-field>
+                <lightning-input-field
+                        field-name="Is_House_Painted__c">
+                </lightning-input-field>
+                <lightning-input-field
+                        field-name="Check_Walls_for_Plumb__c">
+                </lightning-input-field>
+
+                <lightning-input-field
+                        field-name="Picture_House_and_Perimeter_Clean__c">
+                </lightning-input-field>
+
+
+
+
+                <lightning-file-upload
+                        label="House & Garage Perimiter Picture"
+                        name="fileUploader_Garage"
+                        accept={acceptedFormats}
+                        record-id={recordId}
+                        onuploadfinished={handleUploadFinished_Garage}
+                        multiple>
+                </lightning-file-upload>
+
+
+                <div class="slds-m-top_medium">
+                    <lightning-button
+                            variant="brand"
+                            type="submit"
+                            name="update"
+                            label="Save"
+                            onclick={handleSave}>
+                    </lightning-button>
+                </div>
+            </lightning-record-edit-form>
+        </div>
+
+    </lightning-card>
+</template>

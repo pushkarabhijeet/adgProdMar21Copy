@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cabinets, counter tops &amp; sink Notes --></label>
+    <name>Cabinets_counter_tops_sink_Notes__c</name>
+</CustomFieldTranslation>

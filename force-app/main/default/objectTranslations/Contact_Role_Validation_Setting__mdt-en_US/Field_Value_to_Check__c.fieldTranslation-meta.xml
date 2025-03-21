@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What is the value of the API Field Name To Check field? (example: Yes or maybe Closed/Won) --></help>
+    <label><!-- has this value --></label>
+    <name>Field_Value_to_Check__c</name>
+</CustomFieldTranslation>

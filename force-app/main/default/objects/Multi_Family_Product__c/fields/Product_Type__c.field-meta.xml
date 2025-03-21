@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Type__c</fullName>
+    <label>Product Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Carpet</fullName>
+                <default>false</default>
+                <label>Carpet</label>
+            </value>
+            <value>
+                <fullName>LVP</fullName>
+                <default>false</default>
+                <label>LVP</label>
+            </value>
+            <value>
+                <fullName>Sheet Vinyl</fullName>
+                <default>false</default>
+                <label>Sheet Vinyl</label>
+            </value>
+            <value>
+                <fullName>Cushion</fullName>
+                <default>false</default>
+                <label>Cushion</label>
+            </value>
+            <value>
+                <fullName>Wood Product</fullName>
+                <default>false</default>
+                <label>Wood Product</label>
+            </value>
+            <value>
+                <fullName>Cabinets</fullName>
+                <default>false</default>
+                <label>Cabinets</label>
+            </value>
+            <value>
+                <fullName>Countertops</fullName>
+                <default>false</default>
+                <label>Countertops</label>
+            </value>
+            <value>
+                <fullName>Tile</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tile</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

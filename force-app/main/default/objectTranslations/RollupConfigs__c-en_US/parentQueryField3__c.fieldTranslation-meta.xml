@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Holds the API name of the field on the Child object which will be rolled up by the Parent. Example: hours_spent__c --></help>
+    <label><!-- parentQueryField3 --></label>
+    <name>parentQueryField3__c</name>
+</CustomFieldTranslation>

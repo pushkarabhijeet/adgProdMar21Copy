@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exception_Communities</fullName>
+    <columns>NAME</columns>
+    <columns>Builder__c</columns>
+    <columns>Estimated_of_Homes_Units__c</columns>
+    <columns>Build_Cycle_for_Community__c</columns>
+    <columns>Field_Service_Manager__c</columns>
+    <columns>Community_Status__c</columns>
+    <columns>Actual_Of_Houses__c</columns>
+    <columns>EntityIntegration__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Community__c.Exception</value>
+    </filters>
+    <label>Exception Communities</label>
+</ListView>

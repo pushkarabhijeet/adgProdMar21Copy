@@ -1,0 +1,76 @@
+<!--
+/**********************************************************************
+* Name:     qc_FineTuneChecklist
+* Author:   Strategic Growth, Inc. (www.strategicgrowthinc.com)
+* 
+* ======================================================
+* ======================================================
+* Purpose:                                                      
+* 
+* ======================================================
+* ======================================================
+* History:                                                            
+* VERSION   DATE            INITIALS      DESCRIPTION/FEATURES ADDED
+* 1.0       30-Jun-2020     rwd           Initial Development           
+*   
+***********************************************************************/ 
+-->
+<!-- Qc Fine Tune Checklist -->
+<template>
+        <lightning-card title="QC - Fine Tune Checklist" icon-name="custom:custom62">
+                <div class="slds-m-around_medium">
+                        <!-- onload={handleLoad} -->
+                        <lightning-record-edit-form object-api-name={objectApiName} record-id={recordId}
+                                 onerror={handleError} onsuccess={handleSuccess}
+                                onsubmit={handleSubmit}>
+                                <lightning-messages></lightning-messages>
+                                <div class="slds-align_absolute-center">
+                                        <template if:true={spinner}>
+                                                <lightning-spinner class="spins" size="medium"></lightning-spinner>
+                                        </template>
+                                </div>
+                                <lightning-input-field field-name="QC_Date__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Check_fill_all_pin_holes_grouted_areas__c">
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Caulk_shower_walls__c">
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Grout_all_tops_of_showers__c">
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Caulk_cabinets_to_tile_when_no_shoemold__c">
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Caulk_tubs_curbs_shower_skirts_at_floor__c">
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Caulk_back_splash__c">
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Caulk_all_doorways_touching_tile__c">
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Caulk_fireplace__c">
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Stain_any_exposed_edges_of_tile__c">
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Stain_shower_edges_so_tile_meets_sheet__c">
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Wipe_down_cabinets_minor_grout_haze_etc__c">
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Comment__c">
+                                </lightning-input-field>
+                                <c-adg-compress-file-upload record-id={recordId} label="Fine Tune Picture" prefix="FineTune_">
+                                </c-adg-compress-file-upload>
+                                <lightning-input-field field-name="Status__c" required onchange={handleTypeChange}>
+                                </lightning-input-field>
+                                <!-- show case create if needed -->
+                                <!--
+                                <template if:true={showCaseCreation}>
+                                        <c-submit-qc-case record-id={recordId}></c-submit-qc-case>
+                                </template>
+                                -->
+                                <!-- end case create -->
+                                <div class="slds-m-top_medium">
+                                        <lightning-button variant="brand" type="submit" name="update" label="Save">
+                                        </lightning-button>
+                                </div>
+                        </lightning-record-edit-form>
+                </div>
+        </lightning-card>
+</template>

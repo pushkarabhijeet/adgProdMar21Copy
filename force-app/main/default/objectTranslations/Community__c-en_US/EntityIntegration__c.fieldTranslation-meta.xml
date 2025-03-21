@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Only used in integration and can only be added to one community per entity for &quot;orphaned&quot; house records --></help>
+    <label><!-- EntityIntegration --></label>
+    <name>EntityIntegration__c</name>
+</CustomFieldTranslation>

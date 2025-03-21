@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Case will be created with this value for material when field &quot;QC Field Name for Material Option&quot; is Yes --></help>
+    <label><!-- Case Material If Yes --></label>
+    <name>Case_Material_If_Yes__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_Math_Query__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>If checked will perform an aggregate NUMERIC query for all configured rollups (ex: MAX(Amount)). Use a separate rollup configuration for &quot;normal&quot; rollups.</inlineHelpText>
+    <label>Do Math Query</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

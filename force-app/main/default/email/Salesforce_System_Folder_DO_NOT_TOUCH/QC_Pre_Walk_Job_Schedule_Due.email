@@ -1,0 +1,19 @@
+** System generated email **
+
+Reminder action due for this record!
+
+Quality Control Record:
+{!Quality_Control__c.Link}
+
+Is due for:
+{!Quality_Control__c.RecordType}
+
+
+House Lot/Block:
+{!Quality_Control__c.House_Unit__c}
+
+Confirmed Dried-In Date:
+{!Asset.Confirmed_Framed_Dried_in_Date__c}
+
+
+.

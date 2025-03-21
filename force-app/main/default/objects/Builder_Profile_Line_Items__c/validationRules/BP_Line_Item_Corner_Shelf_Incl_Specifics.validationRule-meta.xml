@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BP_Line_Item_Corner_Shelf_Incl_Specifics</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+Corner_Shelf_Included__c = TRUE,
+  ISBLANK( Corner_Shelf_Specifics__c ))</errorConditionFormula>
+    <errorDisplayField>Corner_Shelf_Specifics__c</errorDisplayField>
+    <errorMessage>A value must be provided when &quot;Corner Shelf Included&quot; is checked.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field is used to populate a default &apos;cabinet field manager&apos; --></help>
+    <label><!-- Default Cabinet Field Manager --></label>
+    <name>Cabinet_Field_Manager__c</name>
+    <relationshipLabel><!-- Branch Locations (Default Cabinet Field Manager) --></relationshipLabel>
+</CustomFieldTranslation>

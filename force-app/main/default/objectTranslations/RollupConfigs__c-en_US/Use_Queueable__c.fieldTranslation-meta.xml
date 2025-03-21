@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If checked, rollup helper will execute as asynchronous and queueable. This will help with large data volumes, but may take several seconds (or even minutes) for results to appear in Salesforce. --></help>
+    <label><!-- Use Queueable --></label>
+    <name>Use_Queueable__c</name>
+</CustomFieldTranslation>

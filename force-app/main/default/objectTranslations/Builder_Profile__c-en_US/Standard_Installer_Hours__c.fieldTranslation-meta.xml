@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Pick the correct INSTALLER time zone and if it is supposed to include Saturday or just M-F --></help>
+    <label><!-- Standard Installer Hours --></label>
+    <name>Standard_Installer_Hours__c</name>
+    <relationshipLabel><!-- Builder Profiles --></relationshipLabel>
+</CustomFieldTranslation>

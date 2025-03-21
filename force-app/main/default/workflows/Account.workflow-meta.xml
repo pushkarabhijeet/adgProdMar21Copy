@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Account_Approval_Status_Approved</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Account Approval Status Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Account_Approval_Status_Recalled</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Not Submitted</literalValue>
+        <name>Account Approval Status Recalled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Account_Approval_Status_Rejected</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Account Approval Status Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Account_Approval_Status_Submitted</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Submitted</literalValue>
+        <name>Account Approval Status Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Account_Classification_Business_Pickup</fullName>
+        <field>Classification__c</field>
+        <literalValue>Business Pickup</literalValue>
+        <name>Account: Classification Business Pickup</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Account_Classification_Gain_Share</fullName>
+        <field>Classification__c</field>
+        <literalValue>Gain Share</literalValue>
+        <name>Account: Classification Gain Share</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Account_Classification_New_Account</fullName>
+        <field>Classification__c</field>
+        <literalValue>New Account</literalValue>
+        <name>Account: Classification New Account</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Account_Populate_Short_Name</fullName>
+        <description>Populates Account Short Name from Account Name field if short name is null</description>
+        <field>Account_Short_Name__c</field>
+        <formula>Name</formula>
+        <name>Account: Populate Short Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Account_Status_is_Prospec</fullName>
+        <field>Account_Status__c</field>
+        <literalValue>Prospect</literalValue>
+        <name>Account: Status is Prospec</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Account_Status_to_Customer</fullName>
+        <field>Account_Status__c</field>
+        <literalValue>Customer</literalValue>
+        <name>Account Status to Customer</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Account_Type_default_Local</fullName>
+        <field>Type</field>
+        <literalValue>Local Account</literalValue>
+        <name>Account: Type default Local</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Acct_Account_Number_to_Integration_Key</fullName>
+        <field>Integration_Key_Account__c</field>
+        <formula>AccountNumber</formula>
+        <name>Acct: Account Number to Integration Key</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Account%3A Classification Business Pickup</fullName>
+        <actions>
+            <name>Account_Classification_Business_Pickup</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Classification__c</field>
+            <operation>notEqual</operation>
+            <value>Business Pickup</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Summary_Closed_Won_Opportunities__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Closed_Won_Parent__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account%3A Classification Gain Share</fullName>
+        <actions>
+            <name>Account_Classification_Gain_Share</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Classification__c</field>
+            <operation>notEqual</operation>
+            <value>Gain Share</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Summary_Closed_Won_Opportunities__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>2</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account%3A Classification New Account</fullName>
+        <actions>
+            <name>Account_Classification_New_Account</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Classification__c</field>
+            <operation>notEqual</operation>
+            <value>New Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Summary_Closed_Won_Opportunities__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Closed_Won_Parent__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account%3A Short Name</fullName>
+        <actions>
+            <name>Account_Populate_Short_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Populates Short Name with account name if short name is null upon create</description>
+        <formula>ISBLANK(Account_Short_Name__c )</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account%3A Status is Prospect</fullName>
+        <actions>
+            <name>Account_Status_is_Prospec</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Account_Status__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account%3A Status to Customer</fullName>
+        <actions>
+            <name>Account_Status_to_Customer</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Summary_Closed_Won_Opportunities__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Account_Status__c</field>
+            <operation>equals</operation>
+            <value>Prospect</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account%3A Type is Local</fullName>
+        <actions>
+            <name>Account_Type_default_Local</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Type</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Acct%3A Any Update</fullName>
+        <actions>
+            <name>Acct_Account_Number_to_Integration_Key</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

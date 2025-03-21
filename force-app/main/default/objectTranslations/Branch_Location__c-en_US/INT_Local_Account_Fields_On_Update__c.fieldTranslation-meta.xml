@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- INT Local Account Fields On Update --></label>
+    <name>INT_Local_Account_Fields_On_Update__c</name>
+    <picklistValues>
+        <masterLabel># of Crews</masterLabel>
+        <translation><!-- # of Crews --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ADG Rebate</masterLabel>
+        <translation><!-- ADG Rebate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ADG Rebate (Parent)</masterLabel>
+        <translation><!-- ADG Rebate (Parent) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Id (18)</masterLabel>
+        <translation><!-- Account Id (18) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Name</masterLabel>
+        <translation><!-- Account Name --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Number</masterLabel>
+        <translation><!-- Account Number --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Owner</masterLabel>
+        <translation><!-- Account Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Record Type</masterLabel>
+        <translation><!-- Account Record Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Short Name</masterLabel>
+        <translation><!-- Account Short Name --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Site</masterLabel>
+        <translation><!-- Account Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Source</masterLabel>
+        <translation><!-- Account Source --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Status</masterLabel>
+        <translation><!-- Account Status --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Additional Job Types</masterLabel>
+        <translation><!-- Additional Job Types --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Annual Revenue</masterLabel>
+        <translation><!-- Annual Revenue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approval Status</masterLabel>
+        <translation><!-- Approval Status --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Average # of Homes/Units built/year</masterLabel>
+        <translation><!-- Average # of Homes/Units built/year --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Average Closing Price</masterLabel>
+        <translation><!-- Average Closing Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Average Spend Per House/Unit</masterLabel>
+        <translation><!-- Average Spend Per House/Unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Avg jobs per week</masterLabel>
+        <translation><!-- Avg jobs per week --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Avg. Living Sq. Ft.</masterLabel>
+        <translation><!-- Avg. Living Sq. Ft. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Avg. Price per Sq. Ft.</masterLabel>
+        <translation><!-- Avg. Price per Sq. Ft. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blinds</masterLabel>
+        <translation><!-- Blinds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Builder Profile Community Link</masterLabel>
+        <translation><!-- Builder Profile Community Link --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carpet</masterLabel>
+        <translation><!-- Carpet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Classification</masterLabel>
+        <translation><!-- Classification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed Won (Parent)</masterLabel>
+        <translation><!-- Closed Won (Parent) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Created By</masterLabel>
+        <translation><!-- Created By --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crewsize</masterLabel>
+        <translation><!-- Crewsize --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cust_Addr1</masterLabel>
+        <translation><!-- Cust_Addr1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cust_Addr2</masterLabel>
+        <translation><!-- Cust_Addr2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data.com Key</masterLabel>
+        <translation><!-- Data.com Key --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Description</masterLabel>
+        <translation><!-- Description --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispatcher</masterLabel>
+        <translation><!-- Dispatcher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Division</masterLabel>
+        <translation><!-- Division --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edit</masterLabel>
+        <translation><!-- Edit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Einstein Account Tier</masterLabel>
+        <translation><!-- Einstein Account Tier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employees</masterLabel>
+        <translation><!-- Employees --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entity</masterLabel>
+        <translation><!-- Entity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ExternalID</masterLabel>
+        <translation><!-- ExternalID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fax</masterLabel>
+        <translation><!-- Fax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>From Child</masterLabel>
+        <translation><!-- From Child --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Future Lots</masterLabel>
+        <translation><!-- Future Lots --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geographies Served</masterLabel>
+        <translation><!-- Geographies Served --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gift Restrictions</masterLabel>
+        <translation><!-- Gift Restrictions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gift Restrictions (Parent)</masterLabel>
+        <translation><!-- Gift Restrictions (Parent) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardi</masterLabel>
+        <translation><!-- Hardi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry</masterLabel>
+        <translation><!-- Industry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installer Notes</masterLabel>
+        <translation><!-- Installer Notes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installer Rating</masterLabel>
+        <translation><!-- Installer Rating --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installer Status Symbol</masterLabel>
+        <translation><!-- Installer Status Symbol --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installer#</masterLabel>
+        <translation><!-- Installer# --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Integration Key (Account)</masterLabel>
+        <translation><!-- Integration Key (Account) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Is Parent</masterLabel>
+        <translation><!-- Is Parent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IsActive</masterLabel>
+        <translation><!-- IsActive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job Type</masterLabel>
+        <translation><!-- Job Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kerdi</masterLabel>
+        <translation><!-- Kerdi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Account</masterLabel>
+        <translation><!-- Key Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Account (Parent)</masterLabel>
+        <translation><!-- Key Account (Parent) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Account Builder Name</masterLabel>
+        <translation><!-- Key Account Builder Name --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LVP</masterLabel>
+        <translation><!-- LVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Last 12 Months Closing</masterLabel>
+        <translation><!-- Last 12 Months Closing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Last Evaluation</masterLabel>
+        <translation><!-- Last Evaluation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Last Modified By</masterLabel>
+        <translation><!-- Last Modified By --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Parent</masterLabel>
+        <translation><!-- Lead Parent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legacy ID (Account)</masterLabel>
+        <translation><!-- Legacy ID (Account) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Location</masterLabel>
+        <translation><!-- Location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NDW</masterLabel>
+        <translation><!-- NDW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Number of Children</masterLabel>
+        <translation><!-- Number of Children --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Occupied</masterLabel>
+        <translation><!-- Occupied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operating Hours</masterLabel>
+        <translation><!-- Operating Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Source</masterLabel>
+        <translation><!-- Other Source --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ownership</masterLabel>
+        <translation><!-- Ownership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parent Account</masterLabel>
+        <translation><!-- Parent Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parent Account ID (18)</masterLabel>
+        <translation><!-- Parent Account ID (18) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone</masterLabel>
+        <translation><!-- Phone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physical Address</masterLabel>
+        <translation><!-- Physical Address --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Populate on Child</masterLabel>
+        <translation><!-- Populate on Child --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Preferred Travel Area</masterLabel>
+        <translation><!-- Preferred Travel Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prior 12 Months Closings</masterLabel>
+        <translation><!-- Prior 12 Months Closings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rank</masterLabel>
+        <translation><!-- Rank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rating</masterLabel>
+        <translation><!-- Rating --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Run Dup Rule</masterLabel>
+        <translation><!-- Run Dup Rule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIC Code</masterLabel>
+        <translation><!-- SIC Code --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIC Description</masterLabel>
+        <translation><!-- SIC Description --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sheet Vinyl</masterLabel>
+        <translation><!-- Sheet Vinyl --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipping Address</masterLabel>
+        <translation><!-- Shipping Address --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signature for check</masterLabel>
+        <translation><!-- Signature for check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Status</masterLabel>
+        <translation><!-- Status --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submit to ERP</masterLabel>
+        <translation><!-- Submit to ERP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Summary Closed Won Opportunities</masterLabel>
+        <translation><!-- Summary Closed Won Opportunities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ticker Symbol</masterLabel>
+        <translation><!-- Ticker Symbol --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tile</masterLabel>
+        <translation><!-- Tile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tile Repairs</masterLabel>
+        <translation><!-- Tile Repairs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Total Child Opportunities (won)</masterLabel>
+        <translation><!-- Total Child Opportunities (won) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Type</masterLabel>
+        <translation><!-- Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unit (Account)</masterLabel>
+        <translation><!-- Unit (Account) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vacant Developed Lots</masterLabel>
+        <translation><!-- Vacant Developed Lots --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Website</masterLabel>
+        <translation><!-- Website --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wood</masterLabel>
+        <translation><!-- Wood --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>YOY Closings Change</masterLabel>
+        <translation><!-- YOY Closings Change --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

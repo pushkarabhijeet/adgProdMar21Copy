@@ -1,0 +1,79 @@
+<!--
+/**********************************************************************
+* Name:     qc_TileBacksplash
+* Author:   Strategic Growth, Inc. (www.strategicgrowthinc.com)
+* 
+* ======================================================
+* ======================================================
+* Purpose:                                                      
+* 
+* ======================================================
+* ======================================================
+* History:                                                            
+* VERSION   DATE            INITIALS      DESCRIPTION/FEATURES ADDED
+* 1.0       22-Jun-2020     rwd           Initial Development           
+*   
+***********************************************************************/ 
+-->
+<!-- Qc Tile Backsplash -->
+<template>
+        <lightning-card title="QC - Tile Backsplash Install" icon-name="custom:custom62">
+                <div class="slds-m-around_medium">
+                        <!-- onload={handleLoad}  -->
+                        <lightning-record-edit-form object-api-name={objectApiName} record-id={recordId}
+                                onerror={handleError} onsuccess={handleSuccess} onsubmit={handleSubmit}>
+                                <lightning-messages></lightning-messages>
+                                <div class="slds-align_absolute-center">
+                                        <template if:true={spinner}>
+                                                <lightning-spinner class="spins" size="medium"></lightning-spinner>
+                                        </template>
+                                </div>
+                                <lightning-input-field field-name="QC_Date__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Installed_per_diagram__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Damage_to_cabinets_counters_sink__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Extra_material_in_attic_designated_area__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Does_job_meet_industry_standards__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Comment__c"></lightning-input-field>
+                                <c-adg-compress-file-upload record-id={recordId} label="Tile Backsplash Picture"
+                                        prefix="TileBackSplash_">
+                                </c-adg-compress-file-upload>
+                                <lightning-input-field field-name="Status__c" required></lightning-input-field>
+                                <!--
+                                <lightning-input-field field-name="QC_Date__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Installed_per_diagram__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Damage_to_cabinets_counters_sink__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Extra_material_in_attic_designated_area__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Did_we_meet_builder_specifications__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Comment__c">
+                                </lightning-input-field>
+                                <c-adg-file-uploader record-id={recordId} label="Tile Backsplash Picture">
+                                </c-adg-file-uploader>
+                                <lightning-input-field field-name="Status__c" required onchange={handleTypeChange}>
+                                </lightning-input-field>
+                                -->
+                                <!-- show case create if needed -->
+                                <!--
+                                <template if:true={showCaseCreation}>
+                                        <c-submit-qc-case record-id={recordId}></c-submit-qc-case>
+                                </template>
+                                -->
+                                <!-- end case create -->
+                                <div class="slds-m-top_medium">
+                                        <lightning-button variant="brand" type="submit" name="update" label="Save">
+                                        </lightning-button>
+                                </div>
+                        </lightning-record-edit-form>
+                </div>
+
+        </lightning-card>
+</template>

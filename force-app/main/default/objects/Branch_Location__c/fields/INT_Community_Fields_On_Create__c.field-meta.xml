@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>INT_Community_Fields_On_Create__c</fullName>
+    <label>INT Community Fields On Create</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Actual # Of Houses</fullName>
+                <default>false</default>
+                <label>Actual # Of Houses</label>
+            </value>
+            <value>
+                <fullName>Build Cycle for Community</fullName>
+                <default>false</default>
+                <label>Build Cycle for Community</label>
+            </value>
+            <value>
+                <fullName>Builder</fullName>
+                <default>false</default>
+                <label>Builder</label>
+            </value>
+            <value>
+                <fullName>Builder ID (18)</fullName>
+                <default>false</default>
+                <label>Builder ID (18)</label>
+            </value>
+            <value>
+                <fullName>Builder Profile</fullName>
+                <default>false</default>
+                <label>Builder Profile</label>
+            </value>
+            <value>
+                <fullName>Business Hours</fullName>
+                <default>false</default>
+                <label>Business Hours</label>
+            </value>
+            <value>
+                <fullName>Case Manager</fullName>
+                <default>false</default>
+                <label>Case Manager</label>
+            </value>
+            <value>
+                <fullName>Channel of Business</fullName>
+                <default>false</default>
+                <label>Channel of Business</label>
+            </value>
+            <value>
+                <fullName>Community</fullName>
+                <default>false</default>
+                <label>Community</label>
+            </value>
+            <value>
+                <fullName>Community ID(18)</fullName>
+                <default>false</default>
+                <label>Community ID(18)</label>
+            </value>
+            <value>
+                <fullName>Community Status</fullName>
+                <default>false</default>
+                <label>Community Status</label>
+            </value>
+            <value>
+                <fullName>Community Type</fullName>
+                <default>false</default>
+                <label>Community Type</label>
+            </value>
+            <value>
+                <fullName>Created By</fullName>
+                <default>false</default>
+                <label>Created By</label>
+            </value>
+            <value>
+                <fullName>Day Count Build Sheet</fullName>
+                <default>false</default>
+                <label>Day Count Build Sheet</label>
+            </value>
+            <value>
+                <fullName>Day Count Carpet</fullName>
+                <default>false</default>
+                <label>Day Count Carpet</label>
+            </value>
+            <value>
+                <fullName>Day Count Countertops</fullName>
+                <default>false</default>
+                <label>Day Count Countertops</label>
+            </value>
+            <value>
+                <fullName>Day Count Fine Tune</fullName>
+                <default>false</default>
+                <label>Day Count Fine Tune</label>
+            </value>
+            <value>
+                <fullName>Day Count Floor Wall Tile</fullName>
+                <default>false</default>
+                <label>Day Count Floor Wall Tile</label>
+            </value>
+            <value>
+                <fullName>Day Count LVT</fullName>
+                <default>false</default>
+                <label>Day Count LVT</label>
+            </value>
+            <value>
+                <fullName>Day Count Product Inspection</fullName>
+                <default>false</default>
+                <label>Day Count Product Inspection</label>
+            </value>
+            <value>
+                <fullName>Day Count QC End</fullName>
+                <default>false</default>
+                <label>Day Count QC End</label>
+            </value>
+            <value>
+                <fullName>Day Count Tile Backsplash</fullName>
+                <default>false</default>
+                <label>Day Count Tile Backsplash</label>
+            </value>
+            <value>
+                <fullName>Day Count Vinyl</fullName>
+                <default>false</default>
+                <label>Day Count Vinyl</label>
+            </value>
+            <value>
+                <fullName>Day Count Wood</fullName>
+                <default>false</default>
+                <label>Day Count Wood</label>
+            </value>
+            <value>
+                <fullName>Days to Dried-In</fullName>
+                <default>false</default>
+                <label>Days to Dried-In</label>
+            </value>
+            <value>
+                <fullName>Days to Final</fullName>
+                <default>false</default>
+                <label>Days to Final</label>
+            </value>
+            <value>
+                <fullName>Days to Finish/Install</fullName>
+                <default>false</default>
+                <label>Days to Finish/Install</label>
+            </value>
+            <value>
+                <fullName>Days to Framing</fullName>
+                <default>false</default>
+                <label>Days to Framing</label>
+            </value>
+            <value>
+                <fullName>Days to Install</fullName>
+                <default>false</default>
+                <label>Days to Install</label>
+            </value>
+            <value>
+                <fullName>Days to Order Tile</fullName>
+                <default>false</default>
+                <label>Days to Order Tile</label>
+            </value>
+            <value>
+                <fullName>Days to QC Job Start</fullName>
+                <default>false</default>
+                <label>Days to QC Job Start</label>
+            </value>
+            <value>
+                <fullName>Days to QC Pre-Walk</fullName>
+                <default>false</default>
+                <label>Days to QC Pre-Walk</label>
+            </value>
+            <value>
+                <fullName>Entity</fullName>
+                <default>false</default>
+                <label>Entity</label>
+            </value>
+            <value>
+                <fullName>EntityIntegration</fullName>
+                <default>false</default>
+                <label>EntityIntegration</label>
+            </value>
+            <value>
+                <fullName>Estimated # of Homes/Units</fullName>
+                <default>false</default>
+                <label>Estimated # of Homes/Units</label>
+            </value>
+            <value>
+                <fullName>Estimated Project Duration [months]</fullName>
+                <default>false</default>
+                <label>Estimated Project Duration [months]</label>
+            </value>
+            <value>
+                <fullName>Estimated Project Start Date</fullName>
+                <default>false</default>
+                <label>Estimated Project Start Date</label>
+            </value>
+            <value>
+                <fullName>Field Service Manager</fullName>
+                <default>false</default>
+                <label>Field Service Manager</label>
+            </value>
+            <value>
+                <fullName>FSM Service Resource ID (18)</fullName>
+                <default>false</default>
+                <label>FSM Service Resource ID (18)</label>
+            </value>
+            <value>
+                <fullName>Geolocation</fullName>
+                <default>false</default>
+                <label>Geolocation</label>
+            </value>
+            <value>
+                <fullName>House Type</fullName>
+                <default>false</default>
+                <label>House Type</label>
+            </value>
+            <value>
+                <fullName>Integration Key Community</fullName>
+                <default>false</default>
+                <label>Integration Key Community</label>
+            </value>
+            <value>
+                <fullName>Job City</fullName>
+                <default>false</default>
+                <label>Job City</label>
+            </value>
+            <value>
+                <fullName>Last Modified By</fullName>
+                <default>false</default>
+                <label>Last Modified By</label>
+            </value>
+            <value>
+                <fullName>Location</fullName>
+                <default>false</default>
+                <label>Location</label>
+            </value>
+            <value>
+                <fullName>Location Notes</fullName>
+                <default>false</default>
+                <label>Location Notes</label>
+            </value>
+            <value>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+                <label>Opportunity</label>
+            </value>
+            <value>
+                <fullName>Owner</fullName>
+                <default>false</default>
+                <label>Owner</label>
+            </value>
+            <value>
+                <fullName>Owner ID (18)</fullName>
+                <default>false</default>
+                <label>Owner ID (18)</label>
+            </value>
+            <value>
+                <fullName>Owner Location</fullName>
+                <default>false</default>
+                <label>Owner Location</label>
+            </value>
+            <value>
+                <fullName>Pre-Walk</fullName>
+                <default>false</default>
+                <label>Pre-Walk</label>
+            </value>
+            <value>
+                <fullName>Pre-Walk &amp; Job Start QC Needed</fullName>
+                <default>false</default>
+                <label>Pre-Walk &amp; Job Start QC Needed</label>
+            </value>
+            <value>
+                <fullName>Product Families</fullName>
+                <default>false</default>
+                <label>Product Families</label>
+            </value>
+            <value>
+                <fullName>QC Build Sheet</fullName>
+                <default>false</default>
+                <label>QC Build Sheet</label>
+            </value>
+            <value>
+                <fullName>QC Carpet Install</fullName>
+                <default>false</default>
+                <label>QC Carpet Install</label>
+            </value>
+            <value>
+                <fullName>QC Countertops Install</fullName>
+                <default>false</default>
+                <label>QC Countertops Install</label>
+            </value>
+            <value>
+                <fullName>QC Fine Tune Checklist</fullName>
+                <default>false</default>
+                <label>QC Fine Tune Checklist</label>
+            </value>
+            <value>
+                <fullName>QC Floor Wall Tile Install</fullName>
+                <default>false</default>
+                <label>QC Floor Wall Tile Install</label>
+            </value>
+            <value>
+                <fullName>QC LVT Install</fullName>
+                <default>false</default>
+                <label>QC LVT Install</label>
+            </value>
+            <value>
+                <fullName>QC Product Inspection</fullName>
+                <default>false</default>
+                <label>QC Product Inspection</label>
+            </value>
+            <value>
+                <fullName>QC Tile Backsplash Install</fullName>
+                <default>false</default>
+                <label>QC Tile Backsplash Install</label>
+            </value>
+            <value>
+                <fullName>QC Vinyl Install</fullName>
+                <default>false</default>
+                <label>QC Vinyl Install</label>
+            </value>
+            <value>
+                <fullName>QC Wood Install</fullName>
+                <default>false</default>
+                <label>QC Wood Install</label>
+            </value>
+            <value>
+                <fullName>Record Type</fullName>
+                <default>false</default>
+                <label>Record Type</label>
+            </value>
+            <value>
+                <fullName>Security Notes</fullName>
+                <default>false</default>
+                <label>Security Notes</label>
+            </value>
+            <value>
+                <fullName>Service Center</fullName>
+                <default>false</default>
+                <label>Service Center</label>
+            </value>
+            <value>
+                <fullName>Use Builder Profile Values</fullName>
+                <default>false</default>
+                <label>Use Builder Profile Values</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

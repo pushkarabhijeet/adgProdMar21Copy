@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Height of Tub Splash (Drop-in) --></label>
+    <name>Height_of_Tub_Splash_Drop_in__c</name>
+</CustomFieldTranslation>

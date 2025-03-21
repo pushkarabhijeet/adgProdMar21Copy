@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Carpet Spec Levels --></label>
+    <name>Carpet_Spec_Levels__c</name>
+    <picklistValues>
+        <masterLabel>18oz Nylon</masterLabel>
+        <translation><!-- 18oz Nylon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>18oz PET</masterLabel>
+        <translation><!-- 18oz PET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>18oz SmartStrand</masterLabel>
+        <translation><!-- 18oz SmartStrand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>20oz Nylon</masterLabel>
+        <translation><!-- 20oz Nylon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>20oz PET</masterLabel>
+        <translation><!-- 20oz PET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>20oz SmartStrand</masterLabel>
+        <translation><!-- 20oz SmartStrand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>25oz Nylon</masterLabel>
+        <translation><!-- 25oz Nylon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>25oz PET</masterLabel>
+        <translation><!-- 25oz PET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>25oz SmartStrand</masterLabel>
+        <translation><!-- 25oz SmartStrand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;25oz Nylon</masterLabel>
+        <translation><!-- &gt;25oz Nylon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;25oz PET</masterLabel>
+        <translation><!-- &gt;25oz PET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt;25oz SmartStrand</masterLabel>
+        <translation><!-- &gt;25oz SmartStrand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Nylon</masterLabel>
+        <translation><!-- Other Nylon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other PET</masterLabel>
+        <translation><!-- Other PET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other SmartStrand</masterLabel>
+        <translation><!-- Other SmartStrand --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

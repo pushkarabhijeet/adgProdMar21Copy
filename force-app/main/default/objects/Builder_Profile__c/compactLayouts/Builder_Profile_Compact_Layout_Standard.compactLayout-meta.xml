@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Builder_Profile_Compact_Layout_Standard</fullName>
+    <fields>Name</fields>
+    <fields>Builder__c</fields>
+    <fields>Oldest_Revision__c</fields>
+    <label>Builder Profile Compact Layout - Standard</label>
+</CompactLayout>

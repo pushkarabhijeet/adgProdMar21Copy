@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field_Manager_Must_Work_for_Your_Entity</fullName>
+    <active>true</active>
+    <description>This rule prevents field managers being added to a community that are not employed by that enity/division/business unit.</description>
+    <errorConditionFormula>AND(
+$Profile.Name != &apos;System Administrator&apos;,
+$Profile.Name != &apos;#Custom: System Admin - Integration Boomi&apos;,
+OR (
+TEXT($User.Entity__c) = &apos;Arlun&apos; &amp;&amp; Field_Service_Manager__r.Related_Resource_Entity__c &lt;&gt; &apos;Images&apos; &amp;&amp; Field_Service_Manager__r.Related_Resource_Entity__c &lt;&gt; &apos;Arlun&apos;,
+TEXT($User.Entity__c) = &apos;Images&apos; &amp;&amp; Field_Service_Manager__r.Related_Resource_Entity__c &lt;&gt; &apos;Images&apos; &amp;&amp; Field_Service_Manager__r.Related_Resource_Entity__c &lt;&gt; &apos;Arlun&apos;,
+TEXT($User.Entity__c) != Field_Service_Manager__r.Related_Resource_Entity__c &amp;&amp; TEXT($User.Entity__c) != &apos;Images&apos; &amp;&amp; TEXT($User.Entity__c) != &apos;Arlun&apos;
+)
+)</errorConditionFormula>
+    <errorMessage>You must choose a field manager that works for your company!</errorMessage>
+</ValidationRule>

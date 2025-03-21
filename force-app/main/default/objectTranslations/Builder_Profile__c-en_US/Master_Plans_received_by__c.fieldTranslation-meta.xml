@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- How to we get Master Plans? --></help>
+    <label><!-- Master Plans received by: --></label>
+    <name>Master_Plans_received_by__c</name>
+    <picklistValues>
+        <masterLabel>Builder Site</masterLabel>
+        <translation><!-- Builder Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DropBox</masterLabel>
+        <translation><!-- DropBox --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email</masterLabel>
+        <translation><!-- Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

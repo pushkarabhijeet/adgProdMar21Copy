@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If checked will perform an aggregate DATETIME query for all configured rollups (ex: MAX(CreatedDate)). Use a separate rollup configuration for &quot;normal&quot; rollups. --></help>
+    <label><!-- Do Date/Time Query --></label>
+    <name>Do_Date_Time_Query__c</name>
+</CustomFieldTranslation>

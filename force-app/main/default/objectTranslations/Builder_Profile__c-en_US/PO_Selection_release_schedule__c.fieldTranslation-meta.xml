@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When are PO and selections released? --></help>
+    <label><!-- PO/Selection release schedule --></label>
+    <name>PO_Selection_release_schedule__c</name>
+    <picklistValues>
+        <masterLabel>60 days prior to install</masterLabel>
+        <translation><!-- 60 days prior to install --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>After selections completed</masterLabel>
+        <translation><!-- After selections completed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

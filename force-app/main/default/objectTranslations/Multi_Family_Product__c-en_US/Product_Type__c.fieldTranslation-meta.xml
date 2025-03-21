@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Type --></label>
+    <name>Product_Type__c</name>
+    <picklistValues>
+        <masterLabel>Cabinets</masterLabel>
+        <translation><!-- Cabinets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carpet</masterLabel>
+        <translation><!-- Carpet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Countertops</masterLabel>
+        <translation><!-- Countertops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cushion</masterLabel>
+        <translation><!-- Cushion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LVP</masterLabel>
+        <translation><!-- LVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sheet Vinyl</masterLabel>
+        <translation><!-- Sheet Vinyl --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wood Product</masterLabel>
+        <translation><!-- Wood Product --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

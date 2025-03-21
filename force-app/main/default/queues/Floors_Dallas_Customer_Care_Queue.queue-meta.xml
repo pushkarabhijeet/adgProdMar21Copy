@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>invalid@invalid.invalid</email>
+    <name>Floors DFW Customer Care Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Floors_Customer_Service_All_Locations2</publicGroup>
+            <publicGroup>Floors_Executives</publicGroup>
+        </publicGroups>
+        <roles>
+            <role>Customer_Service_Floors_Dallas</role>
+        </roles>
+        <users>
+            <user>deborah.canales@united-finishes.com</user>
+            <user>itznet.bazaldua@united-finishes.com</user>
+            <user>keren.ruiz@united-finishes.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

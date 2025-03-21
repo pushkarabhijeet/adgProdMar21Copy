@@ -1,0 +1,166 @@
+<template>
+  <template if:true={isModalOpen}>
+    <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_medium" aria-labelledby="modal-heading-01" aria-modal="true">
+      <div class="slds-modal__container">
+
+        <header class="slds-modal__header">
+          <button 
+            class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+            title="Close"
+            onclick={closeModal}>
+              <lightning-icon icon-name="utility:close"
+                alternative-text="close"
+                variant="inverse"
+                size="small"
+              >
+              </lightning-icon>
+            <span class="slds-assistive-text">Close</span>
+          </button>
+          <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Contract Pro: Create New Installer</h2>
+        </header>
+
+        
+
+        
+
+          <div class="slds-modal__content slds-p-horizontal_large">
+
+            <template if:true={isComplete}>
+              <div class="slds-var-p-bottom_xx-large">
+                <div class="slds-text-heading_small slds-text-align_center slds-p-top_large slds-text-color_success">
+                  {message}
+                </div>
+              </div>
+            </template>
+
+            <template if:false={isComplete}>
+
+            <div class="slds-grid slds-gutters">
+
+              <div class="slds-col slds-size_1-of-2">
+                <div class="slds-p-top_large slds-p-bottom_large">
+                  <div class="slds-var-p-top_medium slds-text-heading_small">
+                    1. Search for an existing Account:
+                  </div>
+                  <div class="slds-var-p-top_medium slds-text-body_regular">
+                    From the results below, select an Account that you wish to add the installer (contractor) to.
+                  </div>
+                </div>
+              </div>
+
+              <div class="slds-col slds-size_1-of-2 slds-p-top_large slds-p-right_large">
+                <div class="slds-var-p-bottom_large">
+                  <lightning-input
+                    class="installer-input"
+                    placeholder="(e.g. installer number, name, etc..)"
+                    data-id="searchKey"
+                    onchange={handleSearchInput}
+                  >
+                  </lightning-input>
+                </div>
+              </div>
+            
+            </div>
+
+            <template if:true={hasAccounts}>
+              <template if:true={accounts}>
+                <div class="datatable">
+                  <lightning-datatable
+                    key-field="Id"
+                    max-row-selection="1"
+                    min-column-width="110"
+                    data={accounts}
+                    columns={accountColumns}
+                    onrowselection={getSelectedAccount}
+                    column-widths-mode="auto"
+                  >
+                  </lightning-datatable>
+                </div>
+                {loadMoreStatus}
+              </template>
+            </template>
+
+            <template if:false={hasAccounts}>
+              <div class="account-area">
+                <div class="slds-var-p-top_medium slds-text-body_regular slds-text-align_center">
+                  Enter a search term above to search for an existing Account.
+                </div>
+              </div>
+            </template>
+        
+            <lightning-menu-divider class="slds-p-top_x-large slds-p-bottom_medium"></lightning-menu-divider>
+            <div class="slds-var-p-top_large slds-text-heading_small">
+              2. Enter Installer (Contractor) Details:
+            </div>
+            <div class="slds-var-p-top_medium slds-var-p-bottom_large slds-text-body_regular">
+              Enter the information below to create a new installer Contact. The installer (contractor) will be directly related to the selected Account above.
+            </div>
+            
+            <template if:true={isLoading}>
+              <div class="slds-is-relative" style="min-height: 5em;">
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+              </div>
+            </template>
+            
+            <template if:true={isNormal}>
+              <div class="slds-form slds-var-p-bottom_large" role="list">
+                <div class="slds-form__row">
+                  <div class="slds-form__item" role="listitem">
+                    <div class="slds-form-element slds-form-element_horizontal slds-is-editing">
+                      <lightning-input type="text" label="First Name" name="first" onchange={setFirstName} required></lightning-input>
+                    </div>
+                  </div>
+                  <div class="slds-form__item" role="listitem">
+                    <div class="slds-form-element slds-form-element_horizontal slds-is-editing">
+                      <lightning-input type="text" label="Last Name" name="last" onchange={setLastName} required></lightning-input>
+                    </div>
+                  </div>
+                  <div class="slds-form__item" role="listitem">
+                    <div class="slds-form-element slds-form-element_horizontal slds-is-editing">
+                      <lightning-input
+                        type="tel"
+                        label="Phone" 
+                        name="phone"
+                        value={phone}
+                        pattern="^\(\d{3}\)\s\d{3}-\d{4}$"
+                        message-when-pattern-mismatch="Not a valid phone number"
+                        message-when-value-missing="Phone number is required"
+                        onchange={setPhone}
+                        required
+                      >
+                    </lightning-input>
+                    </div>
+                  </div>
+                </div>
+
+                <template if:true={isError}>
+
+                  <div class="account-area slds-var-m-bottom_xx-large">
+                    <div class="slds-var-p-top_medium slds-text-body_regular slds-text-align_center slds-text-color_destructive">
+                      {error}
+                    </div>
+                  </div>
+                </template>
+
+              </div>
+            </template>
+          </template>
+          </div>
+
+      
+
+        <footer class="slds-modal__footer">
+          <template if:true={isComplete}>
+            <lightning-button variant="neutral" label="Close" class="slds-m-left_x-small" onclick={closeModal}></lightning-button>
+          </template>
+          <template if:true={isNormal}>
+          <button class="slds-button slds-button_neutral" onclick={closeModal} title="Cancel">Cancel</button>
+          <lightning-button variant="brand" label="Save Contact &amp; Send Activation Code" class="slds-m-left_x-small" onclick={submit} disabled={submitButtonDisabled}></lightning-button>
+          </template>
+        </footer>
+
+      </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+  </template>
+</template>

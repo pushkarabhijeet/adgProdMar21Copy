@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- LVP Spec Levels --></label>
+    <name>LVP_Spec_Levels__c</name>
+    <picklistValues>
+        <masterLabel>2mm | 12 mil gluedown</masterLabel>
+        <translation><!-- 2mm | 12 mil gluedown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2mm | 6 mil gluedown</masterLabel>
+        <translation><!-- 2mm | 6 mil gluedown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2mm | 8 mil gluedown</masterLabel>
+        <translation><!-- 2mm | 8 mil gluedown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other gluedown</masterLabel>
+        <translation><!-- Other gluedown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rigid LVP</masterLabel>
+        <translation><!-- Rigid LVP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

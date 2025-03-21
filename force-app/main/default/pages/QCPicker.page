@@ -1,0 +1,69 @@
+<!--
+/**********************************************************************
+* Name:     QCPicker
+* Author:   Strategic Growth, Inc. (www.strategicgrowthinc.com)
+* 
+* ======================================================
+* ======================================================
+* Purpose:                                                      
+* 
+* ======================================================
+* ======================================================
+* History:                                                            
+* VERSION   DATE            INITIALS      DESCRIPTION/FEATURES ADDED
+* 1.0       26-Jun-2020     rwd           Initial Development           
+*   
+***********************************************************************/ 
+-->
+
+
+<apex:page id="QCPicker" standardController="WorkOrder" extensions="SG_VFC_QCPicker" docType="html-5.0" showHeader="false"
+           sideBar="false" lightningStylesheets="true">
+
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <!--<c:SG_Overlay style="processing" />-->
+
+        <!-- Import the Design System style sheet -->
+        <apex:slds />
+
+    </head>
+
+    <body>
+
+    <div class="slds-scope">
+
+        <apex:form id="theForm">
+            <apex:actionStatus id="overlayStatus" onStart="showOverlay();" onstop="hideOverlay();"/>
+            <apex:pageMessages escape="false" id="pageMsg"/>
+
+
+            <apex:outputPanel rendered="{!hasQcs}">
+                <apex:selectRadio value="{!selectedQcId}" layout="pageDirection">
+                    <apex:selectOptions value="{!qcOptions}"/>
+                </apex:selectRadio>
+                <p/><p/>
+
+                <div class="slds-button-group slds-m-top_small slds-float_right slds-align-bottom" role="group">
+                    <apex:commandButton value="Next" action="{!goToQc}"
+                                        styleClass="slds-button slds-button_brand slds-button_neutral slds-not-selected"
+                                        style="display:inline"/>
+                </div>
+            </apex:outputPanel>
+
+            <apex:outputPanel rendered="{!NOT(hasQcs)}">
+                <h2><b>No Open Quality Control Records</b></h2>
+            </apex:outputPanel>
+
+        </apex:form>
+    </div>
+    <div id="overlay"></div>
+    </body>
+    </html>
+</apex:page>

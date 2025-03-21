@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Cabinets should be free of damage. Document any issues in Notes fields. --></help>
+    <label><!-- Verify Cabinets in Good Condition --></label>
+    <name>Verify_Cabinets_in_Good_Condition__c</name>
+</CustomFieldTranslation>

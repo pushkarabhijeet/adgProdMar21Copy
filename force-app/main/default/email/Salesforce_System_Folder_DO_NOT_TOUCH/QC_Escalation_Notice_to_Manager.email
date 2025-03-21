@@ -1,0 +1,16 @@
+** System generated email **
+
+This QC is past due, action due for this record!
+
+Quality Control Record:
+{!Quality_Control__c.Link}
+
+Is due for:
+{!Quality_Control__c.RecordType}
+
+
+QC Due Date
+
+{!Quality_Control__c.QC_End_Date__c}
+
+.

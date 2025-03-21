@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>NAME</field>
+    </columns>
+    <columns>
+        <field>Asset.Integration_Key_Billing_Group__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Asset.Lot_Block__c</field>
+    </columns>
+    <columns>
+        <field>Asset.PrimaryIdentifier__c</field>
+    </columns>
+    <columns>
+        <field>Asset.Entity__c</field>
+    </columns>
+    <columns>
+        <field>Asset.Location__c</field>
+    </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>Asset.Community__c</field>
+    </columns>
+    <description>During the data load if the job identifier is not set correctly, it will combine fields and create a made up number.  Need to research to get the correct number and update FMS.</description>
+    <filter>
+        <criteriaItems>
+            <column>NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>NO_ID,NO ADDRESS</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>House/Unit with bad ID</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AssetWithProduct</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Asset.Integration_Key_Billing_Group__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

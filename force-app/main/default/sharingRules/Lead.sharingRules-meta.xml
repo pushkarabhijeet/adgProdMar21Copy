@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>AWC_Share_Sales_with_AWC</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>AWC Share Sales with AWC</label>
+        <sharedTo>
+            <group>AWC_All_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>AWC_All_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Arlun_share_with_Arlun</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Arlun share with Arlun</label>
+        <sharedTo>
+            <group>Arlun_All_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Arlun_All_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>BWF_share_with_BWF</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>BWF share with BWF</label>
+        <sharedTo>
+            <group>BWF_All_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>BWF_All_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Decor_share_with_Decor</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Decor share with Decor</label>
+        <sharedTo>
+            <group>Decor_Sales_Team</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Decor_Sales_Team</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Floors_Austin_Share_with_Austin</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Floors Austin Share with Austin</label>
+        <sharedTo>
+            <group>Floors_Sales_Austin</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Floors_Sales_Austin</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Floors_Dallas_share_with_Dallas</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Floors Dallas share with Dallas</label>
+        <sharedTo>
+            <group>Floors_Sales_DFW</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Floors_Sales_DFW</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Floors_Sales_Houston</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Floors Sales Houston</label>
+        <sharedTo>
+            <group>Floors_Sales_Houston</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Floors_Sales_Houston</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Floors_Sales_Power_Users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Floors Sales Power Users</label>
+        <sharedTo>
+            <group>Floors_Power_Sales_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Floors_All_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Floors_San_Antonio_Share_with_same</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Floors San Antonio Share with same</label>
+        <sharedTo>
+            <group>Floors_Sales_San_Antonio</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Floors_Sales_San_Antonio</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Heritage_sharing_with_Heritage</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Heritage sharing with Heritage</label>
+        <sharedTo>
+            <group>Heritage_Sales_and_Estimating_Team</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Heritage_Sales_and_Estimating_Team</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Kermans_sharing_with_Kermans</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Kermans sharing with Kermans</label>
+        <sharedTo>
+            <group>Kermans_Sales</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Kermans_Sales</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Markraft_share_with_Markraft</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Markraft share with Markraft</label>
+        <sharedTo>
+            <group>Markraft_Sales</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Markraft_Sales</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>McDade_Share_with_McDade</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>McDade Share with McDade</label>
+        <sharedTo>
+            <group>McDade_Sales</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>McDade_Sales</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Metro_share_with_Metro</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Metro share with Metro</label>
+        <sharedTo>
+            <group>Metro_Sales</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Metro_Sales</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Nonn_s_Share_with_Nunn_s</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Nonn&apos;s Share with Nunn&apos;s</label>
+        <sharedTo>
+            <group>Nonn_s_Sales_Team</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Nonn_s_Sales_Team</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Value_Plus_share_with_Value_Plus</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Value Plus share with Value Plus</label>
+        <sharedTo>
+            <group>Value_Plus_Sales</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Value_Plus_Sales</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Vintage_share_with_Vintage</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Vintage share with Vintage</label>
+        <sharedTo>
+            <group>Vintage_Sales</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Vintage_Sales</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>WCCV_Visibility_to_WCCV</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>WCCV Visibility to WCCV</label>
+        <sharedTo>
+            <group>WCCV_Sales</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>WCCV_Sales</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

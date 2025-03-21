@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Service Areas --></label>
+    <name>Service_Areas__c</name>
+    <picklistValues>
+        <masterLabel>Atlanta, GA</masterLabel>
+        <translation><!-- Atlanta, GA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Austin, TX</masterLabel>
+        <translation><!-- Austin, TX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleveland, OH</masterLabel>
+        <translation><!-- Cleveland, OH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corpus Christi, TX</masterLabel>
+        <translation><!-- Corpus Christi, TX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dallas, TX</masterLabel>
+        <translation><!-- Dallas, TX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Denver, CO</masterLabel>
+        <translation><!-- Denver, CO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Greenville, SC</masterLabel>
+        <translation><!-- Greenville, SC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Houston, TX</masterLabel>
+        <translation><!-- Houston, TX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indianapolis, IN</masterLabel>
+        <translation><!-- Indianapolis, IN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Madison, WI</masterLabel>
+        <translation><!-- Madison, WI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Milwaukee, WI</masterLabel>
+        <translation><!-- Milwaukee, WI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phoenix, AZ</masterLabel>
+        <translation><!-- Phoenix, AZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portland, OR</masterLabel>
+        <translation><!-- Portland, OR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Antonio, TX</masterLabel>
+        <translation><!-- San Antonio, TX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Diego, CA</masterLabel>
+        <translation><!-- San Diego, CA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seattle, WA</masterLabel>
+        <translation><!-- Seattle, WA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tucson, AZ</masterLabel>
+        <translation><!-- Tucson, AZ --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

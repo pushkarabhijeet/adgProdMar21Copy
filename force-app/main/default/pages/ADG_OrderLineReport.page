@@ -1,0 +1,17 @@
+<apex:page showHeader="false" applyBodyTag="false" standardController="WorkOrder">
+    <apex:includeLightning />
+    <div id="ADG_OrderLineReportApp" />
+    
+    <script>
+        var recordId = "{!WorkOrder.Id}";
+        $Lightning.use("c:ADG_OrderLineReportApp", function () {
+          $Lightning.createComponent(
+            "c:ADG_OrderLineReport",
+            {
+              recordId: recordId,
+            },
+            "ADG_OrderLineReportApp"
+          );
+        });
+    </script>
+</apex:page>

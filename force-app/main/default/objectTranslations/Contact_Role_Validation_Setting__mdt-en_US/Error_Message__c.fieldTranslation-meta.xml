@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What error message do you want to display to the end user? --></help>
+    <label><!-- then display this Error Message --></label>
+    <name>Error_Message__c</name>
+</CustomFieldTranslation>

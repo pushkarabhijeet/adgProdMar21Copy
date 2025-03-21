@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>LightningUsageByAppTypeMetrics</baseObject>
+    <category>admin</category>
+    <deployed>true</deployed>
+    <description>LightningUsageByAppTypeMetrics</description>
+    <label>LightningUsageByAppTypeMetrics</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>LightningUsageByAppTypeMetrics</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>MetricsDate</field>
+            <table>LightningUsageByAppTypeMetrics</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ParentEnumOrId</field>
+            <table>LightningUsageByAppTypeMetrics</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FieldValue</field>
+            <table>LightningUsageByAppTypeMetrics</table>
+        </columns>
+        <masterLabel>Lightning Usage By App Type Metrics</masterLabel>
+    </sections>
+</ReportType>

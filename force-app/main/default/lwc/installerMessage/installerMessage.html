@@ -1,0 +1,121 @@
+<template>
+  <lightning-card
+    title="Installer Messages"
+    icon-name="utility:chat"
+    class={connectionIconClass}
+  >
+    <div class="idms-chat-area" onscroll={scrollChat}>
+      <template if:true={isLoading}>
+        <div class="slds-is-relative" style="min-height: 5em;">
+          <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </div>
+      </template>
+
+      <template if:true={shouldShowEmptyMessage}>
+        <div class="slds-is-relative" style="min-height: 5em;">
+          <div class="slds-align_absolute-center" style="height:5rem">
+            <p class="slds-text-body_regular no-messages">{messageBodyHint}</p>
+          </div>
+        </div>
+      </template>
+      
+      <template if:true={messages}>
+        <template for:each={messages} for:item="message">
+          <section role="log" class="slds-chat" key={message.message_id}>
+            <ul class="slds-chat-list">
+              <li class={message.bubble_list_class}>
+                <div class="slds-chat-message">
+                  <div class="slds-chat-message__body">
+                    <div class={message.bubble_chat_class}>
+                      <template if:true={message.is_loading}>
+                        <p class="loading"></p>
+                      </template>
+                      <template if:false={message.is_loading}>
+                        <span>
+                          <lightning-formatted-text value={message.message_text} linkify></lightning-formatted-text>
+                        </span>
+                      </template>
+                    </div>
+                    <template if:false={message.is_loading}>
+                      <div class="slds-chat-message__meta" aria-label="">
+                          {message.display_name} • {message.server_timestamp}
+                      </div>
+                    </template>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </template>
+      </template>
+      <template if:true={localMessages}>
+        <template for:each={localMessages} for:item="message">
+          <section role="log" class="slds-chat" key={message.outgoing_id}>
+            <ul class="slds-chat-list">
+              <li class="slds-chat-listitem slds-chat-listitem_outbound">
+                <div class="slds-chat-message">
+                  <div class="slds-chat-message__body">
+                    <div class="slds-chat-message__text slds-chat-message__text_outbound-agent idms-owner">
+                      <template if:true={message.is_loading}>
+                        <p class="loading"></p>
+                      </template>
+                      <template if:false={message.is_loading}>
+                        <span>
+                          <lightning-formatted-text value={message.message_text} linkify></lightning-formatted-text>
+                        </span>
+                      </template>
+                    </div>
+                    <template if:false={message.is_loading}>
+                      <div class="slds-chat-message__meta" aria-label="">
+                        <template if:false={message.has_error}>
+                          {message.display_name} • sending
+                        </template>
+                        <template if:true={message.has_error}>
+                          <p onclick={retrySend} data-sender_message_id={message.sender_message_id}>{message.error} | retry</p>
+                        </template>
+                      </div>
+                    </template>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </template>
+      </template>
+    </div>
+
+    <template if:true={showConnectionAlert}>
+      <div class="alert alert-warning">
+        {connectionMessage}
+      </div>
+    </template>
+
+    <div class="idms-footer">
+      <lightning-layout vertical-align="end" class="slds-var-m-bottom_small">
+        <lightning-layout-item flexibility="grow">
+          <span onkeypress={keyEvent}>
+            <lightning-input
+              placeholder={inputFieldHint}
+              value={searchKey}
+              data-id="message"
+              onchange={inputUpdate}
+              minlength="1"
+              maxlength="200"
+              disabled={isMessagingDisabled}
+            ></lightning-input>
+          </span>
+        </lightning-layout-item>
+        <lightning-layout-item class="slds-var-p-left_xx-small">
+          <lightning-button-icon
+            icon-name="utility:send"
+            alternative-text="Send Message"
+            title="Send"
+            onclick={submitCurrentMessage}
+            disabled={isMessagingDisabled}
+          >
+          </lightning-button-icon>
+        </lightning-layout-item>
+      </lightning-layout>
+    </div>
+  </lightning-card>
+</template>

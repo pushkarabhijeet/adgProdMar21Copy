@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Builder Profile Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Builder Profile Line Items</value>
+    </caseValues>
+    <layouts>
+        <layout>Builder Profile Line Item Page Layout (Carpet)</layout>
+        <sections>
+            <label><!-- Carpet Details --></label>
+            <section>Carpet Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Builder Profile Line Item Page Layout (Standard)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Vinyl/Wood Details --></label>
+            <section>Vinyl/Wood Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Builder Profile Line Item Page Layout (Tile)</layout>
+        <sections>
+            <label><!-- Backsplash Details --></label>
+            <section>Backsplash Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Tile Details --></label>
+            <section>General Tile Details</section>
+        </sections>
+        <sections>
+            <label><!-- Wall Tile Details --></label>
+            <section>Wall Tile Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Builder Profile Line Item Page Layout (Vinyl/Wood)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Vinyl/Wood Details --></label>
+            <section>Vinyl/Wood Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Builder Profile Line Item Record Type (Carpet) --></label>
+        <name>Builder_Profile_Line_Item_Record_Type_Carpet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Builder Profile Line Item Record Type (Tile) --></label>
+        <name>Builder_Profile_Line_Item_Record_Type_Tile</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Builder Profile Line Item Record Type (Vinyl/Wood) --></label>
+        <name>Builder_Profile_Line_Item_Record_Type_Vinyl_Wood</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- A value must be provided when &quot;Corner Shelf Included&quot; is checked. --></errorMessage>
+        <name>BP_Line_Item_Corner_Shelf_Incl_Specifics</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A value must be provided when &quot;Included&quot; is selected from &apos;Shoemold&apos; picklist. --></errorMessage>
+        <name>BP_Line_Item_Shoemold_Included</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A value must be provided when &quot;Other&quot; is selected from &apos;Underlayment&apos; picklist. --></errorMessage>
+        <name>BP_Line_Item_Underlayment_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A value must be provided when &quot;Included&quot; is selected from &apos;VP to Tile Transition&apos; picklist. --></errorMessage>
+        <name>BP_Line_Item_VP_to_Tile_Transition</name>
+    </validationRules>
+</CustomObjectTranslation>

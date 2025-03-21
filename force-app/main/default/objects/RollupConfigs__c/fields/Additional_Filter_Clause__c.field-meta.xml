@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Filter_Clause__c</fullName>
+    <inlineHelpText>Add an optional filter clause to the rollup, without quotes or punctuation. Example: AND IsActive = true</inlineHelpText>
+    <label>Additional Filter Clause</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

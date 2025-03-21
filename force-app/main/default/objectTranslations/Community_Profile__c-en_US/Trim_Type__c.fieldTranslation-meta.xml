@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Trim Type --></label>
+    <name>Trim_Type__c</name>
+    <picklistValues>
+        <masterLabel>3x6 Wall Tile</masterLabel>
+        <translation><!-- 3x6 Wall Tile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6x6 Wall Tile</masterLabel>
+        <translation><!-- 6x6 Wall Tile --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,15 @@
+*** System generated email ***
+
+A new Account setup has been requested by {!Account.OwnerFullName}
+Please review the account information in Salesforce.com and Approve or Reject the request.  
+
+{!Account.Link}
+
+Name:       
+ {!Account.Name}
+
+Phone:             
+{!Account.Phone}
+
+Address:            
+{!Account.BillingAddress}

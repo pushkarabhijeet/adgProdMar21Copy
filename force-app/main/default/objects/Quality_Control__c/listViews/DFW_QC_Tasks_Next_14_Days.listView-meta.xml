@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DFW_QC_Tasks_Next_14_Days</fullName>
+    <columns>NAME</columns>
+    <columns>QCType__c</columns>
+    <columns>House_Unit__c</columns>
+    <columns>Status__c</columns>
+    <columns>Work_Order_Start_Date__c</columns>
+    <columns>Work_Order_End_Date__c</columns>
+    <columns>Field_Service_Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>WO_Owner_Location__c</field>
+        <operation>equals</operation>
+        <value>DFW</value>
+    </filters>
+    <filters>
+        <field>Work_Order_Start_Date__c</field>
+        <operation>equals</operation>
+        <value>THIS_WEEK</value>
+    </filters>
+    <label>DFW QC Tasks Next 14 Days</label>
+    <sharedTo>
+        <roleAndSubordinates>Field_Service_Manager_Floors</roleAndSubordinates>
+    </sharedTo>
+</ListView>

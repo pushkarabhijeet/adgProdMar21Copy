@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Asset.WorkOrders$Name</field>
+    </columns>
+    <columns>
+        <field>Asset.WorkOrders$Start_Day__c</field>
+    </columns>
+    <columns>
+        <field>Asset.WorkOrders$Job_Type__c</field>
+    </columns>
+    <columns>
+        <field>Asset.WorkOrders$Status</field>
+    </columns>
+    <columns>
+        <field>Asset$Community__c</field>
+    </columns>
+    <description>End date greater or equal to today</description>
+    <filter>
+        <criteriaItems>
+            <column>Asset.WorkOrders$Job_End_Day__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Asset.WorkOrders$Job_End_Day__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Asset$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Images - My Houses with Open Work Orders</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Assets_with_Work_Orders__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Asset$Actual_Completion_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

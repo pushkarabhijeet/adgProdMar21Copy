@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Cabinets</fullName>
+        <default>false</default>
+        <label>Cabinets</label>
+    </customValue>
+    <customValue>
+        <fullName>Carpet</fullName>
+        <default>false</default>
+        <label>Carpet</label>
+    </customValue>
+    <customValue>
+        <fullName>Countertops</fullName>
+        <default>false</default>
+        <label>Countertops</label>
+    </customValue>
+    <customValue>
+        <fullName>Cushion</fullName>
+        <default>false</default>
+        <label>Cushion</label>
+    </customValue>
+    <customValue>
+        <fullName>LVP</fullName>
+        <default>false</default>
+        <label>LVP</label>
+    </customValue>
+    <customValue>
+        <fullName>Sheet Vinyl</fullName>
+        <default>false</default>
+        <label>Sheet Vinyl</label>
+    </customValue>
+    <customValue>
+        <fullName>Wood Products</fullName>
+        <default>false</default>
+        <label>Wood Products</label>
+    </customValue>
+    <masterLabel>MF Product Type List</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

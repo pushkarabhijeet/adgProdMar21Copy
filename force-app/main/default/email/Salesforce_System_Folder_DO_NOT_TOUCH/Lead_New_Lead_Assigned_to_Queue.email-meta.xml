@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification of a Lead Assigned to a Queue</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Lead: New Lead Assigned to Queue</name>
+    <style>none</style>
+    <subject>ADG - Lead {!Lead.Name} from {!Lead.Company} Assigned to the {!Lead.OwnerFullName}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

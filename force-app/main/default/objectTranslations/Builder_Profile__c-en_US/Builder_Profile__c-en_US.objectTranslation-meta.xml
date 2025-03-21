@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Builder Profile</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Builder Profiles</value>
+    </caseValues>
+    <layouts>
+        <layout>Builder Profile Layout</layout>
+        <sections>
+            <label><!-- Build Cycle --></label>
+            <section>Build Cycle</section>
+        </sections>
+        <sections>
+            <label><!-- Comment [hidden] --></label>
+            <section>Comment [hidden]</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- POs &amp; Plans --></label>
+            <section>POs &amp; Plans</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Builder Profile Layout (Community)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- QC Day Count --></label>
+            <section>QC Day Count</section>
+        </sections>
+        <sections>
+            <label><!-- Standard Community Setup --></label>
+            <section>Standard Community Setup</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Builder Profile Layout (Standard)</layout>
+        <sections>
+            <label><!-- Comment [hidden] --></label>
+            <section>Comment [hidden]</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- POs &amp; Plans --></label>
+            <section>POs &amp; Plans</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Create Community --></label>
+        <name>Create_Community</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Community Setup --></label>
+        <name>Community_Setup</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard --></label>
+        <name>Standard</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- There is already a community profile for this account. --></errorMessage>
+        <name>Builder_Profile_Already_Exists_for_Accou</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A value must be provided when &quot;Other&quot; is selected from &apos;Change Order received by&apos; picklist --></errorMessage>
+        <name>Builder_Profile_Change_Order_recd_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A value must be provided when &quot;Other&quot; is selected from &apos;Master Plans received by&apos; field --></errorMessage>
+        <name>Builder_Profile_Master_Plans_recd_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A value must be provided when &quot;Other&quot; is selected from &apos;POs Revisions received by&apos; picklist. --></errorMessage>
+        <name>Builder_Profile_PO_Revisions_recd_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A value must be provided when &quot;Other&quot; is selected from &apos;POs received by&apos; picklist. --></errorMessage>
+        <name>Builder_Profile_POs_recd_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A value must be provided when &quot;Other&quot; is selected from &apos;Plan Changes/Revisions received by&apos; picklist. --></errorMessage>
+        <name>Builder_Profile_Plan_Changes_recd_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A value must be provided when &quot;Other&quot; is selected from &apos;Selections received by&apos; picklist. --></errorMessage>
+        <name>Builder_Profile_Selections_recd_Other</name>
+    </validationRules>
+</CustomObjectTranslation>

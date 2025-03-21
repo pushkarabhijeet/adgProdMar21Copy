@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- How do we receive PO revisions? --></help>
+    <label><!-- PO Revisions received by: --></label>
+    <name>PO_Revisions_received_by__c</name>
+    <picklistValues>
+        <masterLabel>Builder Site</masterLabel>
+        <translation><!-- Builder Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email</masterLabel>
+        <translation><!-- Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SupplyPro</masterLabel>
+        <translation><!-- SupplyPro --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

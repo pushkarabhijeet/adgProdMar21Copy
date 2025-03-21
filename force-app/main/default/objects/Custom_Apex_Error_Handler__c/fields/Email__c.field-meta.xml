@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email__c</fullName>
+    <description>You can send emails to the current user by specifying the Name of the Custom Setting to start with &quot;CurrentUser&quot; (no quotes). Example: CurrentUser_ForSuchAndSuch.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>You can send emails to the current user by specifying the Name of the Custom Setting to start with &quot;CurrentUser&quot; (no quotes). Example: CurrentUser_ForSuchAndSuch.</inlineHelpText>
+    <label>Email</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

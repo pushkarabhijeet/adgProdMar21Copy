@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contact Role Validation Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contact Role Validation Settings</value>
+    </caseValues>
+    <layouts>
+        <layout>Contact Role Validation Setting Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Logic --></label>
+            <section>Logic</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If the &apos;this count this Role&apos; you&apos;re counting is &quot;IsPrimary&quot; then the &apos;to this count&apos; must be 1. --></errorMessage>
+        <name>IsPrimary_Role_must_have_a_Value_of_1</name>
+    </validationRules>
+</CustomObjectTranslation>

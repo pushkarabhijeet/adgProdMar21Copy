@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>invalid@invalid.com.invalid</email>
+    <name>WCCV Grafton Customer Care Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>WCCV_Grafton_Customer_Service</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

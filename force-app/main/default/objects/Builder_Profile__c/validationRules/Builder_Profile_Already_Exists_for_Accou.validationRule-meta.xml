@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Builder_Profile_Already_Exists_for_Accou</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISNEW(), 
+NOT(
+  ISBLANK(Builder__r.Builder_Profile_Community_Link__c )))</errorConditionFormula>
+    <errorMessage>There is already a community profile for this account.</errorMessage>
+</ValidationRule>

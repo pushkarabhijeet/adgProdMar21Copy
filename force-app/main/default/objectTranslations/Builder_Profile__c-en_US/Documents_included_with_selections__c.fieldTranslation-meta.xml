@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Documents included with selections --></label>
+    <name>Documents_included_with_selections__c</name>
+    <picklistValues>
+        <masterLabel>Flooring mark-ups</masterLabel>
+        <translation><!-- Flooring mark-ups --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wall diagram</masterLabel>
+        <translation><!-- Wall diagram --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

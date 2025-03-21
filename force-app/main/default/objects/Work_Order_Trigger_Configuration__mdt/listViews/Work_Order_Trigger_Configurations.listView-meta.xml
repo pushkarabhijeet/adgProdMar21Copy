@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_Order_Trigger_Configurations</fullName>
+    <columns>MasterLabel</columns>
+    <columns>Job_Type__c</columns>
+    <columns>Quality_Control_Record_Type__c</columns>
+    <columns>Community_Field_to_Verify__c</columns>
+    <columns>Day_Count_Field_Name__c</columns>
+    <columns>Allow_Duplicates__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Work Order Trigger Configurations</label>
+</ListView>

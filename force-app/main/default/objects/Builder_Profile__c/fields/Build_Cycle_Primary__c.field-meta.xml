@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Build_Cycle_Primary__c</fullName>
+    <label>Build Cycle Primary</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Express Production Cycle</fullName>
+                <default>false</default>
+                <label>Express Production Cycle</label>
+            </value>
+            <value>
+                <fullName>Normal Production Cycle</fullName>
+                <default>false</default>
+                <label>Normal Production Cycle</label>
+            </value>
+            <value>
+                <fullName>Custom Production Cycle</fullName>
+                <default>false</default>
+                <label>Custom Production Cycle</label>
+            </value>
+            <value>
+                <fullName>Custom Plus Production Cycle</fullName>
+                <default>false</default>
+                <label>Custom Plus Production Cycle</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification of QC for Pre-Walk or Job Start</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>QC: Pre-Walk/Job Schedule Due</name>
+    <style>none</style>
+    <subject>ADG - {!Quality_Control__c.RecordType} QC for house {!Quality_Control__c.House_Unit__c} is due</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Community</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Communities</value>
+    </caseValues>
+    <layouts>
+        <layout>Community Layout (Exception Admin)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Day Count --></label>
+            <section>Day Count</section>
+        </sections>
+        <sections>
+            <label><!-- Number of Houses for Community --></label>
+            <section>Number of Houses for Community</section>
+        </sections>
+        <sections>
+            <label><!-- QC Triggers --></label>
+            <section>QC Triggers</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Community Layout (Exception)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Number of Houses for Community --></label>
+            <section>Number of Houses for Community</section>
+        </sections>
+        <sections>
+            <label><!-- QC Triggers --></label>
+            <section>QC Triggers</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Community Layout (Standard Admin)</layout>
+        <sections>
+            <label><!-- Build Cycle --></label>
+            <section>Build Cycle</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Day Count --></label>
+            <section>Day Count</section>
+        </sections>
+        <sections>
+            <label><!-- Number of Houses for Community --></label>
+            <section>Number of Houses for Community</section>
+        </sections>
+        <sections>
+            <label><!-- Project Instructions --></label>
+            <section>Project Instructions</section>
+        </sections>
+        <sections>
+            <label><!-- QC Requirements --></label>
+            <section>QC Requirements</section>
+        </sections>
+        <sections>
+            <label><!-- Test Dates --></label>
+            <section>Test Dates</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Community Layout (Standard)</layout>
+        <sections>
+            <label><!-- Build Cycle --></label>
+            <section>Build Cycle</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Day Count --></label>
+            <section>Day Count</section>
+        </sections>
+        <sections>
+            <label><!-- Number of Houses for Community --></label>
+            <section>Number of Houses for Community</section>
+        </sections>
+        <sections>
+            <label><!-- Project Instructions --></label>
+            <section>Project Instructions</section>
+        </sections>
+        <sections>
+            <label><!-- QC Requirements --></label>
+            <section>QC Requirements</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Contact --></label>
+        <name>Add_Contact</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Exception --></label>
+        <name>Exception</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard --></label>
+        <name>Standard</name>
+    </recordTypes>
+    <sharingReasons>
+        <label><!-- Community Team --></label>
+        <name>Community_Team</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Business Hours cannot be left blank.  Select Installer standard M-F. --></errorMessage>
+        <name>Business_Hours_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the name of the Orphaned Community. If you are trying to reassign a House&apos;s Community, go to the House Record and change the Community there. --></errorMessage>
+        <name>Cannot_Change_Name_of_Orphaned_Community</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must choose a field manager that works for your company! --></errorMessage>
+        <name>Field_Manager_Must_Work_for_Your_Entity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a name in Pre-Walk when selecting Yes in Pre-Walk &amp; Job Start QC Needed. Person must be a service resource. --></errorMessage>
+        <name>PreWalk_and_Job_Start_Require_Inspector</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When selecting QC Tile Backsplash Install &quot;Yes&quot; the Day Count for Tile Backsplash must be entered. --></errorMessage>
+        <name>QC_Backsplash_Yes_Require_Day_Count</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When selecting QC Carpet Install &quot;Yes&quot; the Day Count for Carpet must be entered. --></errorMessage>
+        <name>QC_Carpet_Yes_Require_Day_Count</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When selecting QC Countertops Install &quot;Yes&quot; the Day Count for Countertops must be entered. --></errorMessage>
+        <name>QC_Countertops_Yes_Require_Day_Count</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Day Count QC End date cannot be left blank.  Default to 2 if needed. --></errorMessage>
+        <name>QC_Day_Count_Yes_Require_Day_Count</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All QC Fields must be completed before saving unless &quot;Yes&quot; is selected in &quot;Use Builder Profile Values&quot;. --></errorMessage>
+        <name>QC_Fields_Require_Values_on_Create</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When selecting QC Floor Wall Tile Install &quot;Yes&quot; the Day Count for Floor Wall Tile must be entered. --></errorMessage>
+        <name>QC_Floor_Wall_Yes_Require_Day_Count</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When selecting QC LVT Install &quot;Yes&quot; the Day Count for Countertops must be entered. --></errorMessage>
+        <name>QC_LVT_Yes_Require_Day_Count</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When selecting QC Vinyl Install &quot;Yes&quot; the Day Count for Countertops must be entered. --></errorMessage>
+        <name>QC_Vinyl_Yes_Require_Day_Count</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When selecting QC Wood Install &quot;Yes&quot; the Day Count for Wood must be entered. --></errorMessage>
+        <name>QC_Wood_Yes_Require_Day_Count</name>
+    </validationRules>
+</CustomObjectTranslation>

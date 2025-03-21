@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check this checkbox to log ALL, Class Specific or Exception Specific Exceptions --></help>
+    <label><!-- Log Exceptions --></label>
+    <name>Log_Exceptions__c</name>
+</CustomFieldTranslation>

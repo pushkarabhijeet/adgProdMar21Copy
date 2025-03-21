@@ -1,0 +1,27 @@
+<!-- **********************************************************************
+* Name:     NewLeadCmpController.cmp
+* Author:   Strategic Growth, Inc. (www.strategicgrowthinc.com)
+*
+* ======================================================
+* ======================================================
+* Purpose: Override the Lead "New" button to redirect based on RecordType selected in the native RT selector screen
+*
+* ======================================================
+* ======================================================
+* History:
+* VERSION   DATE            INITIALS      DESCRIPTION/FEATURES ADDED
+* 1.0       27-Mar-2020     rwd           Initial Development
+*
+***********************************************************************/ -->
+
+<aura:component implements="force:hasRecordId,lightning:actionOverride,lightning:hasPageReference">
+
+    <aura:attribute name="selectedRecordId" type="Id" />
+     
+    <!--Initialize first time-->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  
+    
+    <!-- Lightning preserves the state of the handler, and stale state is resurfaced until physical refresh of page invoking; re-init if coming back-->
+    <aura:handler name="change" value="{!v.pageReference}" action="{!c.reInit}" />
+
+</aura:component>

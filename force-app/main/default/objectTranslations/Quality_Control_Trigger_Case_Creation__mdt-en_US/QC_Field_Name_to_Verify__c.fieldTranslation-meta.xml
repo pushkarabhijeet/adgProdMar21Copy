@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Name of the field in the Quality Control object that the trigger is supposed to check --></help>
+    <label><!-- QC Field Name to Verify --></label>
+    <name>QC_Field_Name_to_Verify__c</name>
+</CustomFieldTranslation>

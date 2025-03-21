@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Required when &quot;Other&quot; is selected from the &apos;Plan Changes/Revisions received by&apos; picklist --></help>
+    <label><!-- Plan Changes/Revisions received (Other) --></label>
+    <name>Plan_Changes_Revisions_received_Other__c</name>
+</CustomFieldTranslation>

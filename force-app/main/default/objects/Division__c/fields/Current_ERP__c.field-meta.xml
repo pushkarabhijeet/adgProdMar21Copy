@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_ERP__c</fullName>
+    <label>Current ERP</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RFMS</fullName>
+                <default>false</default>
+                <label>RFMS</label>
+            </value>
+            <value>
+                <fullName>Great Plains</fullName>
+                <default>false</default>
+                <label>Great Plains</label>
+            </value>
+            <value>
+                <fullName>uFactory</fullName>
+                <default>false</default>
+                <label>uFactory</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

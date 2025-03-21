@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Name of the QC field to check to determine the value of the case material --></help>
+    <label><!-- QC Field Name for Material Option --></label>
+    <name>QC_Field_Name_for_Material_Option__c</name>
+</CustomFieldTranslation>

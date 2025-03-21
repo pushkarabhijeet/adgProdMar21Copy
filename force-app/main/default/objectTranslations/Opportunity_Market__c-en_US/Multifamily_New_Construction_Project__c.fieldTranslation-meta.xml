@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Multifamily New Construction Project --></label>
+    <name>Multifamily_New_Construction_Project__c</name>
+    <relationshipLabel><!-- Opportunity Markets --></relationshipLabel>
+</CustomFieldTranslation>

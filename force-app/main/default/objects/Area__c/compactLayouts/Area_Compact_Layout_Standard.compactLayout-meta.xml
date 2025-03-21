@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Area_Compact_Layout_Standard</fullName>
+    <fields>Name</fields>
+    <fields>Area_Name__c</fields>
+    <fields>Area_Quantity__c</fields>
+    <label>Area Compact Layout (Standard)</label>
+</CompactLayout>

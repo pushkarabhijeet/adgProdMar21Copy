@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Asset Id --></label>
+    <name>AssetId__c</name>
+    <relationshipLabel><!-- ERP Order Groups --></relationshipLabel>
+</CustomFieldTranslation>

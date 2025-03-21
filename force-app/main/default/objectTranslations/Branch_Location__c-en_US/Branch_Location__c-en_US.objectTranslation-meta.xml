@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Branch Location</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Branch Locations</value>
+    </caseValues>
+    <layouts>
+        <layout>Branch Location Layout</layout>
+        <sections>
+            <label><!-- CS Notification Settings --></label>
+            <section>CS Notification Settings</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Integration Mapping (Reference) --></label>
+            <section>Integration Mapping (Reference)</section>
+        </sections>
+        <sections>
+            <label><!-- Integration Settings --></label>
+            <section>Integration Settings</section>
+        </sections>
+        <sections>
+            <label><!-- Other FMS Settings --></label>
+            <section>Other FMS Settings</section>
+        </sections>
+        <sections>
+            <label><!-- QC &amp; Day Count Settings --></label>
+            <section>QC &amp; Day Count Settings</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

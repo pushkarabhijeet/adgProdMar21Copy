@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Height at Dropped Venthood --></label>
+    <name>Height_at_Dropped_Venthood__c</name>
+    <picklistValues>
+        <masterLabel>Bottom of Vent</masterLabel>
+        <translation><!-- Bottom of Vent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>To the Ceiling</masterLabel>
+        <translation><!-- To the Ceiling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Top of Cabinets</masterLabel>
+        <translation><!-- Top of Cabinets --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

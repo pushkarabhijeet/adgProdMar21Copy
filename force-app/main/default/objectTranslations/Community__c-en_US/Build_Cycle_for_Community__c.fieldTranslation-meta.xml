@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Dates to finish: Express =85-112, Normal =133-142, Custom = 131-148, Custom Plus = 181-208 --></help>
+    <label><!-- Build Cycle for Community --></label>
+    <name>Build_Cycle_for_Community__c</name>
+    <picklistValues>
+        <masterLabel>Custom Plus Production Cycle</masterLabel>
+        <translation><!-- Custom Plus Production Cycle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom Production Cycle</masterLabel>
+        <translation><!-- Custom Production Cycle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Express Production Cycle</masterLabel>
+        <translation><!-- Express Production Cycle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Normal Production Cycle</masterLabel>
+        <translation><!-- Normal Production Cycle --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

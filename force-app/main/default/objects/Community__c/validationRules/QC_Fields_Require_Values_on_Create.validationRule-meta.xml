@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QC_Fields_Require_Values_on_Create</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( Use_Builder_Profile_Values__c , &quot;No&quot;)  &amp;&amp;  
+ISBLANK(TEXT(QC_Carpet_Install__c)),
+ISBLANK(TEXT(QC_Countertops_Install__c )),
+ISBLANK(TEXT(QC_Fine_Tune_Checklist__c )),
+ISBLANK(TEXT(QC_Wood_Install__c)),
+ISBLANK(TEXT(QC_LVT_Install__c)),
+ISBLANK(TEXT(QC_Tile_Backsplash_Install__c)),
+ISBLANK(TEXT(QC_Vinyl_Install__c)),
+ISBLANK(TEXT(QC_Product_Inspection__c)),
+ISBLANK(TEXT(QC_Build_Sheet__c)),
+ISBLANK(TEXT(QC_Floor_Wall_Tile_Install__c )))</errorConditionFormula>
+    <errorMessage>All QC Fields must be completed before saving unless &quot;Yes&quot; is selected in &quot;Use Builder Profile Values&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,42 @@
+.THIS .cursor-pointer {
+  cursor: pointer;
+}
+
+.THIS .areaheader {
+  float: left !important;
+  margin: 5px !important;
+  border-width: thin !important;
+  width: 100% !important;
+}
+
+.THIS .area-column {
+  width: 10rem !important;
+}
+
+.THIS .quantity-column {
+  width: 2rem !important;
+}
+
+.THIS .area-note-column {
+  width: 25rem !important;
+}
+
+.THIS .header-gray th {
+  background-color: #e8e8e8 !important;
+}
+
+.THIS .note-color {
+  color: rgb(0, 109, 204);
+}
+
+.THIS .line-table > tbody > tr > td {
+  height: 50px; /* works as min-height on td */
+}
+
+.THIS .area-table td {
+  vertical-align: top;
+}
+
+.THIS .notes-plain {
+  white-space: normal;
+}

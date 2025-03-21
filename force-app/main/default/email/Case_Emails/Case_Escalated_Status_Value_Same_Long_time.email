@@ -1,0 +1,22 @@
+** System generated email **
+
+You are being informed that Case {!Case.CaseNumber} has been escalated. It has been in the current status longer than expected.  Please review at your earliest convenience. 
+
+Subj.:               {!Case.Subject}{!Case.Link}
+
+
+Owner:            {!Case.OwnerFullName}
+
+Type:               {!Case.Type}
+
+Contact:          {!Case.Contact}
+
+Account:          {!Case.Account}
+
+Phone:            {!Contact.Phone}
+
+
+
+
+
+.

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BP_Line_Item_VP_to_Tile_Transition</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(  VP_to_Tile_Transition__c  ,&quot;Included&quot;),
+ISBLANK(  VP_to_Tile_Transition_Specifics__c ))</errorConditionFormula>
+    <errorDisplayField>VP_to_Tile_Transition_Specifics__c</errorDisplayField>
+    <errorMessage>A value must be provided when &quot;Included&quot; is selected from &apos;VP to Tile Transition&apos; picklist.</errorMessage>
+</ValidationRule>

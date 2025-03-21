@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Disable ALL validation rules across all objects IF they have been configured to use Activation Settings --></help>
+    <label><!-- Disable All Validations --></label>
+    <name>Disable_All_Validations__c</name>
+</CustomFieldTranslation>

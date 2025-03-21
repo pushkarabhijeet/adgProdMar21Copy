@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Grout all tops of showers --></label>
+    <name>Grout_all_tops_of_showers__c</name>
+</CustomFieldTranslation>

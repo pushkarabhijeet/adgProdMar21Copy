@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Required when &quot;Included&quot; is selected from the &apos;VP to Tile Transition&apos; picklist --></help>
+    <label><!-- VP to Tile Transition Specifics --></label>
+    <name>VP_to_Tile_Transition_Specifics__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Integration_Bypass_Validation_Rule</name>
+    </customPermissions>
+    <description>This user that is in this Permission set can bypass the validation rule if this permission set is checked within the said rule</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Integration Bypass Validation Rule</label>
+    <license>Salesforce</license>
+</PermissionSet>

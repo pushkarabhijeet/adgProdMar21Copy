@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsPrimary_Role_must_have_a_Value_of_1</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ Role__c = &quot;IsPrimary&quot;,
+  Count__c &lt;&gt; 1
+)</errorConditionFormula>
+    <errorDisplayField>Count__c</errorDisplayField>
+    <errorMessage>If the &apos;this count this Role&apos; you&apos;re counting is &quot;IsPrimary&quot; then the &apos;to this count&apos; must be 1.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Billing Info --></label>
+    <name>Case_Billing_Info__c</name>
+    <picklistValues>
+        <masterLabel>Billable</masterLabel>
+        <translation><!-- Billable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Builder Accommodation</masterLabel>
+        <translation><!-- Builder Accommodation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installer Back Charge</masterLabel>
+        <translation><!-- Installer Back Charge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufacturer Claim</masterLabel>
+        <translation><!-- Manufacturer Claim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBD - Billing</masterLabel>
+        <translation><!-- TBD - Billing --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

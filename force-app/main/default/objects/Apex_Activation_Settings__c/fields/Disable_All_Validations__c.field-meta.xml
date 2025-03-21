@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disable_All_Validations__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Disable ALL validation rules across all objects IF they have been configured to use Activation Settings</inlineHelpText>
+    <label>Disable All Validations</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

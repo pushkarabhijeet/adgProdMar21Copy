@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Community_Profile_Type__c</fullName>
+    <label>Community Profile Type</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Community_Profile_Sub_Category__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Master Bathroom/Shower</fullName>
+                <default>false</default>
+                <label>Master Bathroom/Shower</label>
+            </value>
+            <value>
+                <fullName>Standard Bathroom/Shower</fullName>
+                <default>false</default>
+                <label>Standard Bathroom/Shower</label>
+            </value>
+            <value>
+                <fullName>Pre-Finished Wood</fullName>
+                <default>false</default>
+                <label>Pre-Finished Wood</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Tile (Wall)</controllingFieldValue>
+            <valueName>Master Bathroom/Shower</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tile (Wall)</controllingFieldValue>
+            <valueName>Standard Bathroom/Shower</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wood</controllingFieldValue>
+            <valueName>Pre-Finished Wood</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

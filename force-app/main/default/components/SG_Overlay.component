@@ -1,0 +1,74 @@
+<!--
+/**********************************************************************
+* Name:     SG_Overlay
+* Author:   Strategic Growth, Inc. (www.strategicgrowthinc.com)
+* 
+* ======================================================
+* ======================================================
+* Purpose:                                                      
+* 
+* ======================================================
+* ======================================================
+* History:                                                            
+* VERSION   DATE            INITIALS      DESCRIPTION/FEATURES ADDED
+* 1.0       14-Aug-2018     rwd           Initial Development
+*
+***********************************************************************/
+-->
+
+
+<apex:component > 
+    <!-- Adapted from  Technology Share: http://techsahre.blogspot.com/ -->
+
+    <apex:attribute name="style" default="classic" type="string"
+                    description="the name of the style [classic, processing]"/>
+    <style>
+        <apex:outputPanel layout="none" rendered="{!style == 'processing'}">
+            #overlay {
+            z-index:1000;
+            position:absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            width:100%;
+            background:#fff;
+            opacity:0.45;
+            -moz-opacity:0.45;
+            filter:alpha(opacity=45);
+            visibility:hidden;
+            background-image:url({!$Resource.loadingGif});
+            background-repeat:no-repeat;
+            background-position:center;
+            border:2px solid #000;
+            }
+        </apex:outputPanel>
+
+        <apex:outputPanel layout="none" rendered="{!style == 'classic'}">
+            #overlay {
+            z-index:1000;
+            position:absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            width:100%;
+            background:#000;
+            border:1px solid;
+            opacity:0.45;
+            -moz-opacity:0.45;
+            filter:alpha(opacity=45);
+            visibility:hidden;
+            }
+        </apex:outputPanel>
+    </style>
+    <script type="text/javascript">
+        function showOverlay() {
+        var o = document.getElementById('overlay');
+        o.style.visibility = 'visible';
+        }
+        function hideOverlay() {
+        var o = document.getElementById('overlay');
+        o.style.visibility = 'hidden';
+        }
+
+    </script>
+</apex:component>

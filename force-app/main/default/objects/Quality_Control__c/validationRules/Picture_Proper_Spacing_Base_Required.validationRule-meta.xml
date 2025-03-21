@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Picture_Proper_Spacing_Base_Required</fullName>
+    <active>false</active>
+    <errorConditionFormula>LOWER($Label.SG_DisableValidations) != &quot;true&quot; &amp;&amp;
+AND(
+NOT( ISNEW() ),
+AND(
+OR(RecordType.Name = &quot;QC Wood Install&quot;, RecordType.Name = &quot;QC LVT Install&quot;),
+ISPICKVAL ( Status__c ,&quot;Completed&quot;),
+ISBLANK(Picture_Proper_Spacing_Baseboard_FirePl__c)))</errorConditionFormula>
+    <errorMessage>Please upload a picture of the Proper Spacing of Baseboard/Fireplace</errorMessage>
+</ValidationRule>

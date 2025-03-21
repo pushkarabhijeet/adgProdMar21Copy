@@ -1,0 +1,88 @@
+<!--
+/**********************************************************************
+* Name:     qc_CarpetInstall
+* Author:   Strategic Growth, Inc. (www.strategicgrowthinc.com)
+* 
+* ======================================================
+* ======================================================
+* Purpose:                                                      
+* 
+* ======================================================
+* ======================================================
+* History:                                                            
+* VERSION   DATE            INITIALS      DESCRIPTION/FEATURES ADDED
+* 1.0       22-Jun-2020     rwd           Initial Development           
+*   
+***********************************************************************/ 
+-->
+<!-- Qc Carpet Install -->
+<template>
+        <lightning-card title="QC - Carpet Install" icon-name="custom:custom62">
+                <div class="slds-m-around_medium">
+                        <!--onload={handleLoad} -->
+                        <lightning-record-edit-form object-api-name={objectApiName} record-id={recordId}
+                                onerror={handleError} onsuccess={handleSuccess} onsubmit={handleSubmit}>
+                                <lightning-messages></lightning-messages>
+                                <div class="slds-align_absolute-center">
+                                        <template if:true={spinner}>
+                                                <lightning-spinner class="spins" size="medium"></lightning-spinner>
+                                        </template>
+                                </div>
+                                <lightning-input-field field-name="QC_Date__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Seams_acceptable__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Extra_material_in_attic_designated_area__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Areanyareasdamaged__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Does_job_meet_industry_standards__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Comment__c"></lightning-input-field>
+                                <c-adg-compress-file-upload record-id={recordId} label="Carpet Install Picture" prefix="CarpetInstall_">
+                                </c-adg-compress-file-upload>
+                                <lightning-input-field field-name="Status__c" required></lightning-input-field>
+                                <!--
+                        <lightning-input-field field-name="QC_Date__c" required>
+                        </lightning-input-field>
+                        <lightning-input-field field-name="Seams_acceptable__c" required>
+                        </lightning-input-field>
+                        <lightning-input-field field-name="Extra_material_in_attic_designated_area__c" required>
+                        </lightning-input-field>
+                        <lightning-input-field field-name="Installed_flat_with_industry_specs__c" required>
+                        </lightning-input-field>
+                        <lightning-input-field field-name="Are_any_areas_damaged__c" required>
+                        </lightning-input-field>
+                        <lightning-input-field field-name="Comment__c">
+                        </lightning-input-field>
+                        <c-adg-file-uploader record-id={recordId} label="Carpet Install Picture">
+                        </c-adg-file-uploader>
+                        <lightning-input-field field-name="Status__c" required onchange={handleTypeChange}>
+                        </lightning-input-field>
+                        -->
+                                <!--<p>
+                has case? {hasCase}
+                <br/> house name: {houseName}
+                <br/> account: {accountId}
+                <br/> woId: {woId}
+        </p>-->
+                                <!--
+                        <template if:true={showCaseCreation}>
+                                <c-submit-qc-case record-id={recordId}></c-submit-qc-case>
+                        </template>
+                        -->
+                                <!--<c-child-web-component
+                        record-id={recordId}
+                ></c-child-web-component>-->
+
+                                <div class="slds-m-top_medium">
+                                        <div class="slds-m-top_medium">
+                                                <lightning-button variant="brand" type="submit" name="update"
+                                                        label="Save">
+                                                </lightning-button>
+                                        </div>
+                                </div>
+                        </lightning-record-edit-form>
+                </div>
+        </lightning-card>
+</template>

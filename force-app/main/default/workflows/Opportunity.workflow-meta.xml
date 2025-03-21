@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Opportunity_Closing_reminder_Email</fullName>
+        <description>Opportunity: Closing reminder Email</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Salesforce_System_Folder_DO_NOT_TOUCH/Opportunity_Closing_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Past_Due_Closing</fullName>
+        <description>Opportunity: Past Due Closing</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Salesforce_System_Folder_DO_NOT_TOUCH/Opportunity_Past_Due_Closing</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Past_Due_Notification</fullName>
+        <description>Opportunity Past Due Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Salesforce_System_Folder_DO_NOT_TOUCH/Opportunity_Past_Due_Closing</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Opportunities_Estimated_Rev_per_Home_Un</fullName>
+        <field>Estimated_Revenue_per_Home_Unit__c</field>
+        <formula>Amount  /  of_Homes_Units__c</formula>
+        <name>Opportunities: Estimated Rev per Home/Un</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Opportunity_Business_Dev_Calc_Amount</fullName>
+        <field>Amount</field>
+        <formula>(of_Homes_Units__c ) *  (ExpectedRevenue)</formula>
+        <name>Opportunity: Business Dev Calc Amount</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Opportunity_Close_Date_Auto_Populate</fullName>
+        <field>CloseDate</field>
+        <formula>TODAY()</formula>
+        <name>Opportunity: Close Date Auto Populate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Opportunity_Count_of_Close_Date_Changes</fullName>
+        <field>Date_Change_Count__c</field>
+        <formula>Date_Change_Count__c  + 1</formula>
+        <name>Opportunity: Count of Close Date Changes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Opportunity_Default_State_for_Project_L</fullName>
+        <field>Project_Location_State__c</field>
+        <formula>&quot;California&quot;</formula>
+        <name>Opportunity: Default State for Project L</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Opportunity_Estimated_Project_End_Date</fullName>
+        <field>Estimated_Project_End_Date__c</field>
+        <formula>Estimated_Project_Start_Date__c  +  Project_Duration_months__c* 30.4375</formula>
+        <name>Opportunity: Estimated Project End Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Opportunity_Identify_Account_Status</fullName>
+        <field>Account_Status__c</field>
+        <formula>TEXT(Account.Account_Status__c)</formula>
+        <name>Opportunity: Identify Account Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Opportunity_Name</fullName>
+        <field>Name</field>
+        <formula>LEFT( Account.Name   &amp; &quot; - &quot;  &amp;  Opportunity_Name_Append_short__c &amp;&quot; &quot; &amp;  Close_Date_Year__c , 80)</formula>
+        <name>Opportunity: Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Opportunities%3A Estimated Rev per Home%2FUnit</fullName>
+        <actions>
+            <name>Opportunities_Estimated_Rev_per_Home_Un</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity%3A Close Date Auto Populate</fullName>
+        <actions>
+            <name>Opportunity_Close_Date_Auto_Populate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.IsClosed</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity%3A Closing Reminder</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Entity__c</field>
+            <operation>notEqual</operation>
+            <value>Vintage,NuWood</value>
+        </criteriaItems>
+        <description>Time based</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Opportunity_Closing_reminder_Email</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.CloseDate</offsetFromField>
+            <timeLength>-30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Opportunity_Closing_reminder_Email</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.CloseDate</offsetFromField>
+            <timeLength>-15</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Opportunity_Past_Due_Closing</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.CloseDate</offsetFromField>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Opportunity%3A Count of Close Date Changes</fullName>
+        <actions>
+            <name>Opportunity_Count_of_Close_Date_Changes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR(
+AND(
+ISNEW(),
+NOT(ISBLANK( CloseDate ))),
+ISCHANGED ( CloseDate ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity%3A Default State for Project Loc</fullName>
+        <actions>
+            <name>Opportunity_Default_State_for_Project_L</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Project_Location_State__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Entity__c</field>
+            <operation>equals</operation>
+            <value>NuWood,Vintage</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity%3A Estimated Project End Date</fullName>
+        <actions>
+            <name>Opportunity_Estimated_Project_End_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Estimated_Project_Start_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Project_Duration_months__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity%3A Identify Account Status</fullName>
+        <actions>
+            <name>Opportunity_Identify_Account_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.CloseDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity%3A Past Due Closing Reminder</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>notEqual</operation>
+            <value>Closed Won,Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Entity__c</field>
+            <operation>notEqual</operation>
+            <value>NuWood,Vintage</value>
+        </criteriaItems>
+        <description>Time based</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Opportunity_Past_Due_Notification</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.CloseDate</offsetFromField>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Opportunity_Past_Due_Closing</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.CloseDate</offsetFromField>
+            <timeLength>60</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Opportunity%3A Standard Naming Convention with Append</fullName>
+        <actions>
+            <name>Opportunity_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR(
+    RecordType.DeveloperName = &quot;Single_Family&quot;,
+    RecordType.DeveloperName = &quot;Standard&quot;, 
+    RecordType.DeveloperName = &quot;Revisions&quot;
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

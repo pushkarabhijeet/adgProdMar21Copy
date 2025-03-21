@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Must be Service Resource --></help>
+    <label><!-- Field Service Manager --></label>
+    <name>Field_Service_Manager__c</name>
+    <relationshipLabel><!-- Communities (Field Service Manager) --></relationshipLabel>
+</CustomFieldTranslation>

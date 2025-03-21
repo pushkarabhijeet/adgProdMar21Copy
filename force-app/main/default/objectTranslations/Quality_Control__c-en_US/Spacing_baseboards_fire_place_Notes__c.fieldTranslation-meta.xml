@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Spacing baseboards &amp; fire place Notes --></label>
+    <name>Spacing_baseboards_fire_place_Notes__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Builder_Profile_Plan_Changes_recd_Other</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(  Plan_Changes_Revisions__c ,&quot;Other&quot;),
+ISBLANK( Plan_Changes_Revisions_received_Other__c  ))</errorConditionFormula>
+    <errorDisplayField>Plan_Changes_Revisions_received_Other__c</errorDisplayField>
+    <errorMessage>A value must be provided when &quot;Other&quot; is selected from &apos;Plan Changes/Revisions received by&apos; picklist.</errorMessage>
+</ValidationRule>

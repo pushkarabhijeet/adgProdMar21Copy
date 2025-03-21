@@ -1,0 +1,319 @@
+<aura:component
+  implements="force:hasRecordId"
+  access="global"
+  controller="ADG_OrderLineReport"
+>
+  <aura:attribute name="workOrderDetails" type="Object" default="" />
+  <aura:attribute
+    name="listOfWorkOrderChildDetials"
+    type="Object[]"
+    default="[]"
+  />
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>
+  <lightning:card>
+    <div class="slds-p-around_small">
+      <div class="slds-box">
+        <div class="slds-page-header__row">
+          <div class="slds-page-header__col-title">
+            <div class="slds-media">
+              <div class="slds-media__figure">
+                <span class="slds-icon_container slds-icon-standard-workorder">
+                  <lightning:icon
+                    iconName="standard:work_order"
+                    size="medium"
+                  />
+                </span>
+              </div>
+              <!--Work Order-->
+              <div class="slds-media__body">
+                <div class="slds-page-header__name">
+                  <div class="slds-page-header__name-title">
+                    Work Order
+                    <div class="slds-truncate" title="Work Order">
+                      <a href="{!'/'+v.workOrderDetails.Id}"
+                        >{!v.workOrderDetails.WorkOrderNumber}</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Account Name-->
+              <div class="slds-media__body">
+                <div class="slds-page-header__name">
+                  <div class="slds-page-header__name-title">
+                    Account
+                    <div class="slds-truncate" title="Account">
+                      <a href="{!'/'+v.workOrderDetails.AccountId}"
+                        >{!v.workOrderDetails.Account.Name}</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Installer Name -->
+              <div class="slds-media__body">
+                <div class="slds-page-header__name">
+                  <div class="slds-page-header__name-title">
+                    Installer Account
+                    <div title="Installer Account">
+                      {!v.workOrderDetails.Installer_Account__r.Name}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Job Type -->
+              <div class="slds-media__body">
+                <div class="slds-page-header__name">
+                  <div class="slds-page-header__name-title">
+                    Job Type
+                    <div class="slds-truncate" title="Job Type">
+                      {!v.workOrderDetails.Job_Type__c}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ERP Order Number -->
+              <div class="slds-media__body">
+                <div class="slds-page-header__name">
+                  <div class="slds-page-header__name-title">
+                    ERP Order Number
+                    <div class="slds-truncate" title="ERP Order Number">
+                      {!v.workOrderDetails.ERP_Order_Number__c}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slds-card slds-p-around_small">
+      <div class="slds-scrollable--x">
+        <table
+          class="slds-table slds-no-row-hover slds-table_bordered slds-border_top slds-border_bottom slds-border_left slds-border_right line-table"
+        >
+          <thead>
+            <tr class="slds-line-height_reset header-gray">
+              <th class="plusheader">
+                <div title="Expandable">
+                  <!-- this is reserved for the plus button -->
+                </div>
+              </th>
+              <th>#</th>
+              <th>Style</th>
+              <th>Color</th>
+              <th>Qty</th>
+              <th>Units</th>
+              <th>Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <aura:iteration
+              items="{!v.listOfWorkOrderChildDetials}"
+              var="item"
+              indexVar="itemIndex"
+            >
+              <aura:if
+                isTrue="{! or(item.lineItemsListRecord.Areas__r,item.lineItemsListRecord.Notes__c) }"
+              >
+                <tr
+                  class="cursor-pointer"
+                  onclick="{!c.childElementDropdown}"
+                  data-value="{!itemIndex}"
+                >
+                  <td>
+                    <div>
+                      <lightning:buttonIcon
+                        iconName="{!item.expanded?'utility:dash':'utility:add'}"
+                        alternativeText="plus"
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="slds-cell-wrap">
+                      {!item.lineItemsListRecord.LineNumber__c}
+                    </div>
+                  </td>
+                  <td>
+                    <div class="slds-cell-wrap">
+                      {!item.lineItemsListRecord.Style_Item__c}
+                    </div>
+                  </td>
+                  <td>
+                    <div class="slds-cell-wrap">
+                      {!item.lineItemsListRecord.Color_Description__c}
+                    </div>
+                  </td>
+                  <td>
+                    <div class="slds-cell-wrap">
+                      <lightning:formattedNumber
+                        value="{!item.lineItemsListRecord.Quantity__c}"
+                        maximumFractionDigits="2"
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="slds-cell-wrap">
+                      {!item.lineItemsListRecord.UnitOfMeasure__c}
+                    </div>
+                  </td>
+                  <td>
+                    <div class="slds-cell-wrap">
+                      {!item.lineItemsListRecord.Line_Status__c}
+                    </div>
+                  </td>
+
+                  <td class="slds-text-align_center">
+                    <div class="slds-cell-wrap">
+                      <lightning:icon
+                        iconName="{!item.hasNotes?'utility:note':''}"
+                        alternativeText="New note"
+                        title="New note"
+                        size="small"
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <aura:if isTrue="{!item.expanded}">
+                  <tr>
+                    <td colspan="8">
+                      <section class="section">
+                        <aura:if isTrue="{!item.lineItemsListRecord.Areas__r}">
+                          <div class="areaheader">
+                            <table
+                              class="slds-table area-table slds-no-row-hover slds-table_bordered slds-border_top slds-border_bottom slds-border_left slds-border_right"
+                            >
+                              <thead>
+                                <tr class="header-gray">
+                                  <th class="area-column">Area</th>
+                                  <th class="quantity-column">Qty</th>
+                                  <th class="quantity-column">Units</th>
+                                  <th class="area-note-column">Notes</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <aura:iteration
+                                  items="{!item.lineItemsListRecord.Areas__r}"
+                                  var="area"
+                                  indexVar="areaIndex"
+                                >
+                                  <tr>
+                                    <td>
+                                      <div class="slds-cell-wrap">
+                                        {!area.Area_Name__c}
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="slds-cell-wrap">
+                                        <lightning:formattedNumber
+                                          value="{!area.Area_Quantity__c}"
+                                          maximumFractionDigits="2"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="slds-cell-wrap">
+                                        {!item.lineItemsListRecord.UnitOfMeasure__c}
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div>
+                                        <lightning:formattedRichText
+                                          value="{!area.Area_Note__c}"
+                                        />
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </aura:iteration>
+                              </tbody>
+                            </table>
+                          </div>
+                        </aura:if>
+
+                        
+                        <aura:if isTrue="{!item.lineItemsListRecord.Notes__c}">
+                          <div class="areaheader">
+                            <table
+                              class="slds-table slds-no-row-hover slds-table_bordered slds-border_top slds-border_bottom slds-border_left slds-border_right"
+                            >
+                              <thead>
+                                <tr class="header-gray">
+                                  <th>Notes</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div>
+                                      <lightning:formattedRichText
+                                        value="{!item.lineItemsListRecord.Notes__c}"
+                                        readonly="true"
+                                      />
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </aura:if>
+                         
+                      </section>
+                    </td>
+                  </tr>
+                </aura:if>
+                <aura:set attribute="else">
+                  <tr
+                    class="header-row"
+                    onclick="{!c.childElementDropdown}"
+                    data-value="{!itemIndex}"
+                  >
+                    <td class="row">
+                      <div>
+                        <!-- this place is reserved to allign # Line Number when Icon is not displayed -->
+                      </div>
+                    </td>
+                    <td>
+                      <div class="slds-cell-wrap">
+                        {!item.lineItemsListRecord.LineNumber__c}
+                      </div>
+                    </td>
+                    <td>
+                      <div class="slds-cell-wrap">
+                        {!item.lineItemsListRecord.Style_Item__c}
+                      </div>
+                    </td>
+                    <td>
+                      <div class="slds-cell-wrap">
+                        {!item.lineItemsListRecord.Color_Description__c}
+                      </div>
+                    </td>
+                    <td>
+                      <div class="slds-cell-wrap">
+                        <lightning:formattedNumber
+                          value="{!item.lineItemsListRecord.Quantity__c}"
+                          maximumFractionDigits="2"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="slds-cell-wrap">
+                        {!item.lineItemsListRecord.UnitOfMeasure__c}
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <div class="slds-cell-wrap">
+                        {!item.lineItemsListRecord.Line_Status__c}
+                      </div>
+                    </td>
+                  </tr>
+                </aura:set>
+              </aura:if>
+            </aura:iteration>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </lightning:card>
+</aura:component>

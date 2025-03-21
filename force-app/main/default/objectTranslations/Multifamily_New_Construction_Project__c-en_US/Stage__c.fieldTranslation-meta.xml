@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Stage --></label>
+    <name>Stage__c</name>
+    <picklistValues>
+        <masterLabel>Close Out</masterLabel>
+        <translation><!-- Close Out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Execution</masterLabel>
+        <translation><!-- Execution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prep</masterLabel>
+        <translation><!-- Prep --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Register Project with Manufacturer</masterLabel>
+        <translation><!-- Register Project with Manufacturer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

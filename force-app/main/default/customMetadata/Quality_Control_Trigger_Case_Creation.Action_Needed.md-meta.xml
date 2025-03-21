@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Action Needed</label>
+    <protected>false</protected>
+    <values>
+        <field>Case_Material_If_No__c</field>
+        <value xsi:type="xsd:string">Needs to be ordered</value>
+    </values>
+    <values>
+        <field>Case_Material_If_Yes__c</field>
+        <value xsi:type="xsd:string">On Location</value>
+    </values>
+    <values>
+        <field>Case_Subject__c</field>
+        <value xsi:type="xsd:string">Action Needed</value>
+    </values>
+    <values>
+        <field>Case_Type__c</field>
+        <value xsi:type="xsd:string">Repair</value>
+    </values>
+    <values>
+        <field>List_of_QC_Record_Types__c</field>
+        <value xsi:type="xsd:string">QC_Wood_Install</value>
+    </values>
+    <values>
+        <field>QC_Field_Name_for_Material_Option__c</field>
+        <value xsi:type="xsd:string">Extra_material_in_attic_designated_area__c</value>
+    </values>
+    <values>
+        <field>QC_Field_Name_to_Verify__c</field>
+        <value xsi:type="xsd:string">Action_Needed__c</value>
+    </values>
+    <values>
+        <field>QC_Field_Value__c</field>
+        <value xsi:type="xsd:string">N/A</value>
+    </values>
+</CustomMetadata>

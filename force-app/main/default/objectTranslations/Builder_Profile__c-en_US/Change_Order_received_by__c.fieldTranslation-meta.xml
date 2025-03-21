@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- How will we be notified of change orders? --></help>
+    <label><!-- Change Order received by: --></label>
+    <name>Change_Order_received_by__c</name>
+    <picklistValues>
+        <masterLabel>Builder Site</masterLabel>
+        <translation><!-- Builder Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email</masterLabel>
+        <translation><!-- Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SupplyPro</masterLabel>
+        <translation><!-- SupplyPro --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

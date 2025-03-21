@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Bid Pro</fullName>
+        <default>false</default>
+        <label>Bid Pro</label>
+    </customValue>
+    <customValue>
+        <fullName>Building Connect</fullName>
+        <default>false</default>
+        <label>Building Connect</label>
+    </customValue>
+    <customValue>
+        <fullName>Construct Connect</fullName>
+        <default>false</default>
+        <label>Construct Connect</label>
+    </customValue>
+    <customValue>
+        <fullName>Firstbidding.net</fullName>
+        <default>false</default>
+        <label>Firstbidding.net</label>
+    </customValue>
+    <customValue>
+        <fullName>Isqftmail.com</fullName>
+        <default>false</default>
+        <label>Isqftmail.com</label>
+    </customValue>
+    <customValue>
+        <fullName>Planhub.com</fullName>
+        <default>false</default>
+        <label>Planhub.com</label>
+    </customValue>
+    <customValue>
+        <fullName>Procore</fullName>
+        <default>false</default>
+        <label>Procore</label>
+    </customValue>
+    <customValue>
+        <fullName>Smartbid.net</fullName>
+        <default>false</default>
+        <label>Smartbid.net</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Bid Software Picklist</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

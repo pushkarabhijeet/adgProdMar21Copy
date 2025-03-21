@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BP_Line_Item_Underlayment_Other</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(  Underlayment__c  ,&quot;Other&quot;),
+ISBLANK( Underlayment_Other__c ))</errorConditionFormula>
+    <errorDisplayField>Underlayment_Other__c</errorDisplayField>
+    <errorMessage>A value must be provided when &quot;Other&quot; is selected from &apos;Underlayment&apos; picklist.</errorMessage>
+</ValidationRule>

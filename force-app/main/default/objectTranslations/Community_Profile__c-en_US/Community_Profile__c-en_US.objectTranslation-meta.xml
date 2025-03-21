@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Community Profile</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Community Profiles</value>
+    </caseValues>
+    <layouts>
+        <layout>Builder Specific Profile Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- From the Builder Profile --></label>
+            <section>From the Builder Profile</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Builder Specific Profile Page Layout (Carpet)</layout>
+        <sections>
+            <label><!-- Carpet Details --></label>
+            <section>Carpet Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Builder Specific Profile Page Layout (Tile)</layout>
+        <sections>
+            <label><!-- Backsplash Details --></label>
+            <section>Backsplash Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Tile Details --></label>
+            <section>General Tile Details</section>
+        </sections>
+        <sections>
+            <label><!-- Wall Tile Details --></label>
+            <section>Wall Tile Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Builder Specific Profile Page Layout (Vinyl/Wood)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Vinyl/Wood Details --></label>
+            <section>Vinyl/Wood Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Community Specific Profile Layout</layout>
+        <sections>
+            <label><!-- Community Specific Entries --></label>
+            <section>Community Specific Entries</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Community Specific Profile Page Layout (Carpet)</layout>
+        <sections>
+            <label><!-- Carpet Details --></label>
+            <section>Carpet Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Community Specific Profile Page Layout (Tile)</layout>
+        <sections>
+            <label><!-- Backsplash Details --></label>
+            <section>Backsplash Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Tile Details --></label>
+            <section>General Tile Details</section>
+        </sections>
+        <sections>
+            <label><!-- Wall Tile Details --></label>
+            <section>Wall Tile Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Community Specific Profile Page Layout (Vinyl/Wood)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Vinyl/Wood Details --></label>
+            <section>Vinyl/Wood Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Builder Specific Profile --></label>
+        <name>Builder_Specific_Profile</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Builder Specific Profile Record Type (Carpet) --></label>
+        <name>Builder_Specific_Profile_Record_Type_Carpet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Builder Specific Profile Record Type (Tile) --></label>
+        <name>Builder_Specific_Profile_Record_Type_Tile</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Builder Specific Profile Record Type (Vinyl/Wood) --></label>
+        <name>Builder_Specific_Profile_Record_Type_Vinyl_Wood</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Community Specific Profile --></label>
+        <name>Community_Specific_Profile</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Community Specific Profile Record Type (Carpet) --></label>
+        <name>Community_Specific_Profile_Record_Type_Carpet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Community Specific Profile Record Type (Tile) --></label>
+        <name>Community_Specific_Profile_Record_Type_Tile</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Community Specific Profile Record Type (Vinyl/Wood) --></label>
+        <name>Community_Specific_Profile_Record_Type_Vinyl_Wood</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

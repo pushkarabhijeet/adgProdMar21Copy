@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Accents &amp; Interiors</fullName>
+        <default>false</default>
+        <label>Accents &amp; Interiors</label>
+    </customValue>
+    <customValue>
+        <fullName>Atlanta West</fullName>
+        <default>false</default>
+        <label>Atlanta West</label>
+    </customValue>
+    <customValue>
+        <fullName>Dixie Interiors</fullName>
+        <default>false</default>
+        <label>Dixie Interiors</label>
+    </customValue>
+    <customValue>
+        <fullName>Great Floors</fullName>
+        <default>false</default>
+        <label>Great Floors</label>
+    </customValue>
+    <customValue>
+        <fullName>JR McDade</fullName>
+        <default>false</default>
+        <label>JR McDade</label>
+    </customValue>
+    <customValue>
+        <fullName>Kerman’s</fullName>
+        <default>false</default>
+        <label>Kerman’s</label>
+    </customValue>
+    <customValue>
+        <fullName>Malibu</fullName>
+        <default>false</default>
+        <label>Malibu</label>
+    </customValue>
+    <customValue>
+        <fullName>Nonn’s</fullName>
+        <default>false</default>
+        <label>Nonn’s</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacific Carpets</fullName>
+        <default>false</default>
+        <label>Pacific Carpets</label>
+    </customValue>
+    <customValue>
+        <fullName>Value Plus</fullName>
+        <default>false</default>
+        <label>Value Plus</label>
+    </customValue>
+    <customValue>
+        <fullName>WCCV</fullName>
+        <default>false</default>
+        <label>WCCV</label>
+    </customValue>
+    <masterLabel>MF PM and NC Division List</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

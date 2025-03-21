@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_Record_Type_BS_Carpet</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Builder_Specific_Profile_Record_Type_Carpet</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type (BS Carpet)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Record_Type_BS_Tile</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Builder_Specific_Profile_Record_Type_Tile</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type (BS Tile)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Record_Type_BS_Vinyl_Wood</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Builder_Specific_Profile_Record_Type_Vinyl_Wood</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type (BS Vinyl/Wood)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Record_Type_CS_Carpet</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Community_Specific_Profile_Record_Type_Carpet</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type (CS Carpet)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Record_Type_CS_Tile</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Community_Specific_Profile_Record_Type_Tile</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type (CS Tile)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Record_Type_CS_Vinyl_Wood</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Community_Specific_Profile_Record_Type_Vinyl_Wood</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type (CS Vinyl/Wood)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Community Profile%3A Set Builder Specific Record Type %28Carpet%29</fullName>
+        <actions>
+            <name>Update_Record_Type_BS_Carpet</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Community_Profile__c.BP_Sub_Category__c</field>
+            <operation>equals</operation>
+            <value>Carpet</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Community Profile%3A Set Builder Specific Record Type %28Tile%29</fullName>
+        <actions>
+            <name>Update_Record_Type_BS_Tile</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Community_Profile__c.BP_Sub_Category__c</field>
+            <operation>equals</operation>
+            <value>Tile (Backsplash)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Community_Profile__c.BP_Sub_Category__c</field>
+            <operation>equals</operation>
+            <value>Tile (Floor)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Community_Profile__c.BP_Sub_Category__c</field>
+            <operation>equals</operation>
+            <value>Tile (Wall)</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Community Profile%3A Set Builder Specific Record Type %28Vinyl%2FWood%29</fullName>
+        <actions>
+            <name>Update_Record_Type_BS_Vinyl_Wood</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Community_Profile__c.BP_Sub_Category__c</field>
+            <operation>equals</operation>
+            <value>Vinyl (Plank)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Community_Profile__c.BP_Sub_Category__c</field>
+            <operation>equals</operation>
+            <value>Vinyl (Sheet)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Community_Profile__c.BP_Sub_Category__c</field>
+            <operation>equals</operation>
+            <value>Wood</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Community Profile%3A Set Community Specific Record Type %28Carpet%29</fullName>
+        <actions>
+            <name>Update_Record_Type_CS_Carpet</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Community_Profile__c.Community_Profile_Sub_Category__c</field>
+            <operation>equals</operation>
+            <value>Carpet</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Community Profile%3A Set Community Specific Record Type %28Tile%29</fullName>
+        <actions>
+            <name>Update_Record_Type_CS_Tile</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Community_Profile__c.Community_Profile_Sub_Category__c</field>
+            <operation>equals</operation>
+            <value>Tile (Backsplash),Tile (Floor),Tile (Wall)</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Community Profile%3A Set Community Specific Record Type %28Vinyl%2FWood%29</fullName>
+        <actions>
+            <name>Update_Record_Type_CS_Vinyl_Wood</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Community_Profile__c.Community_Profile_Sub_Category__c</field>
+            <operation>equals</operation>
+            <value>Vinyl (Plank),Vinyl (Sheet),Wood</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

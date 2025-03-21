@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Manager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field should be populated only by Entities using Automatic Case Assignment. This field allows process builder to automatically assign new cases to the Case Manager upon creation. If this field is populated by an Entity not using Auto case assignment, nothing will happen.</description>
+    <label>Case Manager</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Communities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

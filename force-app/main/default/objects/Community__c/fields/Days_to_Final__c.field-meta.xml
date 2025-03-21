@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_to_Final__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Build_Cycle_for_Community__c ,
+&quot;Express Production Cycle&quot;, &quot;48&quot;,
+&quot;Normal Production Cycle&quot;, &quot;99&quot;,
+&quot;Custom Production Cycle&quot;, &quot;81&quot;,
+&quot;Custom Plus Production Cycle&quot;, &quot;106&quot;,
+&quot;Test Cycle&quot;, &quot;1&quot;,
+&quot;&quot;,NULL,
+&quot;No Cycle Time Assigned&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Based on Dried-In date</inlineHelpText>
+    <label>Days to Final</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

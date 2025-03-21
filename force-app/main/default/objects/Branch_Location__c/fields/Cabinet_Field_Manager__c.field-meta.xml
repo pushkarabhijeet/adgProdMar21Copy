@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cabinet_Field_Manager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>This field is used to populate a default &apos;cabinet field manager&apos;</inlineHelpText>
+    <label>Default Cabinet Field Manager</label>
+    <referenceTo>ServiceResource</referenceTo>
+    <relationshipLabel>Branch Locations (Default Cabinet Field Manager)</relationshipLabel>
+    <relationshipName>Branch_Locations3</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

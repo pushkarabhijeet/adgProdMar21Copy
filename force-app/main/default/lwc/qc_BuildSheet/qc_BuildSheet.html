@@ -1,0 +1,76 @@
+<!--
+/**********************************************************************
+* Name:     qc_BuildSheet
+* Author:   Strategic Growth, Inc. (www.strategicgrowthinc.com)
+* 
+* ======================================================
+* ======================================================
+* Purpose:                                                      
+* 
+* ======================================================
+* ======================================================
+* History:                                                            
+* VERSION   DATE            INITIALS      DESCRIPTION/FEATURES ADDED
+* 1.0       10-Nov-2020     rwd           Initial Development           
+*   
+***********************************************************************/ 
+-->
+<!-- Qc Build Sheet -->
+<template>
+    <lightning-card
+            title="QC - Build Sheet"
+            icon-name="custom:custom62">
+        <div class="slds-m-around_medium">
+            <!--onload={handleLoad}-->
+            <lightning-record-edit-form
+                    object-api-name={objectApiName}
+                    record-id={recordId}
+                    
+                    onerror={handleError}
+                    onsuccess={handleSuccess}
+                    onsubmit ={handleSubmit}>
+                <lightning-messages></lightning-messages>
+
+                <div class="slds-align_absolute-center">
+                    <template if:true={spinner}>
+                        <lightning-spinner class="spins" size="medium"></lightning-spinner>
+                    </template>
+                </div>
+
+                <lightning-input-field
+                        field-name="QC_Date__c" required>
+                </lightning-input-field>
+
+                <lightning-file-upload
+                        label="Build Measure Picture"
+                        name="fileUploader_Build"
+                        accept={acceptedFormats}
+                        record-id={recordId}
+                        onuploadfinished={handleUploadFinished_Build}
+                        multiple>
+                </lightning-file-upload>
+
+
+                <lightning-input-field field-name="Status__c"  required onchange={handleTypeChange}></lightning-input-field>
+                <!--
+                <template if:true={showCaseCreation}>
+
+                    <c-submit-qc-case record-id={recordId}></c-submit-qc-case> 
+                </template>
+                -->
+
+                <div class="slds-m-top_medium">
+                    <div class="slds-m-top_medium">
+                        <lightning-button
+                                variant="brand"
+                                type="submit"
+                                name="update"
+                                label="Save">
+                        </lightning-button>
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+        </div>
+
+    </lightning-card>
+</template>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BP_T_Molds_Specifics__c</fullName>
+    <externalId>false</externalId>
+    <formula>Builder_Specific_Profile__r.T_Molds_Specifics__c</formula>
+    <inlineHelpText>From Builder Profile Line Item</inlineHelpText>
+    <label>T-Molds Specifics</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

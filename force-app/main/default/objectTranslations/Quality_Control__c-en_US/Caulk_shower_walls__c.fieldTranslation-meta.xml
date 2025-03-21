@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Caulk shower walls --></label>
+    <name>Caulk_shower_walls__c</name>
+</CustomFieldTranslation>

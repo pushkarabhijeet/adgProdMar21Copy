@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Work Order Layout (Internal System Admin)</layout>
+        <sections>
+            <label><!-- Install Schedule --></label>
+            <section>Install Schedule</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Information --></label>
+            <section>Internal Information</section>
+        </sections>
+        <sections>
+            <label><!-- Location --></label>
+            <section>Location</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Work Order Layout (Internal)</layout>
+        <sections>
+            <label><!-- Install Schedule --></label>
+            <section>Install Schedule</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Information --></label>
+            <section>Internal Information</section>
+        </sections>
+        <sections>
+            <label><!-- Location --></label>
+            <section>Location</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Work Order Layout (Standard Admin)</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Install Schedule --></label>
+            <section>Install Schedule</section>
+        </sections>
+        <sections>
+            <label><!-- Installer Information --></label>
+            <section>Installer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Information --></label>
+            <section>Internal Information</section>
+        </sections>
+        <sections>
+            <label><!-- Payment --></label>
+            <section>Payment</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Work Order Layout (Standard)</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Install Schedule --></label>
+            <section>Install Schedule</section>
+        </sections>
+        <sections>
+            <label><!-- Installer Information --></label>
+            <section>Installer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Information --></label>
+            <section>Internal Information</section>
+        </sections>
+        <sections>
+            <label><!-- Payment --></label>
+            <section>Payment</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Create Case --></label>
+        <name>Create_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+</CustomObjectTranslation>

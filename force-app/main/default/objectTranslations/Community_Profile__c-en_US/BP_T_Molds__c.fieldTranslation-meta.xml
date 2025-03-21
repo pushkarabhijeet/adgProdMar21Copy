@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- From Builder Profile Line Item --></help>
+    <label><!-- T-Molds --></label>
+    <name>BP_T_Molds__c</name>
+</CustomFieldTranslation>

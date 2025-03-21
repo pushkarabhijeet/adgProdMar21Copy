@@ -1,0 +1,33 @@
+.contract-pro-panel {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 1em 1em 1em;
+}
+
+.left {
+  height: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2rem;
+  text-align: center;
+}
+
+/* .right {
+  width: 60%;
+  border: solid 1px #000;
+} */
+
+/* .control-area {
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-color: rgb(233, 233, 235);
+  border-width: 1px;
+  border-style: solid;
+  background-color: var(--lwc-colorBackground, #f3f2f2);
+  border-radius: 5px;
+  margin: 0.8em 0.8em 0 0.8em;
+  padding: 1em;
+  min-height: 5em;
+  max-height: 20em;
+} */

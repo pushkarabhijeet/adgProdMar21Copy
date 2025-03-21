@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>WOOD / FINE TUNE</label>
+    <protected>false</protected>
+    <values>
+        <field>Allow_Duplicates__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Community_Field_to_Verify__c</field>
+        <value xsi:type="xsd:string">QC_Fine_Tune_Checklist__c</value>
+    </values>
+    <values>
+        <field>Day_Count_Field_Name__c</field>
+        <value xsi:type="xsd:string">Day_Count_Fine_Tune__c</value>
+    </values>
+    <values>
+        <field>Job_Type__c</field>
+        <value xsi:type="xsd:string">WOOD / FINE TUNE</value>
+    </values>
+    <values>
+        <field>Quality_Control_Record_Type__c</field>
+        <value xsi:type="xsd:string">QC_Fine_Tune_Checklist</value>
+    </values>
+</CustomMetadata>

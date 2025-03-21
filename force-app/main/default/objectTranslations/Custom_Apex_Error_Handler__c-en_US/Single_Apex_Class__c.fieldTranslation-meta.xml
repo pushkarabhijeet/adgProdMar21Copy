@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- List the name of a single apex class from which you want to get emails upon errors - if and only if the apex class was coded to leverage these settings. If left blank, person will get every email possible. --></help>
+    <label><!-- Single Apex Class --></label>
+    <name>Single_Apex_Class__c</name>
+</CustomFieldTranslation>

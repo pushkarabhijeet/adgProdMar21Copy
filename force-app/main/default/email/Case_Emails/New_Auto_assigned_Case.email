@@ -1,0 +1,8 @@
+A new case has been auto-assigned to you: {!Case.CaseNumber}
+
+Account: {!Case.Account}
+Community: {!Case.Community__c}
+House/Unit: {!Case.Asset}
+
+Description: {!Case.Subject}
+Case: {!Case.Description}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Underlayment_on_2nd_Floor__c</fullName>
+    <label>Underlayment on 2nd Floor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>1/4&quot;</fullName>
+                <default>false</default>
+                <label>1/4&quot;</label>
+            </value>
+            <value>
+                <fullName>Hardi</fullName>
+                <default>false</default>
+                <label>Hardi</label>
+            </value>
+            <value>
+                <fullName>Durock</fullName>
+                <default>false</default>
+                <label>Durock</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

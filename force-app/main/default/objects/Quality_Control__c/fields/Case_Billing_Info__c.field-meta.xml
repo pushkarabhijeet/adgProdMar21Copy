@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Billing_Info__c</fullName>
+    <defaultValue>&quot;Please select a value&quot;</defaultValue>
+    <label>Case Billing Info</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Billable</fullName>
+                <default>false</default>
+                <label>Billable</label>
+            </value>
+            <value>
+                <fullName>Installer Back Charge</fullName>
+                <default>false</default>
+                <label>Installer Back Charge</label>
+            </value>
+            <value>
+                <fullName>Manufacturer Claim</fullName>
+                <default>false</default>
+                <label>Manufacturer Claim</label>
+            </value>
+            <value>
+                <fullName>TBD - Billing</fullName>
+                <default>false</default>
+                <label>TBD - Billing</label>
+            </value>
+            <value>
+                <fullName>Builder Accommodation</fullName>
+                <default>false</default>
+                <label>Builder Accommodation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

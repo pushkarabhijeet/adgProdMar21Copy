@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Height_at_Dropped_Venthood__c</fullName>
+    <label>Height at Dropped Venthood</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bottom of Vent</fullName>
+                <default>false</default>
+                <label>Bottom of Vent</label>
+            </value>
+            <value>
+                <fullName>Top of Cabinets</fullName>
+                <default>false</default>
+                <label>Top of Cabinets</label>
+            </value>
+            <value>
+                <fullName>To the Ceiling</fullName>
+                <default>false</default>
+                <label>To the Ceiling</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

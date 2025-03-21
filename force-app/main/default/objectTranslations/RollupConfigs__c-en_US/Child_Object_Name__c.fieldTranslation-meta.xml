@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Stores the API name of the child object which contains fields to be rolled up by the Parent --></help>
+    <label><!-- Child Object Name --></label>
+    <name>Child_Object_Name__c</name>
+</CustomFieldTranslation>

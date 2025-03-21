@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select Yes to generate QC &amp; Tasks as reminder to confirm Slab, Dried-In &amp; Order Date (by house).   Select No does not generate task reminders or QC forms. --></help>
+    <label><!-- Pre-Walk &amp; Job Start QC Needed --></label>
+    <name>Control_Date_Tasks_Needed__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

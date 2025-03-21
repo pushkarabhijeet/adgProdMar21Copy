@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Builder_Profile_Line_Item_Record_Type_Tile</fullName>
+    <active>true</active>
+    <label>Builder Profile Line Item Record Type (Tile)</label>
+    <picklistValues>
+        <picklist>Adhesive__c</picklist>
+        <values>
+            <fullName>Installer supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplied to Installer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Flooring</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Charge_Cover_with_Paper_Cardboard__c</picklist>
+        <values>
+            <fullName>Charged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Included</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cover_Floors_With__c</picklist>
+        <values>
+            <fullName>Cardboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nothing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paper</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Height_at_Dropped_Venthood__c</picklist>
+        <values>
+            <fullName>Bottom of Vent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To the Ceiling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Top of Cabinets</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reducers__c</picklist>
+        <values>
+            <fullName>Included %28specify%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Included</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shoemold__c</picklist>
+        <values>
+            <fullName>Included %28specify%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Included</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Category__c</picklist>
+        <values>
+            <fullName>Tile %28Backsplash%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tile %28Floor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tile %28Wall%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>T_Molds__c</picklist>
+        <values>
+            <fullName>Included %28specify%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Included</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>T_Seams_Allowed__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Trim_Type__c</picklist>
+        <values>
+            <fullName>3x6 Wall Tile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6x6 Wall Tile</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Master Bathroom%2FShower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard Bathroom%2FShower</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Underlayment__c</picklist>
+        <values>
+            <fullName>Hardi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Underlayment_on_2nd_Floor__c</picklist>
+        <values>
+            <fullName>1%2F4%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Durock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VP_to_Tile_Transition__c</picklist>
+        <values>
+            <fullName>Included %28specify%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Included</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Wood_Look_Default_Install__c</picklist>
+        <values>
+            <fullName>Front to Back</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Side to Side</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

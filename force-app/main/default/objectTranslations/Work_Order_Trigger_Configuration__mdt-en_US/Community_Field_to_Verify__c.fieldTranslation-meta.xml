@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Name of the community picklist field that should be checked &quot;Yes&quot; for the trigger to create the QC record --></help>
+    <label><!-- Community Field to Verify --></label>
+    <name>Community_Field_to_Verify__c</name>
+</CustomFieldTranslation>

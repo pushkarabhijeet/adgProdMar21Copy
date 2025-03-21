@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What field on the Opportunity should trigger when to validate the Roles? Must be the API Field Name (e.g. My_Custom_Field__c NOT My Custom Field) --></help>
+    <label><!-- If this field --></label>
+    <name>Field_To_Check__c</name>
+</CustomFieldTranslation>

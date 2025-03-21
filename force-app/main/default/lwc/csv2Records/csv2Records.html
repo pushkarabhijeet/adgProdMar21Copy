@@ -1,0 +1,24 @@
+<!-- sldsValidatorIgnore -->
+<template>
+  <lightning-card title="CSV To Datatable" icon-name="doctype:csv">
+    <div class="slds-align_absolute-center slds-text-heading_medium">
+      <a onclick={downloadTemplate} > Click to download the template </a>
+    </div>
+      <div class="slds-p-around_medium">
+        <strong>Your file:</strong> {fileName} <br /><br />
+        <lightning-input
+          type="file"
+          label="Please upload a UTF-8 encoded, comma separated .csv file"
+          accept=".csv"
+          onchange={handleFileUpload}>
+        </lightning-input>
+      
+    </div>
+      <div style="height: 300px">
+          <lightning-datatable key-field="id" data={data} columns={columns} hide-checkbox-column></lightning-datatable>
+      </div>
+    <div>
+      <lightning-button variant="brand" label="Process Records" title="Primary action" onclick={handleInsertClick}></lightning-button>
+    </div>
+  </lightning-card>
+</template>

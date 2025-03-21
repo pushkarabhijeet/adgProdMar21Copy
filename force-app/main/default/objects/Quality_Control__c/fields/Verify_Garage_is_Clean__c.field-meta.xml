@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Verify_Garage_is_Clean__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>There should be no trash present. Document any issues in the Notes field.</inlineHelpText>
+    <label>Verify Garage is Clean</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

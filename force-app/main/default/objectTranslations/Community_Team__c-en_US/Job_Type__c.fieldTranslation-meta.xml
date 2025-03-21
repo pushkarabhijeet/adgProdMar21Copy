@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Job Type --></label>
+    <name>Job_Type__c</name>
+    <picklistValues>
+        <masterLabel>CABINET</masterLabel>
+        <translation><!-- CABINET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CARPET</masterLabel>
+        <translation><!-- CARPET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COUNTERTOPS</masterLabel>
+        <translation><!-- COUNTERTOPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LAMINATE</masterLabel>
+        <translation><!-- LAMINATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LVP</masterLabel>
+        <translation><!-- LVP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPECIALTY</masterLabel>
+        <translation><!-- SPECIALTY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TILE</masterLabel>
+        <translation><!-- TILE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VINYL</masterLabel>
+        <translation><!-- VINYL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WOOD</masterLabel>
+        <translation><!-- WOOD --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

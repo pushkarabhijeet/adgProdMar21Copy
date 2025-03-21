@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission set allows user to edit payment fields on the work order.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.Approved_for_Payment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Can Edit Payment Fields</label>
+</PermissionSet>

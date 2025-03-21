@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>invalid@invalid.invalid</email>
+    <name>Floors San Marcos Customer Care Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Floors_Executives</publicGroup>
+            <publicGroup>Floors_San_Marcos_CS</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

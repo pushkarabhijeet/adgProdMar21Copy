@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Name of the field in the Community record that tells how many days to add from the work order start date --></help>
+    <label><!-- Day Count Field Name --></label>
+    <name>Day_Count_Field_Name__c</name>
+</CustomFieldTranslation>

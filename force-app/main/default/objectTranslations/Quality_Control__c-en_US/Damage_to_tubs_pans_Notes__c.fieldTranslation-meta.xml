@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Confirm there are no chips/trash --></help>
+    <label><!-- Damage to tubs &amp; pans Notes --></label>
+    <name>Damage_to_tubs_pans_Notes__c</name>
+</CustomFieldTranslation>

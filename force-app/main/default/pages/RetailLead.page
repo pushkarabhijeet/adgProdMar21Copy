@@ -1,0 +1,174 @@
+<!--
+/**********************************************************************
+* Name:     RetailLead
+* Author:   Strategic Growth, Inc. (www.strategicgrowthinc.com)
+* 
+* ======================================================
+* ======================================================
+* Purpose:                                                      
+* 
+* ======================================================
+* ======================================================
+* History:                                                            
+* VERSION   DATE            INITIALS      DESCRIPTION/FEATURES ADDED
+* 1.0       30-Jan-2020     rwd           Initial Development           
+*   
+***********************************************************************/ 
+-->
+
+
+<apex:page id="RetailLead" standardController="Lead" extensions="SG_VFC_RetailLead" docType="html-5.0"
+           showHeader="false" sideBar="false" lightningStylesheets="true">
+
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <!--<c:SG_Overlay style="processing" />-->
+
+        <!-- Import the Design System style sheet -->
+        <apex:slds />
+
+        <style>
+
+            .thankYouHeader {
+                text-align: center;
+                /*border: 3px solid green;*/
+            }
+
+            .thankYou {
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+                color: green;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+
+
+
+    <apex:form id="theForm">
+
+    <div class="slds-scope">
+
+        <div class="slds-page-header" role="banner">
+            <div class="slds-grid">
+                <div class="slds-col slds-has-flexi-truncate">
+                    <!-- HEADING AREA -->
+                    <div class="slds-media slds-no-space slds-grow">
+                        <div class="slds-media__figure">
+                                    <span class="slds-icon_container slds-icon-standard-account"
+                                          title="description of icon when needed">
+                                        <svg aria-hidden="true" class="slds-icon">
+                                            <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#lead')}"></use>
+                                        </svg>
+                                        <span class="slds-assistive-text">Leads Icon</span>
+                                    </span>
+
+                        </div>
+                        <div class="slds-media__body">
+                            <p class="slds-text-title_caps slds-line-height_reset">Register</p>
+
+                            <h1 class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate"
+                                title="Title">Contact Us</h1>
+                        </div>
+                    </div>
+                    <!-- / HEADING AREA -->
+                </div>
+
+                <!-- button bar -->
+                <div class="slds-button-group slds-m-top_small" role="group">
+                    <apex:commandButton value="Submit My Information" action="{!customSave}"
+                                        styleClass="slds-button slds-button_brand slds-button_neutral slds-not-selected"
+                                        style="display:inline"/>
+                    <apex:commandButton value="Start Over" action="{!startOver}"
+                                        styleClass="slds-button slds-button_neutral slds-not-selected"
+                                        html-formnovalidate="true"
+                                        immediate="true" style="display:inline"/>
+                    &nbsp;
+                    <apex:commandButton value="Quit" action="{!URLFOR('/lightning/page/home')}"
+                                        styleClass="slds-button slds-button_neutral slds-not-selected"
+                                        html-formnovalidate="true"
+                                        immediate="true" style="display:inline"/>
+
+                </div>
+                <!-- end button bar -->
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+            <apex:actionStatus id="overlayStatus" onStart="showOverlay();" onstop="hideOverlay();"/>
+            <apex:pageMessages escape="false" id="pageMsg"/>
+
+            <apex:pageBlock >
+                <apex:outputPanel rendered="{!isSaved}">
+                    <div class="thankYouHeader">
+                        <apex:outputText value="{!$Label.Household_ThankYou}" styleClass="thankYou"/>
+                        <br/>&nbsp;<br/>
+                    </div>
+
+                </apex:outputPanel>
+
+                <apex:pageBlockSection columns="1">
+                    <apex:inputField value="{!theLead.FirstName}" required="true"/>
+                    <apex:inputField value="{!theLead.LastName}"/>
+                    <apex:inputField value="{!theLead.Email}"/>
+                    <apex:inputField value="{!theLead.Phone}"/>
+                    <apex:inputField value="{!theLead.MobilePhone}"/>
+
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+
+        <p>&nbsp;</p>
+        <div class="slds-page-header" role="banner">
+            <div class="slds-grid">
+                <div class="slds-col slds-has-flexi-truncate">
+                    <!-- HEADING AREA -->
+                    &nbsp;
+                    <!-- / HEADING AREA -->
+                </div>
+
+                <!-- button bar -->
+                <div class="slds-button-group slds-m-top_small" role="group">
+                    <apex:commandButton value="Submit My Information" action="{!customSave}"
+                                        styleClass="slds-button slds-button_brand slds-button_neutral slds-not-selected"
+                                        style="display:inline"/>
+                    &nbsp;
+                    <apex:commandButton value="Start Over" action="{!startOver}"
+                                        styleClass="slds-button slds-button_neutral slds-not-selected"
+                                        html-formnovalidate="true"
+                                        immediate="true" style="display:inline"/>
+                    &nbsp;
+                    <apex:commandButton value="Quit" action="{!URLFOR('/lightning/page/home')}"
+                                        styleClass="slds-button slds-button_neutral slds-not-selected"
+                                        html-formnovalidate="true"
+                                        immediate="true" style="display:inline"/>
+                </div>
+                <!-- end button bar -->
+
+
+            </div>
+
+        </div>
+
+
+
+        </apex:form>
+
+    <div id="overlay"></div>
+    </body>
+    </html>
+</apex:page>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Read</contactAccessLevel>
+    <description>Customer Service Arlun Denver</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Customer Service Arlun Denver</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Operations_Manager_Arlun_Denver</parentRole>
+</Role>

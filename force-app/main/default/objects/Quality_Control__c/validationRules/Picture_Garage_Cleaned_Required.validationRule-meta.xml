@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Picture_Garage_Cleaned_Required</fullName>
+    <active>false</active>
+    <errorConditionFormula>LOWER($Label.SG_DisableValidations) != &quot;true&quot; &amp;&amp;
+AND(
+NOT( ISNEW() ),
+AND(
+RecordType.Name = &quot;Job Start Confirmation&quot;,
+ISPICKVAL (Status__c, &quot;Completed&quot;),
+ISBLANK(Picture_Garage_Cleaned__c)))</errorConditionFormula>
+    <errorMessage>Please upload a picture of the Cleaned Garage</errorMessage>
+</ValidationRule>

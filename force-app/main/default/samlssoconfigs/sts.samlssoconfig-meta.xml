@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>FederationId</identityMapping>
+    <issuer>https://sts.windows.net/f79f69ce-bbc8-4fdd-84cc-34f81a517926/</issuer>
+    <loginUrl>https://login.microsoftonline.com/f79f69ce-bbc8-4fdd-84cc-34f81a517926/saml2</loginUrl>
+    <name>MFA</name>
+    <oauthTokenEndpoint>https://adg1.my.salesforce.com/services/oauth2/token</oauthTokenEndpoint>
+    <redirectBinding>true</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P1Uh00000002kz</requestSigningCertId>
+    <salesforceLoginUrl>https://adg1.my.salesforce.com</salesforceLoginUrl>
+    <samlEntityId>https://adg1.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <useConfigRequestMethod>true</useConfigRequestMethod>
+    <useSameDigestAlgoForSigning>true</useSameDigestAlgoForSigning>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIC8DCCAdigAwIBAgIQGTG4Syf5IaNOR4M96uwQ7TANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yMTEyMjAxODA3NTBaFw0yNDEyMjAxODA3NDlaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkcZpCk+lkS1rhEQHMjz2HpsbV93BzQ1/kr6iIT3al1b3Igw1ehpnFPSlszCVsTOpjmEbnBNUS1YsajqcvydNPUgDEuuLVqEgD+ByJYRsgDGMw1wbasN7Vbvo7f7yHwdhHzCFmRbBY9WkfJiPvjx52ZT2DyoTE6sgkErzmFlLspSH7KeMh9bJty/I1ku6Kw5B1QrL2lxI8XF1iQAIrQoFWV+EvviMjztKPv0GAmALxcD2ZoC3eXpyNkEh5Q59FYG89myPAS0gfvd73WRCpujc7sXt8Y04tLh8p5yg5o5FyR8MBem/sHcyL9FwKh+z9nuJ9xskRbWufw/iz7h7Malq9QIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQA7Ug5wCxgvcgni81/7+uR60qQnrLdMXA2tLtyGdTQglfms9Ze0EyqzV9nKin6OXfPOH7sXbZhmYsjHBd3b5ryUrYDvsOP8ogXjtQjvZUYwgQQtYsg5X91SDLuAyIspYOfGoRUiRMjG6lrml/K9hld22SnT9sDnkvuOEoObVp40k9KPzO5kjp/ZAFFJkaGARi7yXAqoA5B2X0iVgOWoTp/7Fk6i1PzLMIeimg0Oo1fnqShSKqfb3tpGi5f7NQjaHqbT8uS4T+7L7g9acnBVTIzESKN4gTO7gJHFlFlh6juCqz9QUU/XVwlZPnBc1BbmbtMS7gPBTWkJOpfy0Cn2MMNF</validationCert>
+</SamlSsoConfig>

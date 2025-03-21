@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Opportunity_Product_Calculate_Quantity</fullName>
+        <field>Quantity</field>
+        <formula>Homes_Units__c</formula>
+        <name>Opportunity Product: Calculate Quantity</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Opportunity_Product_Populate_Homes_Unit</fullName>
+        <field>Homes_Units__c</field>
+        <formula>Opportunity.of_Homes_Units__c</formula>
+        <name>Opportunity Product: Populate Homes/Unit</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Oppty_Product_Populate_Product_Family</fullName>
+        <field>Product_Family__c</field>
+        <formula>TEXT(Product2.Family)</formula>
+        <name>Oppty Product: Populate Product Family</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Opportunity Product%3A Calculate Quantity</fullName>
+        <actions>
+            <name>Opportunity_Product_Calculate_Quantity</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.Homes_Units__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity Product%3A Populate %23 of homes%2Funits on create</fullName>
+        <actions>
+            <name>Opportunity_Product_Populate_Homes_Unit</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>ISNEW() || 
+ ISCHANGED(  Homes_Units__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

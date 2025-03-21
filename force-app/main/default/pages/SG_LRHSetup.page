@@ -1,0 +1,438 @@
+<!--
+/**********************************************************************
+* Name:     SG_LRHSetup
+* Author:   Strategic Growth, Inc. (www.strategicgrowthinc.com)
+*
+* ======================================================
+* ======================================================
+* Purpose:
+*
+* ======================================================
+* ======================================================
+* History:
+* VERSION   DATE            INITIALS      DESCRIPTION/FEATURES ADDED
+* 1.0       25-Jun-2014     rwd           Initial Development
+*
+***********************************************************************/
+-->
+
+<apex:page id="SG_LRHSetup" tabStyle="SG_Lookup_Helper__tab" standardController="RollupConfigs__c" extensions="SG_VFC_LRHSetup" title="Strategic Growth, Inc. Rollup Summary Admin"  lightningStylesheets="true"> <!--  showHeader="false" sideBar="false" applyBodyTag="false" applyHtmlTag="false">-->
+
+
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+
+
+    <style type="text/css">
+        .sampleTrigger {
+        font-family: Courier New, monospace;
+        }
+
+    </style>
+
+    <apex:sectionHeader title="Strategic Growth, Inc." subtitle="Lookup Rollup Helper"/>
+
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Edit/Create Quote</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <c:SG_Overlay style="processing" />
+
+        <!-- Import the Design System style sheet -->
+        <!--<apex:slds />-->
+
+    </head>
+
+
+    <body class="slds-scope">
+
+    <apex:form id="theForm">
+        <apex:actionStatus id="overlayStatus" onStart="showOverlay();" onstop="hideOverlay();"/>
+
+        <apex:pageBlock mode="detail" >
+
+            <apex:pageBlockButtons location="top">
+
+                <apex:commandButton value="Create New Configuration" action="{!doShowCreateSection}" status="overlayStatus" rerender="theForm"/>
+                <!--<apex:commandButton value="Save Configuration" action="{!saveConfig}" status="overlayStatus" rerender="theForm, existingConfigs, msg" rendered="{!IF(childObject != null && parentObject != null, true, false)}"/>
+                <apex:commandButton value="Delete Configuration" action="{!deleteConfig}" onclick="return window.confirm('Delete this configuration ({!theConfig.Name})?');" rendered="{!IF(childObject != null && parentObject != null && theConfig != null, true, false)}"/>
+                <apex:commandButton value="Cancel" action="{!customCancel}" immediate="true" status="overlayStatus" rerender="theForm, existingConfigs, msg" rendered="{!IF(childObject != null && parentObject != null, true, false)}"/>-->
+            </apex:pageBlockButtons>
+
+
+            <apex:pageBlockSection title="Edit Existing Rollup Configuration" rendered="{! existingConfigs != null}" id="existingConfigs" columns="1" collapsible="false">
+                <apex:pageBlockTable value="{!existingConfigs}" var="item" rendered="{! existingConfigs != null}">
+                    <apex:column >
+                        <apex:commandButton value="Edit" action="{!editConfiguration}" status="overlayStatus" rerender="theForm">
+                            <apex:param name="childObject" value="{!item.Child_Object_Name__c}" assignTo="{!childObject}"/>
+                            <apex:param name="parentObject" value="{!item.Parent_Object__c}" assignTo="{!parentObject}"/>
+                            <apex:param name="selectedConfigName" value="{!item.Name}" assignTo="{!selectedConfigName}"/>
+                            <apex:param name="doEdit" value="true" assignTo="{!doEdit}"/>
+                        </apex:commandButton>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">Name</apex:facet>
+                            {!item.Name}
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">Child</apex:facet>
+                            {!item.Child_Object_Name__c}
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">Parent</apex:facet>
+                            {!item.Parent_Object__c}
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">Active</apex:facet>
+                            {!item.Active__c}
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">Queueable</apex:facet>
+                            {!item.Use_Queueable__c}
+                    </apex:column>
+
+
+                </apex:pageBlockTable>
+                <p></p>
+            </apex:pageBlockSection>
+
+        </apex:pageBlock>
+
+
+        <apex:pageBlock rendered="{!showCreateSection}">
+            <!-- cancel button for selecting objects, before Setting them -->
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Cancel" action="{!customCancel}" immediate="true" status="overlayStatus" rerender="theForm msg" rendered="{!IF(childObject == null && parentObject == null, true, false)}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="2" title="Select Objects to Roll Up" rendered="{!showCreateSection}" collapsible="false">
+                <!-- Object Selection -->
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Select Object to Roll Up FROM (the Child Object)" for="childObj"/>
+                    <apex:SelectList value="{!childObject}" size="1" id="childObj">
+                        <apex:selectOptions value="{!childObjects}"></apex:selectOptions>
+                    </apex:SelectList>
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Select Object to Roll Up INTO (the Parent Object)" for="parentObj"/>
+                    <apex:SelectList value="{!parentObject}" size="1" id="parentObj">
+                        <apex:selectOptions value="{!parentObjects}"></apex:selectOptions>
+                    </apex:SelectList>
+                </apex:pageBlockSectionItem>
+
+                <br/>
+
+                <apex:commandButton value="Set Objects" action="{!setObjects}" status="overlayStatus" rerender="theForm" styleClass="slds-text-align_center"/>
+            </apex:pageBlockSection>
+
+        </apex:pageBlock>
+
+        <apex:pageMessages escape="false" id="msg"/>
+
+        <apex:pageBlock mode="detail" rendered="{!IF(childObject != null && parentObject != null, true, false)}">
+            <apex:pageBlockButtons location="both">
+                <apex:commandButton value="Save Configuration" action="{!saveConfig}" status="overlayStatus" rerender="theForm, existingConfigs, msg"/>
+                <apex:commandButton value="Delete Configuration" action="{!deleteConfig}" onclick="return window.confirm('Delete this configuration ({!theConfig.Name})?');" rendered="{!IF(childObject != null && parentObject != null && theConfig != null, true, false)}"/>
+                <apex:commandButton value="Cancel" action="{!customCancel}" immediate="true" status="overlayStatus" rerender="theForm, existingConfigs, msg"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="Configuration Info" columns="2" collapsible="false">
+
+
+                <!-- General Config Info -->
+                <apex:pageBlockSectionItem helpText="Name of the configuration. This name may be used by the trigger if multiple configurations for the same object exist">
+                    <apex:outputPanel layout="none" styleClass="slds-icon_container slds-icon-utility-delete">
+
+                        <label for="configName">Name for Configuration</label>
+
+                    </apex:outputPanel>
+                    <apex:inputField value="{!theConfig.Name}" id="configName" style="width:205px"/>
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionItem helpText="On/Off toggle for this particular configuration">
+                    <apex:outputPanel >
+                        <label for="active">Active?</label>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!theConfig.Active__c}" id="active"/>
+                </apex:pageBlockSectionItem>
+
+                <!-- end row 1 -->
+
+                <!-- start row 2 -->
+
+                <apex:pageBlockSectionItem helpText="The child object (Object to be rolled up FROM)">
+                    <apex:outputPanel ><label for="childObj"> Child Object </label></apex:outputPanel>
+                    {!childObject}
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionItem helpText="Holds the Name of the field on the Child that is the Lookup relationship to the parent. Example: Account Id">
+                    <apex:outputPanel ><label for="relationshipName"> Loookup Field on <apex:outputText value=" {!childObject}"/> that points to <apex:outputText value=" {!parentObject}"/></label></apex:outputPanel>
+                    <apex:outputPanel >
+                        <div class = "requiredInput">
+                            <div class = "requiredBlock"></div>
+                            <apex:selectList value="{!theConfig.queryField_parentRelationshipName__c}" multiselect="false" size="1" id="relationshipName">
+                                <apex:selectOptions value="{!childObjectFields_Lookups}"/>
+                            </apex:selectList>
+                        </div>
+                    </apex:outputPanel>
+
+                </apex:pageBlockSectionItem>
+
+
+
+                <!-- end row 2 -->
+
+                <!-- start row 3 -->
+
+                <apex:pageBlockSectionItem helpText="The parent object (Object to be rolled up INTO)">
+                    <apex:outputPanel ><label for="childObj"> Parent Object </label></apex:outputPanel>
+                        {!parentObject}
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionItem helpText="If checked, rollup helper will execute as asynchronous and queueable. This will help with large data volumes, but may take several seconds (or even minutes) for results to appear in Salesforce.">
+                    <apex:outputPanel ><label for="useQueue">Use Queueable</label></apex:outputPanel>
+                    <apex:inputField value="{!theConfig.Use_Queueable__c}" id="useQueue"/>
+                </apex:pageBlockSectionItem>
+
+                <!-- end row 3 -->
+
+                <!-- row -->
+                <apex:pageBlockSectionItem helpText="Optional notes about this configuration (special modifications to the trigger, explanations, etc)">
+                    <apex:outputPanel ><label for="notes">Configuration Notes</label></apex:outputPanel>
+                    <apex:inputTextarea value="{!theConfig.Config_Notes__c}" id="notes" rows="4" cols="50"/>
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionItem helpText="If selected, will perform MAX/MIN query for NUMERIC/CURRENCY fields">
+                    <apex:outputPanel ><label for="doMathQuery">Do Aggregate Query (NUMERIC)</label></apex:outputPanel>
+                    <apex:inputCheckbox value="{!theConfig.Do_Math_Query__c}" id="doMathQuery">
+                        <apex:actionSupport event="onclick"
+                                            action="{!doMathQuerySelect}"
+                                            status="overlayStatus" rerender="msg, theForm"/>
+                    </apex:inputCheckbox>
+                </apex:pageBlockSectionItem>
+
+                <!-- end row -->
+
+
+                <!-- start row  -->
+
+                <apex:pageBlockSectionItem helpText="Display a functional trigger for the child object that you can cut and paste into a new or existing trigger">
+                    <apex:outputPanel ><label for="createTrigger"> Display Sample Rollup Trigger for <apex:outputText value=" {!childObject}"/>?</label></apex:outputPanel>
+                    <apex:inputCheckbox value="{!showSampleTrigger}" id="createTrigger">
+                        <apex:actionSupport event="onclick"
+                                            action="{!doShowTriggerReload}"
+                                            status="overlayStatus" rerender="msg, theForm"/>
+                    </apex:inputCheckbox>
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionItem helpText="If selected, will perform MAX/MIN query for DATE fields">
+                    <apex:outputPanel ><label for="doDateQuery">Do Aggregate Query (DATE)</label></apex:outputPanel>
+                    <apex:inputCheckbox value="{!theConfig.Do_Date_Query__c}" id="doDateQuery">
+                        <apex:actionSupport event="onclick"
+                                            action="{!doDateSelect}"
+                                            status="overlayStatus" rerender="msg, theForm"/>
+                    </apex:inputCheckbox>
+                </apex:pageBlockSectionItem>
+
+                <!-- end row -->
+
+                <!-- start row -->
+
+                <apex:pageBlockSectionItem />
+
+                <apex:pageBlockSectionItem helpText="If selected, will perform MAX/MIN query for DATETIME fields">
+                    <apex:outputPanel ><label for="doDateTimeQuery">Do Aggregate Query (DATE/TIME)</label></apex:outputPanel>
+                    <apex:inputCheckbox value="{!theConfig.Do_Date_Time_Query__c}" id="doDateTimeQuery">
+                        <apex:actionSupport event="onclick"
+                                            action="{!doDateTimeSelect}"
+                                            status="overlayStatus" rerender="msg, theForm"/>
+                    </apex:inputCheckbox>
+                </apex:pageBlockSectionItem>
+
+                <!-- end row -->
+
+                <!-- start row -->
+
+                <apex:pageBlockSectionItem />
+
+                <apex:pageBlockSectionItem helpText="For aggregating queries - MAX/MIN/AVG" rendered="{!isDateQuery || isDateTimeQuery || isMathQuery}">
+                    <apex:outputPanel ><label for="dateMathQueryType">Aggregate Query Type</label></apex:outputPanel>
+                    <apex:selectList value="{!theConfig.Date_Math_Query_Type__c}" multiselect="false" size="1" id="child1">
+                        <apex:selectOptions value="{!aggFunctionOptions}"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!NOT(isDateQuery) && NOT(isDateTimeQuery) && NOT(isMathQuery)}"/>
+
+                <!-- end row -->
+
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Filter Clause & Fields to Roll Up" columns="1" collapsible="false">
+                <!-- Rollup Fields -->
+
+                <!-- additional filter clause -->
+                <apex:pageBlockSectionItem helpText="Add an optional filter clause to the rollup, without quotes or punctuation. Example: AND IsActive = true">
+                    <apex:outputPanel ><label for="notes">Additional Filter Clause</label></apex:outputPanel>
+                    <apex:inputTextarea value="{!theConfig.Additional_Filter_Clause__c	}" id="filterClause" rows="4" cols="50"/>
+                </apex:pageBlockSectionItem>
+
+                <!-- row count field -->
+                <apex:pageBlockSectionItem helpText="Holds the name of the field on the parent which stores the aggregated number of child rows (e.g., if there are 15 children for a parent, value will be '15')">
+                    <apex:outputPanel ><label for="parentRowCountName"> Field on <apex:outputText value=" {!parentObject}"/> to Store the total number of <apex:outputText value=" {!childObject_Friendly}"/> rows  -- OPTIONAL</label></apex:outputPanel>
+                    <apex:selectList value="{!theConfig.parentRowCount__c}" multiselect="false" size="1" id="parentRowCountName">
+                        <apex:selectOptions value="{!parentRowcountFields}"/>
+                    </apex:selectList>
+
+                </apex:pageBlockSectionItem>
+                <br/><br/>
+
+
+                <!--  Field 1 -->
+                <apex:pageBlockSectionItem helpText="Holds the name of the field on the Child object which will be rolled up by the Parent. Example: Hours Spent">
+                    <apex:outputPanel ><label for="child1"><apex:outputText value="{!childObject}"/> Field 1 (Child)</label></apex:outputPanel>
+                    <apex:selectList value="{!theConfig.queryField1__c}" multiselect="false" size="1" id="child1">
+                        <apex:selectOptions value="{!childObjectFields}"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem helpText="Holds the name of the field on the Parent object which will display the rolled-up summary of fields on the Child. Example: Total Hours Spent">
+                    <apex:outputPanel ><label for="parent1"><apex:outputText value="{!parentObject}"/> Field 1 (Parent)</label></apex:outputPanel>
+                    <apex:selectList value="{!theConfig.parentQueryField1__c}" multiselect="false" size="1" id="parent1">
+                        <apex:selectOptions value="{!parentObjectFields}"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+
+                <br/><br/>
+
+                <!--  Field 2 -->
+                <apex:pageBlockSectionItem helpText="Holds the name of the field on the Child object which will be rolled up by the Parent. Example: Hours Spent">
+                    <apex:outputPanel ><label for="child2"><apex:outputText value="{!childObject}"/> Field 2 (Child)</label></apex:outputPanel>
+                    <apex:selectList value="{!theConfig.queryField2__c}" multiselect="false" size="1" id="child2">
+                        <apex:selectOptions value="{!childObjectFields}"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem helpText="Holds the name of the field on the Parent object which will display the rolled-up summary of fields on the Child. Example: Total Hours Spent">
+                    <apex:outputPanel ><label for="parent2"><apex:outputText value="{!parentObject}"/> Field 2 (Parent)</label></apex:outputPanel>
+                    <apex:selectList value="{!theConfig.parentQueryField2__c}" multiselect="false" size="1" id="parent2">
+                        <apex:selectOptions value="{!parentObjectFields}"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+
+                <br/><br/>
+
+                <!--  Field 3 -->
+                <apex:pageBlockSectionItem helpText="Holds the name of the field on the Child object which will be rolled up by the Parent. Example: Hours Spent">
+                    <apex:outputPanel ><label for="child3"><apex:outputText value="{!childObject}"/> Field 3 (Child)</label></apex:outputPanel>
+                    <apex:selectList value="{!theConfig.queryField3__c}" multiselect="false" size="1" id="child3">
+                        <apex:selectOptions value="{!childObjectFields}"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem helpText="Holds the name of the field on the Parent object which will display the rolled-up summary of fields on the Child. Example: Total Hours Spent">
+                    <apex:outputPanel ><label for="parent3"><apex:outputText value="{!parentObject}"/> Field 3 (Parent)</label></apex:outputPanel>
+                    <apex:selectList value="{!theConfig.parentQueryField3__c}" multiselect="false" size="1" id="parent3">
+                        <apex:selectOptions value="{!parentObjectFields}"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+
+                <br/><br/>
+
+                <!--  Field 4 -->
+                <apex:pageBlockSectionItem helpText="Holds the name of the field on the Child object which will be rolled up by the Parent. Example: Hours Spent">
+                    <apex:outputPanel ><label for="child4"><apex:outputText value="{!childObject}"/> Field 4 (Child)</label></apex:outputPanel>
+                    <apex:selectList value="{!theConfig.queryField4__c}" multiselect="false" size="1" id="child4">
+                        <apex:selectOptions value="{!childObjectFields}"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem helpText="Holds the name of the field on the Parent object which will display the rolled-up summary of fields on the Child. Example: Total Hours Spent">
+                    <apex:outputPanel ><label for="parent4"><apex:outputText value="{!parentObject}"/> Field 4 (Parent)</label></apex:outputPanel>
+                    <apex:selectList value="{!theConfig.parentQueryField4__c}" multiselect="false" size="1" id="parent4">
+                        <apex:selectOptions value="{!parentObjectFields}"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+
+                <br/><br/>
+
+                <!--  Field 5 -->
+                <apex:pageBlockSectionItem helpText="Holds the name of the field on the Child object which will be rolled up by the Parent. Example: Hours Spent">
+                    <apex:outputPanel ><label for="child5"><apex:outputText value="{!childObject}"/> Field 5 (Child)</label></apex:outputPanel>
+                    <apex:selectList value="{!theConfig.queryField5__c}" multiselect="false" size="1" id="child5">
+                        <apex:selectOptions value="{!childObjectFields}"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem helpText="Holds the name of the field on the Parent object which will display the rolled-up summary of fields on the Child. Example: Total Hours Spent">
+                    <apex:outputPanel ><label for="parent5"><apex:outputText value="{!parentObject}"/> Field 5 (Parent)</label></apex:outputPanel>
+                    <apex:selectList value="{!theConfig.parentQueryField5__c}" multiselect="false" size="1" id="parent5">
+                        <apex:selectOptions value="{!parentObjectFields}"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+
+                <!--  spacer -->
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel layout="block" style="width:400px;"></apex:outputPanel>
+                    &nbsp;
+                </apex:pageBlockSectionItem>
+
+            </apex:pageBlockSection>
+
+            <apex:pageBlock mode="detail" rendered="{!showSampleTrigger}" title="Sample Trigger Code" id="sampleTrigger">
+<pre>
+trigger SG_{!childObject_Friendly}_LU on {!childObject} (after insert, after update, after delete, after undelete) {
+
+
+    if ( SG_ApexActivator.isDisabled('Disable_{!childObject}_Triggers__c'))
+    {
+		System.debug('---> SG_{!childObject_Friendly}_LU; this trigger has been disabled via Custom Setting');
+		return;
+    }
+
+
+    //Pass in the API name of the child object, for example '{!childObject}' and the API name of the parent object, for example '{!parentObject}';
+    SG_LookupRollupHelper lh = new SG_LookupRollupHelper( '{!childObject}', '{!parentObject}');
+
+    // take care of assigning the correct lists based on the trigger type (Insert vs Update vs Delete vs Undelete)
+    lh.setTriggerLists(Trigger.isUpdate, Trigger.isDelete, Trigger.new, Trigger.old);
+
+    // do the rollup(s) -- will execute all active rollups for current child/parent configuration
+    lh.doRollupSummary();
+
+
+}
+</pre>
+
+            </apex:pageBlock>
+
+            <apex:pageBlock mode="detail" rendered="{!showSampleTrigger}" title="Sample Test Code">
+                <div id="sampleTrigger">
+    		<pre>
+@isTest
+private class SG_{!childObject_Friendly}_LU_Test {
+
+	static testMethod void sampleTestMethod()
+    {
+        {!childObject} obj = new {!childObject}();
+		// TODO: add required fields to object for validation rules, etc
+		insert obj;
+
+        // TODO: write proper assertions!!
+
+		update obj;
+
+		delete obj;
+	}
+}
+    	 	</pre>
+
+                </div>
+            </apex:pageBlock>
+
+
+
+        </apex:pageBlock>
+    </apex:form>
+
+
+    </body>
+    </html>
+    <div id="overlay"></div>
+</apex:page>

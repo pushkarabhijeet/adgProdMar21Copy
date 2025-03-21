@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Project Type --></label>
+    <name>Project_Type__c</name>
+    <picklistValues>
+        <masterLabel>Build to Rent</masterLabel>
+        <translation><!-- Build to Rent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garden Style</masterLabel>
+        <translation><!-- Garden Style --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Highrise</masterLabel>
+        <translation><!-- Highrise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mid-Rise</masterLabel>
+        <translation><!-- Mid-Rise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Podium Wrap</masterLabel>
+        <translation><!-- Podium Wrap --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

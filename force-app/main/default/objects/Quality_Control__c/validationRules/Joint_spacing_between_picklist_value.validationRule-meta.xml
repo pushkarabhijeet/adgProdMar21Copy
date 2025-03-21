@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Joint_spacing_between_picklist_value</fullName>
+    <active>false</active>
+    <errorConditionFormula>LOWER($Label.SG_DisableValidations) != &quot;true&quot; &amp;&amp;
+AND(
+NOT( ISNEW() ),
+AND(
+RecordType.Name = &quot;QC Wood Install&quot;,
+ISPICKVAL(Joint_spacing_between_boards_row_to_row__c,&quot;Please select a value&quot;),
+ISPICKVAL( Status__c , &quot;Completed&quot;)
+))</errorConditionFormula>
+    <errorDisplayField>Joint_spacing_between_boards_row_to_row__c</errorDisplayField>
+    <errorMessage>Please select either Yes or No</errorMessage>
+</ValidationRule>

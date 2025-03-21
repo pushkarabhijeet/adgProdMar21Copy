@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gaps_at_stairs_picklist_value</fullName>
+    <active>false</active>
+    <errorConditionFormula>LOWER($Label.SG_DisableValidations) != &quot;true&quot; &amp;&amp;
+AND(
+NOT( ISNEW() ),
+AND(
+RecordType.Name = &quot;QC Carpet Install&quot;,
+ISPICKVAL(Gaps_at_stairs__c,&quot;Please select a value&quot;),
+ISPICKVAL( Status__c , &quot;Completed&quot;)
+))</errorConditionFormula>
+    <errorDisplayField>Gaps_at_stairs__c</errorDisplayField>
+    <errorMessage>Please select either Yes, No or N/A</errorMessage>
+</ValidationRule>

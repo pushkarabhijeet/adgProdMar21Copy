@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Division_Compact_Layout_Standard</fullName>
+    <fields>Name</fields>
+    <fields>Builder__c</fields>
+    <fields>Estimated_of_Homes_Units__c</fields>
+    <fields>Estimated_Project_Start_Date__c</fields>
+    <fields>Channel_of_Business__c</fields>
+    <label>Sub-Division - Compact Layout (Standard)</label>
+</CompactLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BP_Line_Item_Shoemold_Included</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(  Shoemold__c  ,&quot;Included&quot;),
+ISBLANK(  Shoemold_Specifics__c ))</errorConditionFormula>
+    <errorDisplayField>Shoemold_Specifics__c</errorDisplayField>
+    <errorMessage>A value must be provided when &quot;Included&quot; is selected from &apos;Shoemold&apos; picklist.</errorMessage>
+</ValidationRule>

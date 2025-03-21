@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quality Control</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quality Control</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Picture Upload Fields --></label>
+        <name>Picture_Upload_Fields</name>
+    </fieldSets>
+    <layouts>
+        <layout>Job Start Completion Page Layout (Level 1)</layout>
+        <sections>
+            <label><!-- Comment [hidden] --></label>
+            <section>Comment [hidden]</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Job Start Confirmation --></label>
+            <section>Job Start Confirmation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Pre-Walk Page Layout (Level 1)</layout>
+        <sections>
+            <label><!-- Comment [hidden] --></label>
+            <section>Comment [hidden]</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Walk --></label>
+            <section>Pre-Walk</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>QC Carpet Install Page Layout (Level 1)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Inspection --></label>
+            <section>Inspection</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>QC Countertops Page Layout (Level 1)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Inspection --></label>
+            <section>Inspection</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>QC Fine Tune Checklist</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>QC Floor &amp; Wall Tile Install (Level 1)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Floor Wall Tile --></label>
+            <section>Floor Wall Tile</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>QC Floor Tile Install Page Layout (Level 1)</layout>
+        <sections>
+            <label><!-- Builder Spec --></label>
+            <section>Builder Spec</section>
+        </sections>
+        <sections>
+            <label><!-- Comment [hidden] --></label>
+            <section>Comment [hidden]</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Inspection --></label>
+            <section>Inspection</section>
+        </sections>
+        <sections>
+            <label><!-- Inspection (Level 2) --></label>
+            <section>Inspection (Level 2)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>QC LVT Install Page Layout (Level 1)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Inspection --></label>
+            <section>Inspection</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>QC Product Inspection</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Product Inspection --></label>
+            <section>Product Inspection</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>QC Tile Backsplash Install Page Layout (Level 1)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Inspection --></label>
+            <section>Inspection</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>QC Vinyl Install Page Layout (Level 1)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Inspection --></label>
+            <section>Inspection</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>QC Wall Tile Install Page Layout (Level 1)</layout>
+        <sections>
+            <label><!-- Builder Specs --></label>
+            <section>Builder Specs</section>
+        </sections>
+        <sections>
+            <label><!-- Comment [hidden] --></label>
+            <section>Comment [hidden]</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Inspection --></label>
+            <section>Inspection</section>
+        </sections>
+        <sections>
+            <label><!-- Inspection (Level 2) --></label>
+            <section>Inspection (Level 2)</section>
+        </sections>
+        <sections>
+            <label><!-- Inspection (start level 2) --></label>
+            <section>Inspection (start level 2)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>QC Wood Install Page Layout (Level 1)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Inspection --></label>
+            <section>Inspection</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Update --></label>
+        <name>Update_QC</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Job Start Confirmation --></label>
+        <name>Job_Start_Confirmation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Pre-Walk --></label>
+        <name>Pre_Walk</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QC Build Sheet --></label>
+        <name>QC_Build_Sheet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QC Carpet Install --></label>
+        <name>QC_Carpet_Install</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QC Countertops Install --></label>
+        <name>QC_Countertops_Install</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QC Fine Tune Checklist --></label>
+        <name>QC_Fine_Tune_Checklist</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QC Floor Tile Install --></label>
+        <name>QC_Floor_Tile_Install</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QC Floor &amp; Wall Tile Install --></label>
+        <name>QC_Floor_Wall_Tile_Install</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QC LVT Install --></label>
+        <name>QC_LVT_Install</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QC Product Inspection --></label>
+        <name>QC_Product_Inspection</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QC Tile Backsplash Install --></label>
+        <name>QC_Tile_Backsplash_Install</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QC Vinyl Install --></label>
+        <name>QC_Vinyl_Install</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QC Wall Tile Install --></label>
+        <name>QC_Wall_Tile_Install</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QC Wood Install --></label>
+        <name>QC_Wood_Install</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes/No or N/A --></errorMessage>
+        <name>Action_Needed_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Action_Needed_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Are_Cabinets_Installed_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Are_Countertops_Installed_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes/No or N/A --></errorMessage>
+        <name>Areas_damaged_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Backsplash_ran_to_edge_of_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Approved or Needs Adjustment --></errorMessage>
+        <name>Check_Slab_Tolerance_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Approved or Needs Adjustment --></errorMessage>
+        <name>Check_Walls_for_Plumb_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Chipped_tiles_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes, No or N/A --></errorMessage>
+        <name>Cuts_neat_clean_around_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Cuts_tight_around_plugs_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes/No or N/A --></errorMessage>
+        <name>Damage_cabinets_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Damage_cabinets_doors_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Damage_to_baseboards_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes/No or N/A --></errorMessage>
+        <name>Damage_to_cabinets_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Damage_to_cabinets_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Damage_to_tubs_pans_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes, No or N/A --></errorMessage>
+        <name>Deco_level_and_even_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Did_we_meet_builder_specs_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Does_Shower_Bath_Need_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes/No or N/A --></errorMessage>
+        <name>Door_jambs_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Door_jambs_under_cut_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes/No or N/A --></errorMessage>
+        <name>Doors_rehung_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Doors_rehung_hinge_pins_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Electrical_cords_in_good_working_order_p</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes/No or N/A --></errorMessage>
+        <name>Extra_material_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Extra_material_in_attic_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes, No or N/A --></errorMessage>
+        <name>Face_hearth_per_diagram_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes/No or N/A --></errorMessage>
+        <name>Floor_clean_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Floor_clean_free_of_glue_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Floor_plan_matches_actual_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes/No or N/A --></errorMessage>
+        <name>Floors_covered_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Floors_covered_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Free_of_grout_haze_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Gaps_at_base_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes, No or N/A --></errorMessage>
+        <name>Gaps_at_stairs_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Gout_voids_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Grout_filled_at_top_of_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes/No or N/A --></errorMessage>
+        <name>Grout_joints_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Grout_joints_properly_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>House_garage_perimeter_clean_picklist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Installed_flat_with_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes/No or N/A --></errorMessage>
+        <name>Installed_per_diagram_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Installed_per_diagram_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Is_House_Painted_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Is_Tile_fully_bonded_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Is_Tub_Deck_Ready_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Is_grout_color_same_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Is_trim_baseboards_instal_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Joint_spacing_between_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Pan_square_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please upload a picture showing the Cabinets Condition --></errorMessage>
+        <name>Picture_Cabinets_Condition_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please upload a Picture of Cabinets Installed --></errorMessage>
+        <name>Picture_Cabinets_Installed_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please upload a picture of the Installed Countertops --></errorMessage>
+        <name>Picture_Countertops_Installed_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please upload a picture of Extra Material --></errorMessage>
+        <name>Picture_Extra_Material_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please upload a picture of Gap Between Tile and Tub --></errorMessage>
+        <name>Picture_Gap_Between_Tile_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please upload a picture of the Cleaned Garage --></errorMessage>
+        <name>Picture_Garage_Cleaned_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please upload picture of the House Painted --></errorMessage>
+        <name>Picture_House_Painted_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please upload a House &amp; Garage Perimeter Picture --></errorMessage>
+        <name>Picture_House_and_Perimeter_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please upload a picture showing the Pan Square --></errorMessage>
+        <name>Picture_Pan_Square_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please upload a picture of the Proper Spacing of Baseboard/Fireplace --></errorMessage>
+        <name>Picture_Proper_Spacing_Base_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please upload a picture of Shower/Bath for Field Measure --></errorMessage>
+        <name>Picture_Shower_Bath_Picture_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please upload a picture of Slab Tolerance --></errorMessage>
+        <name>Picture_Slab_Tolerance_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please upload a picture of Trim Baseboard Install --></errorMessage>
+        <name>Picture_Trim_Baseboard_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please upload a photo of the Tub Condition --></errorMessage>
+        <name>Picture_Tub_Condition_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please upload a picture of Tub Deck ready for install --></errorMessage>
+        <name>Picture_Tub_Deck_Ready_Install_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please upload Wall Plumb picture. --></errorMessage>
+        <name>Picture_Wall_Plumb_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Proper_spacing_at_base_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Protecting_grg_floor_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes/No or N/A --></errorMessage>
+        <name>Seam_sealer_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Seam_sealer_installed_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes/No or N/A --></errorMessage>
+        <name>Seams_acceptable_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Seams_acceptable_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Stained_shoe_trim_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Tile_cut_off_on_correct_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Tile_tub_no_grout_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes/No or N/A --></errorMessage>
+        <name>Trim_Installed_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Trim_installed_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Trimmed_out_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Using_eye_protection_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Wall_board_installed_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes/No or N/A --></errorMessage>
+        <name>Weep_holes_clear_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes or No --></errorMessage>
+        <name>Weep_holes_clear_free_picklist_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Yes/No or N/A --></errorMessage>
+        <name>climate_control_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

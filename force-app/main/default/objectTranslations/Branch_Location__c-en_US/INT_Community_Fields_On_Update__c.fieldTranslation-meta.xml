@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- INT Community Fields On Update --></label>
+    <name>INT_Community_Fields_On_Update__c</name>
+    <picklistValues>
+        <masterLabel>Actual # Of Houses</masterLabel>
+        <translation><!-- Actual # Of Houses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Build Cycle for Community</masterLabel>
+        <translation><!-- Build Cycle for Community --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Builder</masterLabel>
+        <translation><!-- Builder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Builder ID (18)</masterLabel>
+        <translation><!-- Builder ID (18) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Builder Profile</masterLabel>
+        <translation><!-- Builder Profile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Hours</masterLabel>
+        <translation><!-- Business Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case Manager</masterLabel>
+        <translation><!-- Case Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Channel of Business</masterLabel>
+        <translation><!-- Channel of Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community</masterLabel>
+        <translation><!-- Community --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community ID(18)</masterLabel>
+        <translation><!-- Community ID(18) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community Status</masterLabel>
+        <translation><!-- Community Status --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community Type</masterLabel>
+        <translation><!-- Community Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Created By</masterLabel>
+        <translation><!-- Created By --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Day Count Build Sheet</masterLabel>
+        <translation><!-- Day Count Build Sheet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Day Count Carpet</masterLabel>
+        <translation><!-- Day Count Carpet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Day Count Countertops</masterLabel>
+        <translation><!-- Day Count Countertops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Day Count Fine Tune</masterLabel>
+        <translation><!-- Day Count Fine Tune --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Day Count Floor Wall Tile</masterLabel>
+        <translation><!-- Day Count Floor Wall Tile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Day Count LVT</masterLabel>
+        <translation><!-- Day Count LVT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Day Count Product Inspection</masterLabel>
+        <translation><!-- Day Count Product Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Day Count QC End</masterLabel>
+        <translation><!-- Day Count QC End --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Day Count Tile Backsplash</masterLabel>
+        <translation><!-- Day Count Tile Backsplash --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Day Count Vinyl</masterLabel>
+        <translation><!-- Day Count Vinyl --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Day Count Wood</masterLabel>
+        <translation><!-- Day Count Wood --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Days to Dried-In</masterLabel>
+        <translation><!-- Days to Dried-In --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Days to Final</masterLabel>
+        <translation><!-- Days to Final --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Days to Finish/Install</masterLabel>
+        <translation><!-- Days to Finish/Install --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Days to Framing</masterLabel>
+        <translation><!-- Days to Framing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Days to Install</masterLabel>
+        <translation><!-- Days to Install --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Days to Order Tile</masterLabel>
+        <translation><!-- Days to Order Tile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Days to QC Job Start</masterLabel>
+        <translation><!-- Days to QC Job Start --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Days to QC Pre-Walk</masterLabel>
+        <translation><!-- Days to QC Pre-Walk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entity</masterLabel>
+        <translation><!-- Entity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EntityIntegration</masterLabel>
+        <translation><!-- EntityIntegration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estimated # of Homes/Units</masterLabel>
+        <translation><!-- Estimated # of Homes/Units --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estimated Project Duration [months]</masterLabel>
+        <translation><!-- Estimated Project Duration [months] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estimated Project Start Date</masterLabel>
+        <translation><!-- Estimated Project Start Date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSM Service Resource ID (18)</masterLabel>
+        <translation><!-- FSM Service Resource ID (18) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Field Service Manager</masterLabel>
+        <translation><!-- Field Service Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geolocation</masterLabel>
+        <translation><!-- Geolocation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>House Type</masterLabel>
+        <translation><!-- House Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Integration Key Community</masterLabel>
+        <translation><!-- Integration Key Community --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job City</masterLabel>
+        <translation><!-- Job City --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Last Modified By</masterLabel>
+        <translation><!-- Last Modified By --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Location</masterLabel>
+        <translation><!-- Location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Location Notes</masterLabel>
+        <translation><!-- Location Notes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opportunity</masterLabel>
+        <translation><!-- Opportunity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owner</masterLabel>
+        <translation><!-- Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owner ID (18)</masterLabel>
+        <translation><!-- Owner ID (18) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owner Location</masterLabel>
+        <translation><!-- Owner Location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Walk</masterLabel>
+        <translation><!-- Pre-Walk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Walk &amp; Job Start QC Needed</masterLabel>
+        <translation><!-- Pre-Walk &amp; Job Start QC Needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Families</masterLabel>
+        <translation><!-- Product Families --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QC Build Sheet</masterLabel>
+        <translation><!-- QC Build Sheet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QC Carpet Install</masterLabel>
+        <translation><!-- QC Carpet Install --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QC Countertops Install</masterLabel>
+        <translation><!-- QC Countertops Install --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QC Fine Tune Checklist</masterLabel>
+        <translation><!-- QC Fine Tune Checklist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QC Floor Wall Tile Install</masterLabel>
+        <translation><!-- QC Floor Wall Tile Install --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QC LVT Install</masterLabel>
+        <translation><!-- QC LVT Install --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QC Product Inspection</masterLabel>
+        <translation><!-- QC Product Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QC Tile Backsplash Install</masterLabel>
+        <translation><!-- QC Tile Backsplash Install --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QC Vinyl Install</masterLabel>
+        <translation><!-- QC Vinyl Install --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QC Wood Install</masterLabel>
+        <translation><!-- QC Wood Install --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Record Type</masterLabel>
+        <translation><!-- Record Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Security Notes</masterLabel>
+        <translation><!-- Security Notes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Center</masterLabel>
+        <translation><!-- Service Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Use Builder Profile Values</masterLabel>
+        <translation><!-- Use Builder Profile Values --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

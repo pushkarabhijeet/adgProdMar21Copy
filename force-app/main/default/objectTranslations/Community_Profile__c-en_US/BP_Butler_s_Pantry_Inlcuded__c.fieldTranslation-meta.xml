@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- From Builder Profile Line Item --></help>
+    <label><!-- Butler&apos;s Pantry Inlcuded --></label>
+    <name>BP_Butler_s_Pantry_Inlcuded__c</name>
+</CustomFieldTranslation>

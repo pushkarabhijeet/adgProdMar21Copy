@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Copy of Opportunity Page Layout (Floors)</layout>
+        <sections>
+            <label><!-- Basic Opportunity Information --></label>
+            <section>Basic Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields (required when Bid Submitted = Yes) --></label>
+            <section>Fields (required when Bid Submitted = Yes)</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Name will be auto populated on save. --></label>
+            <section>Opportunity Name will be auto populated on save.</section>
+        </sections>
+        <sections>
+            <label><!-- Project Location (required when Bid Submitted = Yes) --></label>
+            <section>Project Location (required when Bid Submitted = Yes)</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Construction Opportunity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fifth Bid Information --></label>
+            <section>Fifth Bid Information</section>
+        </sections>
+        <sections>
+            <label><!-- First Bid Information --></label>
+            <section>First Bid Information</section>
+        </sections>
+        <sections>
+            <label><!-- Fourth Bid Information --></label>
+            <section>Fourth Bid Information</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Name will be auto populated on save. --></label>
+            <section>Opportunity Name will be auto populated on save.</section>
+        </sections>
+        <sections>
+            <label><!-- Second Bid Information --></label>
+            <section>Second Bid Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sixth Bid Information --></label>
+            <section>Sixth Bid Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Third Bid Information --></label>
+            <section>Third Bid Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Page Layout (Auto Win))</layout>
+        <sections>
+            <label><!-- Basic Opportunity Information --></label>
+            <section>Basic Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Name will be auto populated on save. --></label>
+            <section>Opportunity Name will be auto populated on save.</section>
+        </sections>
+        <sections>
+            <label><!-- Project Location (required when Bid Submitted = Yes --></label>
+            <section>Project Location (required when Bid Submitted = Yes</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Location (auto populates when record is saved, but can be changed) --></label>
+            <section>Sales Location (auto populates when record is saved, but can be changed)</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Totals by Product Family Selected --></label>
+            <section>Totals by Product Family Selected</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Page Layout (Business Development)</layout>
+        <sections>
+            <label><!-- Basic Opportunity Information --></label>
+            <section>Basic Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields (required when Bid Submitted = Yes) --></label>
+            <section>Fields (required when Bid Submitted = Yes)</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Name will be auto populated on save. --></label>
+            <section>Opportunity Name will be auto populated on save.</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Page Layout (Heritage Revisions)</layout>
+        <sections>
+            <label><!-- Basic Opportunity Information --></label>
+            <section>Basic Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Name will be auto populated on save. --></label>
+            <section>Opportunity Name will be auto populated on save.</section>
+        </sections>
+        <sections>
+            <label><!-- Product Information --></label>
+            <section>Product Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Tasks and Comments --></label>
+            <section>Tasks and Comments</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Page Layout (Heritage Single-Family)</layout>
+        <sections>
+            <label><!-- Basic Opportunity Information --></label>
+            <section>Basic Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields (required when Bid Submitted = Yes) --></label>
+            <section>Fields (required when Bid Submitted = Yes)</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Name will be auto populated on save. --></label>
+            <section>Opportunity Name will be auto populated on save.</section>
+        </sections>
+        <sections>
+            <label><!-- Product Information --></label>
+            <section>Product Information</section>
+        </sections>
+        <sections>
+            <label><!-- Project Location (required when Bid Submitted = Yes) --></label>
+            <section>Project Location (required when Bid Submitted = Yes)</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Location (auto populates when record is saved, but can be changed) --></label>
+            <section>Sales Location (auto populates when record is saved, but can be changed)</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Tasks &amp; Comments --></label>
+            <section>Tasks &amp; Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Totals by Product Family Selected --></label>
+            <section>Totals by Product Family Selected</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Page Layout (Heritage Standard)</layout>
+        <sections>
+            <label><!-- Basic Opportunity Information --></label>
+            <section>Basic Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields (required when Bid Submitted = Yes) --></label>
+            <section>Fields (required when Bid Submitted = Yes)</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Name will be auto populated on save. --></label>
+            <section>Opportunity Name will be auto populated on save.</section>
+        </sections>
+        <sections>
+            <label><!-- Product Information (required when Bid Submitted = Yes) --></label>
+            <section>Product Information (required when Bid Submitted = Yes)</section>
+        </sections>
+        <sections>
+            <label><!-- Project Location (required when Bid Submitted = Yes) --></label>
+            <section>Project Location (required when Bid Submitted = Yes)</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Location (auto populates when record is saved, but can be changed) --></label>
+            <section>Sales Location (auto populates when record is saved, but can be changed)</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Tasks &amp; Comments --></label>
+            <section>Tasks &amp; Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Totals by Product Family Selected --></label>
+            <section>Totals by Product Family Selected</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Page Layout (Multi-Family Property Management 1)</layout>
+        <sections>
+            <label><!-- Basic Opportunity Information --></label>
+            <section>Basic Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields (required when Bid Submitted = Yes) --></label>
+            <section>Fields (required when Bid Submitted = Yes)</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Name will be auto populated on save. --></label>
+            <section>Opportunity Name will be auto populated on save.</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Page Layout (Retail)</layout>
+        <sections>
+            <label><!-- Basic Opportunity Information --></label>
+            <section>Basic Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Name will be auto populated on save. --></label>
+            <section>Opportunity Name will be auto populated on save.</section>
+        </sections>
+        <sections>
+            <label><!-- Project Locations --></label>
+            <section>Project Locations</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Location (auto populates when record is saved, but can be changed) --></label>
+            <section>Sales Location (auto populates when record is saved, but can be changed)</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Page Layout (Single Family)</layout>
+        <sections>
+            <label><!-- Basic Opportunity Information --></label>
+            <section>Basic Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields (required when Bid Submitted = Yes) --></label>
+            <section>Fields (required when Bid Submitted = Yes)</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Name will be auto populated on save. --></label>
+            <section>Opportunity Name will be auto populated on save.</section>
+        </sections>
+        <sections>
+            <label><!-- Project Location (required when Bid Submitted = Yes) --></label>
+            <section>Project Location (required when Bid Submitted = Yes)</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Page Layout (Standard)</layout>
+        <sections>
+            <label><!-- Basic Opportunity Information --></label>
+            <section>Basic Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields (required when Bid Submitted = Yes) --></label>
+            <section>Fields (required when Bid Submitted = Yes)</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Name will be auto populated on save. --></label>
+            <section>Opportunity Name will be auto populated on save.</section>
+        </sections>
+        <sections>
+            <label><!-- Product Information (required when Bid Submitted = Yes) --></label>
+            <section>Product Information (required when Bid Submitted = Yes)</section>
+        </sections>
+        <sections>
+            <label><!-- Project Location (required when Bid Submitted = Yes) --></label>
+            <section>Project Location (required when Bid Submitted = Yes)</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Totals by Product Family Selected --></label>
+            <section>Totals by Product Family Selected</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Page Layout - National Property Management – No RFP</layout>
+        <sections>
+            <label><!-- Additional Opp Info --></label>
+            <section>Additional Opp Info</section>
+        </sections>
+        <sections>
+            <label><!-- Basic Opportunity Information --></label>
+            <section>Basic Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Name will be auto populated on save. --></label>
+            <section>Opportunity Name will be auto populated on save.</section>
+        </sections>
+        <sections>
+            <label><!-- Potential Revenue Calculations --></label>
+            <section>Potential Revenue Calculations</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Page Layout - National Property Management – RFP</layout>
+        <sections>
+            <label><!-- Additional Opp Info --></label>
+            <section>Additional Opp Info</section>
+        </sections>
+        <sections>
+            <label><!-- Basic Opportunity Information --></label>
+            <section>Basic Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Name will be auto populated on save. --></label>
+            <section>Opportunity Name will be auto populated on save.</section>
+        </sections>
+        <sections>
+            <label><!-- Potential Revenue Calculations --></label>
+            <section>Potential Revenue Calculations</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Page Layout - Property Management - Local Opportunities</layout>
+        <sections>
+            <label><!-- Additional Opp Info --></label>
+            <section>Additional Opp Info</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Information --></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Name will be auto populated on save. --></label>
+            <section>Opportunity Name will be auto populated on save.</section>
+        </sections>
+        <sections>
+            <label><!-- Potential Revenue Calculations --></label>
+            <section>Potential Revenue Calculations</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Page Layout - Property Management - Regional Opportunities</layout>
+        <sections>
+            <label><!-- Additional Opp Info --></label>
+            <section>Additional Opp Info</section>
+        </sections>
+        <sections>
+            <label><!-- Basic Opportunity Information --></label>
+            <section>Basic Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Name will be auto populated on save. --></label>
+            <section>Opportunity Name will be auto populated on save.</section>
+        </sections>
+        <sections>
+            <label><!-- Potential Revenue Calculations --></label>
+            <section>Potential Revenue Calculations</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Property Management</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity --></label>
+            <section>Opportunity</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Details --></label>
+            <section>Opportunity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Value --></label>
+            <section>Opportunity Value</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Competitor --></label>
+        <name>Add_Competitor</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Add Vendor/Supplier --></label>
+        <name>Add_Vendor_Supplier</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Child Opportunity --></label>
+        <name>Create_Child_Opportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Task --></label>
+        <name>Create_Task</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Generate Local Opportunity --></label>
+        <name>Generate_Local_Opportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Generate Regional Opportunities RFP --></label>
+        <name>Generate_Regional_Opportunities_RFP</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Generate Regional Opportunity --></label>
+        <name>Generate_Regional_Opportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Revision Opportunity --></label>
+        <name>Revision_Opportunity</name>
+    </quickActions>
+</CustomObjectTranslation>

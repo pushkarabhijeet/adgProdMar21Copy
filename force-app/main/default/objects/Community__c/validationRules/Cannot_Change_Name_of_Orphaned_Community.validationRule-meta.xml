@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Change_Name_of_Orphaned_Community</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED(Name),
+    RecordType.Name=&apos;Exception&apos;,
+ $Profile.Name &lt;&gt; &apos;System Administrator&apos;
+)</errorConditionFormula>
+    <errorMessage>You cannot change the name of the Orphaned Community. If you are trying to reassign a House&apos;s Community, go to the House Record and change the Community there.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>COMMUNITY_MASS_UPDATE_FIELD_MANAGER</fullName>
+    <columns>NAME</columns>
+    <columns>Builder__c</columns>
+    <columns>Field_Service_Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Community__c.Exception,Community__c.Standard</value>
+    </filters>
+    <filters>
+        <field>Field_Service_Manager__c</field>
+        <operation>equals</operation>
+        <value>Ana M Guevara</value>
+    </filters>
+    <label>COMMUNITY: MASS UPDATE FIELD MANAGER</label>
+    <sharedTo>
+        <group>Data_Mgmt_McDade</group>
+    </sharedTo>
+</ListView>

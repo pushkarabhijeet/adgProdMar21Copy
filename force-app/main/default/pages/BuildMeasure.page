@@ -1,0 +1,179 @@
+<!--
+/**********************************************************************
+* Name:     BuildMeasure
+* Author:   Strategic Growth, Inc. (www.strategicgrowthinc.com)
+* 
+* ======================================================
+* ======================================================
+* Purpose:                                                      
+* 
+* ======================================================
+* ======================================================
+* History:                                                            
+* VERSION   DATE            INITIALS      DESCRIPTION/FEATURES ADDED
+* 1.0       10-Nov-2020     rwd           Initial Development           
+*   
+***********************************************************************/ 
+-->
+
+
+<apex:page id="BuildMeasure3" standardController="Quality_Control__c" extensions="SG_VFC_BuildMeasure" docType="html-5.0"
+           showHeader="false" sideBar="false" lightningStylesheets="true">
+
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <!--<c:SG_Overlay style="processing" />-->
+
+        <!-- Import the Design System style sheet -->
+        <apex:slds />
+
+        <style>
+            .h1_Measure {
+                font-weight: bolder;
+                font-size: 14px;
+
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+    <div class="slds-scope">
+
+        <apex:form id="theForm">
+            <apex:actionStatus id="overlayStatus" onStart="showOverlay();" onstop="hideOverlay();"/>
+            <apex:pageMessages escape="false" id="pageMsg"/>
+
+            <!-- error messaging/toasts requires variable errorMsg in controller -->
+            <apex:outputPanel rendered="{!hasError}">
+                <div style="height: 4rem;" class="demo-only">
+                    <div class="slds-notify_container slds-is-relative">
+                        <div role="alert" class="slds-notify slds-notify_toast slds-theme_error">
+                            <span class="slds-assistive-text">error</span>
+                            <span title="Description of icon when needed"
+                                  class="slds-icon_container slds-icon-utility-error slds-m-right_small slds-no-flex slds-align-top">
+                            <svg aria-hidden="true" class="slds-icon slds-icon_small"></svg>
+                        </span>
+                            <div class="slds-notify__content">
+                                <h2 class="slds-text-heading_small ">
+                                    <apex:outputText value="{!errorMsg}" escape="false"/>
+                                </h2>
+                            </div>
+                            <button title="Close"
+                                    class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse">
+                                <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+                                </svg>
+                                <span class="slds-assistive-text">Close</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </apex:outputPanel>
+
+
+            <apex:pageBlock >
+                <div class="slds-panel__section">
+                    <div class="slds-media">
+                        <div class="slds-media__body">
+
+                            <div style="float:right;" role="group">
+                                <apex:commandButton action="{!customSave}" value="Save"/>
+                                <apex:commandButton action="{!addMoreMeasurements}" value="Add More Measurements"/><p/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <table border="0" width="50%">
+
+                    <apex:variable value="{!0}" var="ctr"/>
+            <apex:repeat value="{!measurements}" var="item">
+                <tr>
+
+                <apex:variable var="ctr" value="{!ctr + 1}"/>
+                <apex:variable value="{!IF(item.Name != "", item.Name, "" )}" var="sectionName"/>
+                <td colspan="2">
+                    <h2 class="h1_Measure">
+                        <apex:outputText value="Build - {!ctr} {!sectionName}"/>
+                    </h2>
+                </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <apex:outputLabel value="{!$objectType.QC_Build_Measure__c.fields.Name.label}"/>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!item.Name}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <apex:outputLabel value="{!$objectType.QC_Build_Measure__c.fields.Length__c.label}"/>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!item.Length__c}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <apex:outputLabel value="{!$objectType.QC_Build_Measure__c.fields.Width__c.label}"/>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!item.Width__c}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <apex:outputLabel value="{!$objectType.QC_Build_Measure__c.fields.Material__c.label}"/>
+                    </td>
+                    <td>
+                        <apex:inputField value="{!item.Material__c}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <apex:outputLabel value="{!$objectType.QC_Build_Measure__c.fields.Do_edges_need_beveled_and_polished__c.label}"/>
+                    </td>
+                    <td>
+                        <!--<apex:inputField value="{!item.Do_edges_need_beveled_and_polished__c}"/>-->
+                        <apex:selectRadio value="{!item.Do_edges_need_beveled_and_polished__c}" layout="pageDirection">
+                            <apex:selectOptions value="{!edgeItems}"/>
+                        </apex:selectRadio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <apex:outputLabel value="{!$objectType.QC_Build_Measure__c.fields.Comments__c.label}"/>
+                    </td>
+                    <td>
+                        <apex:inputTextarea value="{!item.Comments__c}" cols="40" rows="5"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr/>
+                        <p>&nbsp;</p>
+                    </td>
+                </tr>
+            </apex:repeat>
+
+                </table>
+                <apex:commandButton action="{!customSave}" value="Save"/>
+                <apex:commandButton action="{!addMoreMeasurements}" value="Add More Measurements"/>
+            </apex:pageBlock>
+
+        </apex:form>
+    </div>
+    <div id="overlay"></div>
+    </body>
+    </html>
+</apex:page>

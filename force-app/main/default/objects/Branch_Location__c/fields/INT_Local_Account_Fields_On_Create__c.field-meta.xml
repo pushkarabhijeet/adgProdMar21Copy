@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>INT_Local_Account_Fields_On_Create__c</fullName>
+    <label>INT Local Account Fields On Create</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName># of Crews</fullName>
+                <default>false</default>
+                <label># of Crews</label>
+            </value>
+            <value>
+                <fullName>Account Id (18)</fullName>
+                <default>false</default>
+                <label>Account Id (18)</label>
+            </value>
+            <value>
+                <fullName>Account Name</fullName>
+                <default>false</default>
+                <label>Account Name</label>
+            </value>
+            <value>
+                <fullName>Account Number</fullName>
+                <default>false</default>
+                <label>Account Number</label>
+            </value>
+            <value>
+                <fullName>Account Owner</fullName>
+                <default>false</default>
+                <label>Account Owner</label>
+            </value>
+            <value>
+                <fullName>Account Record Type</fullName>
+                <default>false</default>
+                <label>Account Record Type</label>
+            </value>
+            <value>
+                <fullName>Account Short Name</fullName>
+                <default>false</default>
+                <label>Account Short Name</label>
+            </value>
+            <value>
+                <fullName>Account Site</fullName>
+                <default>false</default>
+                <label>Account Site</label>
+            </value>
+            <value>
+                <fullName>Account Source</fullName>
+                <default>false</default>
+                <label>Account Source</label>
+            </value>
+            <value>
+                <fullName>Account Status</fullName>
+                <default>false</default>
+                <label>Account Status</label>
+            </value>
+            <value>
+                <fullName>Additional Job Types</fullName>
+                <default>false</default>
+                <label>Additional Job Types</label>
+            </value>
+            <value>
+                <fullName>ADG Rebate</fullName>
+                <default>false</default>
+                <label>ADG Rebate</label>
+            </value>
+            <value>
+                <fullName>ADG Rebate (Parent)</fullName>
+                <default>false</default>
+                <label>ADG Rebate (Parent)</label>
+            </value>
+            <value>
+                <fullName>Annual Revenue</fullName>
+                <default>false</default>
+                <label>Annual Revenue</label>
+            </value>
+            <value>
+                <fullName>Approval Status</fullName>
+                <default>false</default>
+                <label>Approval Status</label>
+            </value>
+            <value>
+                <fullName>Average # of Homes/Units built/year</fullName>
+                <default>false</default>
+                <label>Average # of Homes/Units built/year</label>
+            </value>
+            <value>
+                <fullName>Average Closing Price</fullName>
+                <default>false</default>
+                <label>Average Closing Price</label>
+            </value>
+            <value>
+                <fullName>Average Spend Per House/Unit</fullName>
+                <default>false</default>
+                <label>Average Spend Per House/Unit</label>
+            </value>
+            <value>
+                <fullName>Avg jobs per week</fullName>
+                <default>false</default>
+                <label>Avg jobs per week</label>
+            </value>
+            <value>
+                <fullName>Avg. Living Sq. Ft.</fullName>
+                <default>false</default>
+                <label>Avg. Living Sq. Ft.</label>
+            </value>
+            <value>
+                <fullName>Avg. Price per Sq. Ft.</fullName>
+                <default>false</default>
+                <label>Avg. Price per Sq. Ft.</label>
+            </value>
+            <value>
+                <fullName>Blinds</fullName>
+                <default>false</default>
+                <label>Blinds</label>
+            </value>
+            <value>
+                <fullName>Builder Profile Community Link</fullName>
+                <default>false</default>
+                <label>Builder Profile Community Link</label>
+            </value>
+            <value>
+                <fullName>Carpet</fullName>
+                <default>false</default>
+                <label>Carpet</label>
+            </value>
+            <value>
+                <fullName>Classification</fullName>
+                <default>false</default>
+                <label>Classification</label>
+            </value>
+            <value>
+                <fullName>Closed Won (Parent)</fullName>
+                <default>false</default>
+                <label>Closed Won (Parent)</label>
+            </value>
+            <value>
+                <fullName>Created By</fullName>
+                <default>false</default>
+                <label>Created By</label>
+            </value>
+            <value>
+                <fullName>Crewsize</fullName>
+                <default>false</default>
+                <label>Crewsize</label>
+            </value>
+            <value>
+                <fullName>Cust_Addr1</fullName>
+                <default>false</default>
+                <label>Cust_Addr1</label>
+            </value>
+            <value>
+                <fullName>Cust_Addr2</fullName>
+                <default>false</default>
+                <label>Cust_Addr2</label>
+            </value>
+            <value>
+                <fullName>Data.com Key</fullName>
+                <default>false</default>
+                <label>Data.com Key</label>
+            </value>
+            <value>
+                <fullName>Description</fullName>
+                <default>false</default>
+                <label>Description</label>
+            </value>
+            <value>
+                <fullName>Dispatcher</fullName>
+                <default>false</default>
+                <label>Dispatcher</label>
+            </value>
+            <value>
+                <fullName>Division</fullName>
+                <default>false</default>
+                <label>Division</label>
+            </value>
+            <value>
+                <fullName>Edit</fullName>
+                <default>false</default>
+                <label>Edit</label>
+            </value>
+            <value>
+                <fullName>Einstein Account Tier</fullName>
+                <default>false</default>
+                <label>Einstein Account Tier</label>
+            </value>
+            <value>
+                <fullName>Employees</fullName>
+                <default>false</default>
+                <label>Employees</label>
+            </value>
+            <value>
+                <fullName>Entity</fullName>
+                <default>false</default>
+                <label>Entity</label>
+            </value>
+            <value>
+                <fullName>ExternalID</fullName>
+                <default>false</default>
+                <label>ExternalID</label>
+            </value>
+            <value>
+                <fullName>Fax</fullName>
+                <default>false</default>
+                <label>Fax</label>
+            </value>
+            <value>
+                <fullName>From Child</fullName>
+                <default>false</default>
+                <label>From Child</label>
+            </value>
+            <value>
+                <fullName>Future Lots</fullName>
+                <default>false</default>
+                <label>Future Lots</label>
+            </value>
+            <value>
+                <fullName>Geographies Served</fullName>
+                <default>false</default>
+                <label>Geographies Served</label>
+            </value>
+            <value>
+                <fullName>Gift Restrictions</fullName>
+                <default>false</default>
+                <label>Gift Restrictions</label>
+            </value>
+            <value>
+                <fullName>Gift Restrictions (Parent)</fullName>
+                <default>false</default>
+                <label>Gift Restrictions (Parent)</label>
+            </value>
+            <value>
+                <fullName>Hardi</fullName>
+                <default>false</default>
+                <label>Hardi</label>
+            </value>
+            <value>
+                <fullName>Industry</fullName>
+                <default>false</default>
+                <label>Industry</label>
+            </value>
+            <value>
+                <fullName>Installer Notes</fullName>
+                <default>false</default>
+                <label>Installer Notes</label>
+            </value>
+            <value>
+                <fullName>Installer Rating</fullName>
+                <default>false</default>
+                <label>Installer Rating</label>
+            </value>
+            <value>
+                <fullName>Installer Status Symbol</fullName>
+                <default>false</default>
+                <label>Installer Status Symbol</label>
+            </value>
+            <value>
+                <fullName>Installer#</fullName>
+                <default>false</default>
+                <label>Installer#</label>
+            </value>
+            <value>
+                <fullName>Integration Key (Account)</fullName>
+                <default>false</default>
+                <label>Integration Key (Account)</label>
+            </value>
+            <value>
+                <fullName>Is Parent</fullName>
+                <default>false</default>
+                <label>Is Parent</label>
+            </value>
+            <value>
+                <fullName>IsActive</fullName>
+                <default>false</default>
+                <label>IsActive</label>
+            </value>
+            <value>
+                <fullName>Job Type</fullName>
+                <default>false</default>
+                <label>Job Type</label>
+            </value>
+            <value>
+                <fullName>Kerdi</fullName>
+                <default>false</default>
+                <label>Kerdi</label>
+            </value>
+            <value>
+                <fullName>Key Account</fullName>
+                <default>false</default>
+                <label>Key Account</label>
+            </value>
+            <value>
+                <fullName>Key Account (Parent)</fullName>
+                <default>false</default>
+                <label>Key Account (Parent)</label>
+            </value>
+            <value>
+                <fullName>Key Account Builder Name</fullName>
+                <default>false</default>
+                <label>Key Account Builder Name</label>
+            </value>
+            <value>
+                <fullName>Last 12 Months Closing</fullName>
+                <default>false</default>
+                <label>Last 12 Months Closing</label>
+            </value>
+            <value>
+                <fullName>Last Evaluation</fullName>
+                <default>false</default>
+                <label>Last Evaluation</label>
+            </value>
+            <value>
+                <fullName>Last Modified By</fullName>
+                <default>false</default>
+                <label>Last Modified By</label>
+            </value>
+            <value>
+                <fullName>Lead Parent</fullName>
+                <default>false</default>
+                <label>Lead Parent</label>
+            </value>
+            <value>
+                <fullName>Legacy ID (Account)</fullName>
+                <default>false</default>
+                <label>Legacy ID (Account)</label>
+            </value>
+            <value>
+                <fullName>Location</fullName>
+                <default>false</default>
+                <label>Location</label>
+            </value>
+            <value>
+                <fullName>LVP</fullName>
+                <default>false</default>
+                <label>LVP</label>
+            </value>
+            <value>
+                <fullName>NDW</fullName>
+                <default>false</default>
+                <label>NDW</label>
+            </value>
+            <value>
+                <fullName>Number of Children</fullName>
+                <default>false</default>
+                <label>Number of Children</label>
+            </value>
+            <value>
+                <fullName>Occupied</fullName>
+                <default>false</default>
+                <label>Occupied</label>
+            </value>
+            <value>
+                <fullName>Operating Hours</fullName>
+                <default>false</default>
+                <label>Operating Hours</label>
+            </value>
+            <value>
+                <fullName>Other Source</fullName>
+                <default>false</default>
+                <label>Other Source</label>
+            </value>
+            <value>
+                <fullName>Ownership</fullName>
+                <default>false</default>
+                <label>Ownership</label>
+            </value>
+            <value>
+                <fullName>Parent Account</fullName>
+                <default>false</default>
+                <label>Parent Account</label>
+            </value>
+            <value>
+                <fullName>Parent Account ID (18)</fullName>
+                <default>false</default>
+                <label>Parent Account ID (18)</label>
+            </value>
+            <value>
+                <fullName>Phone</fullName>
+                <default>false</default>
+                <label>Phone</label>
+            </value>
+            <value>
+                <fullName>Physical Address</fullName>
+                <default>false</default>
+                <label>Physical Address</label>
+            </value>
+            <value>
+                <fullName>Populate on Child</fullName>
+                <default>false</default>
+                <label>Populate on Child</label>
+            </value>
+            <value>
+                <fullName>Preferred Travel Area</fullName>
+                <default>false</default>
+                <label>Preferred Travel Area</label>
+            </value>
+            <value>
+                <fullName>Prior 12 Months Closings</fullName>
+                <default>false</default>
+                <label>Prior 12 Months Closings</label>
+            </value>
+            <value>
+                <fullName>Rank</fullName>
+                <default>false</default>
+                <label>Rank</label>
+            </value>
+            <value>
+                <fullName>Rating</fullName>
+                <default>false</default>
+                <label>Rating</label>
+            </value>
+            <value>
+                <fullName>Run Dup Rule</fullName>
+                <default>false</default>
+                <label>Run Dup Rule</label>
+            </value>
+            <value>
+                <fullName>Sheet Vinyl</fullName>
+                <default>false</default>
+                <label>Sheet Vinyl</label>
+            </value>
+            <value>
+                <fullName>Shipping Address</fullName>
+                <default>false</default>
+                <label>Shipping Address</label>
+            </value>
+            <value>
+                <fullName>SIC Code</fullName>
+                <default>false</default>
+                <label>SIC Code</label>
+            </value>
+            <value>
+                <fullName>SIC Description</fullName>
+                <default>false</default>
+                <label>SIC Description</label>
+            </value>
+            <value>
+                <fullName>Signature for check</fullName>
+                <default>false</default>
+                <label>Signature for check</label>
+            </value>
+            <value>
+                <fullName>Status</fullName>
+                <default>false</default>
+                <label>Status</label>
+            </value>
+            <value>
+                <fullName>Submit to ERP</fullName>
+                <default>false</default>
+                <label>Submit to ERP</label>
+            </value>
+            <value>
+                <fullName>Summary Closed Won Opportunities</fullName>
+                <default>false</default>
+                <label>Summary Closed Won Opportunities</label>
+            </value>
+            <value>
+                <fullName>Ticker Symbol</fullName>
+                <default>false</default>
+                <label>Ticker Symbol</label>
+            </value>
+            <value>
+                <fullName>Tile</fullName>
+                <default>false</default>
+                <label>Tile</label>
+            </value>
+            <value>
+                <fullName>Tile Repairs</fullName>
+                <default>false</default>
+                <label>Tile Repairs</label>
+            </value>
+            <value>
+                <fullName>Total Child Opportunities (won)</fullName>
+                <default>false</default>
+                <label>Total Child Opportunities (won)</label>
+            </value>
+            <value>
+                <fullName>Type</fullName>
+                <default>false</default>
+                <label>Type</label>
+            </value>
+            <value>
+                <fullName>Unit (Account)</fullName>
+                <default>false</default>
+                <label>Unit (Account)</label>
+            </value>
+            <value>
+                <fullName>Vacant Developed Lots</fullName>
+                <default>false</default>
+                <label>Vacant Developed Lots</label>
+            </value>
+            <value>
+                <fullName>Website</fullName>
+                <default>false</default>
+                <label>Website</label>
+            </value>
+            <value>
+                <fullName>Wood</fullName>
+                <default>false</default>
+                <label>Wood</label>
+            </value>
+            <value>
+                <fullName>YOY Closings Change</fullName>
+                <default>false</default>
+                <label>YOY Closings Change</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

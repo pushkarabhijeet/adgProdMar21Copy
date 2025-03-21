@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PO_Selection_release_schedule__c</fullName>
+    <inlineHelpText>When are PO and selections released?</inlineHelpText>
+    <label>PO/Selection release schedule</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>After selections completed</fullName>
+                <default>false</default>
+                <label>After selections completed</label>
+            </value>
+            <value>
+                <fullName>60 days prior to install</fullName>
+                <default>false</default>
+                <label>60 days prior to install</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

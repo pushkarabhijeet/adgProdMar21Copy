@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- From the Builder Profile Line Item --></help>
+    <label><!-- Cover Floors With --></label>
+    <name>BP_Cover_Floors_With__c</name>
+</CustomFieldTranslation>

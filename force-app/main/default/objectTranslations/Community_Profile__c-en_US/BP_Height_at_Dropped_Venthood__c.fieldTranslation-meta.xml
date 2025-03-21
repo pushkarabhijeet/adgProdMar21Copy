@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- From Builder Profile Line Item --></help>
+    <label><!-- Height at Dropped Venthood --></label>
+    <name>BP_Height_at_Dropped_Venthood__c</name>
+</CustomFieldTranslation>

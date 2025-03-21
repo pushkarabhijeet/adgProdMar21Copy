@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default_WO_Field_Manager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Default WO Field Manager</label>
+    <referenceTo>ServiceResource</referenceTo>
+    <relationshipLabel>Branch Locations</relationshipLabel>
+    <relationshipName>Branch_Locations</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
